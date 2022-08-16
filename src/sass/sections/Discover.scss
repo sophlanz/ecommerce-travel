@@ -1,0 +1,53 @@
+/*quote section*/
+.quote {
+    height:400px;
+    font-size:3rem;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    padding:0px 150px 0px 150px;
+    text-align:center;
+    color:$grey;
+    line-height:1.6;
+    font-style:italic;
+    font-family:"Regular";
+}
+#instruction {
+    margin-left:20px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+#instruction p {
+    font-family:'Bold';
+    font-style:italic;
+    color:$grey;
+}
+#instruction h1 {
+    font-family:"Bold";
+    font-size:1.3rem;
+
+}
+.filterTrips {
+    display:flex;
+    margin:30px 20px 30px 20px;
+    padding:20px;
+    background-color:$light-grey;
+    gap:10px;
+}
+.filterTrips h1 {
+    font-family:"Bold";
+    font-size:1.2rem;
+    color:#18191b;
+}
+.filterTrips p{
+    font-family:"Regular";
+    font-style:italic;
+    color:rgba(69,50,42,.6);
+    font-size:.8rem;
+}
+.destination , .duration, .budget {
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}

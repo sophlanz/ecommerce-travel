@@ -1,0 +1,58 @@
+@import "utilities/variables";
+@import "layout/all";
+@import "base/reset";
+@import "components/all";
+@import "sections/all";
+
+
+/*import font */
+@font-face {
+    font-family: "Regular";   
+    src: local("OggRegular"),
+      url("../fonts/OggRegular.ttf") format("truetype");
+  };
+  @font-face {
+    font-family: "Bold";   
+    src: local("OggBold"),
+      url("../fonts/OggBold.ttf") format("truetype");
+  };
+  @font-face {
+    font-family: "BoldItalic";   
+    src: local("OggBoldItalic"),
+      url("../fonts/OggBoldItalic.ttf") format("truetype");
+  };
+  @font-face {
+    font-family: "Light";   
+    src: local("OggLigh"),
+      url("../fonts/OggLight.ttf") format("truetype");
+  };
+  @font-face {
+    font-family: "LightItalic";   
+    src: local("OggLightItalic"),
+      url("../fonts/OggLightItalic.ttf") format("truetype");
+  };
+  @font-face {
+    font-family: "Medium";   
+    src: local("OggMedium"),
+      url("../fonts/OggMedium.ttf") format("truetype");
+  };
+  @font-face {
+    font-family: "MediumItalic";   
+    src: local("OggMediumItalic"),
+      url("../fonts/OggMediumItalic.ttf") format("truetype");
+  };
+  @font-face {
+    font-family: "RegularItalic";   
+    src: local("OggRegularItalic"),
+    url("../fonts/OggRegularItalic.ttf")  format("truetype");
+  };
+  @font-face {
+    font-family: "Thin";   
+    src: local("OggThin"),
+      url("../fonts/OggThin.ttf") format("truetype");
+  };
+  @font-face {
+    font-family: "ThinItalic";   
+    src: local("OggThinItalic"),
+      url("../fonts/OggThinItalic.ttf") format("truetype");
+  };
