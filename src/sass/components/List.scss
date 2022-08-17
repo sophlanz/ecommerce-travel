@@ -11,3 +11,8 @@ li{
 datalist {
     display:flex;
 }
+/*style tickmarks*/
+datalist#tickmarks {
+    display:flex;
+    gap:40px;
+}

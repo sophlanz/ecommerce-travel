@@ -1,4 +1,18 @@
 import React, {useState} from 'react';
+import elephant from '../images/elephant.jpg';
+import boat from '../images/boat.jpg';
+import beach from '../images/beach.jpg';
+import food from '../images/food.jpg';
+import temple from '../images/temple.jpg'
+import halong from '../images/halong.jpg';
+import hanoi from '../images/hanoi.jpg';
+import loop from '../images/loop.jpg';
+import market from '../images/market.jpg';
+import bromo from '../images/bromo.jpg';
+import kelimutu from '../images/kelimutu.jpg';
+import komodo from '../images/komodo.jpg';
+import kuta from '../images/kuta.jpg';
+import rajaampat from '../images/rajaampat.jpg';
 const Discover = () => {
     return (
         <div>
@@ -23,38 +37,235 @@ const Discover = () => {
                         <div class = "destination">
                             <h1>Destination</h1>
                             <p>Select from the dropdown below your dream destination...</p>
-                            <label for="destinationInput">Select your destination...
-                            <input  list = "destinations" name = "destinationInput" id="destinationInput"/>
+                            <label for="destinationInput">
+                            <input  list = "destinations" placeholder="Select your destination..." name = "destinationInput" id="destinationInput"/>
                             </label>
                             <datalist id="destinations">
-                                <option value ="Spain"/>
+                                <option value ="Indonesia"/>
                                 <option value ="Thailand"/>
                                 <option value ="Vietnam"/>
                             </datalist>
                         </div>
                         <div class = "duration">
                             <h1>Duration</h1>
-                            <p>Select how much of your day you want the excursion to occupy...</p>
-                            <input type = "range" list="tickmarks"  step="1" min="1" max="3"/>
+                            <p>Select length of the excursion...</p>
+                            <input type = "range" list="tickmarks"  step="1" min="0" max="3"/>
                             <datalist id= "tickmarks">
-                                <option value="1" label="half day"/>
-                                <option value="2" label = "full day"/>
-                                <option value="3" label = "over night"/>
+                                <option value ="0" label="Any"></option>
+                                <option value="1" label="Half-Day"/>
+                                <option value="2" label = "Full-Day"/>
+                                <option value="3" label = "Over-Night"/>
                             </datalist>
-                            
                         </div>
                         <div class = "budget">
                             <h1>Budget</h1>
                             <p>How much are you looking to spend?</p>
-                            <input type = "range" list = "tickmarks" step="1"min="1" max="3"/>
+                            <input type = "range" list = "tickmarks" step="1"min="0" max="3"/>
                             <datalist id = "tickmarks">
+                                <option value = "0" label="Any"></option>
                                 <option value = "1">$0-$100</option>
                                 <option value = "2">$101-$250</option>
-                                <option value = "3">$251-$500</option>
+                                <option value = "3">$250+</option>
                             </datalist>
                         </div>
                     </div>
-                    <div id="exploreTips"></div>       
+                    <div id="exploreTrips">
+                    {/*Thailand*/}
+                        <div id="excursion" style={{backgroundImage: `url(${elephant})`}} >
+                            <div id="country">Thailand</div>
+                            <div id="excursionTitle">Elephant Forest Adventure</div>
+                            <div class = "priceDuration">
+                                <div id="excursionPrice">
+                                    <h1>from</h1>
+                                    <p>$60</p>
+                                </div>
+                                <div id="excursionDuration">
+                                    <h1>duration</h1>
+                                    <p>Half-Day</p>
+                                </div>
+                            </div>
+                            <button id = "moreInfo">More Information</button>
+                        </div>
+                        <div id="excursion" style={{backgroundImage: `url(${temple})`}}>
+                            <div id="country">Thailand</div>
+                            <div id="excursionTitle">Temple Tour</div>
+                            <div class = "priceDuration">
+                                <div id="excursionPrice">
+                                    <h1>from</h1>
+                                    <p>$60</p>
+                                </div>
+                                <div id="excursionDuration">
+                                    <h1>duration</h1>
+                                    <p>Half-Day</p>
+                                </div>
+                            </div>
+                            <button id = "moreInfo">More Information</button>
+                        </div>
+                        <div id="excursion" style={{backgroundImage: `url(${beach})`}}>
+                            <div id="country">Thailand</div>
+                            <div id="excursionTitle">Koh Phi Phi Espcape</div>
+                            <div class = "priceDuration">
+                                <div id="excursionPrice">
+                                    <h1>from</h1>
+                                    <p>$60</p>
+                                </div>
+                                <div id="excursionDuration">
+                                    <h1>duration</h1>
+                                    <p>Half-Day</p>
+                                </div>
+                            </div>
+                            <button id = "moreInfo">More Information</button>
+                        </div>
+                        <div id="excursion" style={{backgroundImage: `url(${food})`}}>
+                            <div id="country">Thailand</div>
+                            <div id="excursionTitle">Home Stay</div>
+                            <div class = "priceDuration">
+                                <div id="excursionPrice">
+                                    <h1>from</h1>
+                                    <p>$60</p>
+                                </div>
+                                <div id="excursionDuration">
+                                    <h1>duration</h1>
+                                    <p>Half-Day</p>
+                                </div>
+                            </div>
+                            <button id = "moreInfo">More Information</button>
+                        </div>
+                        {/*Vietnam*/}
+                        <div id="excursion" style={{backgroundImage: `url(${halong})`}} >
+                            <div id="country">Vietnam</div>
+                            <div id="excursionTitle"> Ha Long Bay Tour </div>
+                            <div class = "priceDuration">
+                                <div id="excursionPrice">
+                                    <h1>from</h1>
+                                    <p>$60</p>
+                                </div>
+                                <div id="excursionDuration">
+                                    <h1>duration</h1>
+                                    <p>Half-Day</p>
+                                </div>
+                            </div>
+                            <button id = "moreInfo">More Information</button>
+                        </div>
+                        <div id="excursion" style={{backgroundImage: `url(${hanoi})`}}>
+                            <div id="country">Vietnam</div>
+                            <div id="excursionTitle">Hanoi walking tour</div>
+                            <div class = "priceDuration">
+                                <div id="excursionPrice">
+                                    <h1>from</h1>
+                                    <p>$60</p>
+                                </div>
+                                <div id="excursionDuration">
+                                    <h1>duration</h1>
+                                    <p>Half-Day</p>
+                                </div>
+                            </div>
+                            <button id = "moreInfo">More Information</button>
+                        </div>
+                        <div id="excursion" style={{backgroundImage: `url(${loop})`}}>
+                            <div id="country">Vietnam</div>
+                            <div id="excursionTitle">Ha Giang Loop On Motorbike</div>
+                            <div class = "priceDuration">
+                                <div id="excursionPrice">
+                                    <h1>from</h1>
+                                    <p>$60</p>
+                                </div>
+                                <div id="excursionDuration">
+                                    <h1>duration</h1>
+                                    <p>Half-Day</p>
+                                </div>
+                            </div>
+                            <button id = "moreInfo">More Information</button>
+                        </div>
+                        <div id="excursion" style={{backgroundImage: `url(${market})`}}>
+                            <div id="country">Vietnam</div>
+                            <div id="excursionTitle">Market Tour and Cooking Class</div>
+                            <div class = "priceDuration">
+                                <div id="excursionPrice">
+                                    <h1>from</h1>
+                                    <p>$60</p>
+                                </div>
+                                <div id="excursionDuration">
+                                    <h1>duration</h1>
+                                    <p>Half-Day</p>
+                                </div>
+                            </div>
+                            <button id = "moreInfo">More Information</button>
+                        </div>
+                        {/*Indonesia*/}
+                        <div id="excursion" style={{backgroundImage: `url(${rajaampat})`}} >
+                            <div id="country">Indonesia</div>
+                            <div id="excursionTitle">Scuba Diving at Raja Ampat</div>
+                            <div class = "priceDuration">
+                                <div id="excursionPrice">
+                                    <h1>from</h1>
+                                    <p>$60</p>
+                                </div>
+                                <div id="excursionDuration">
+                                    <h1>duration</h1>
+                                    <p>Half-Day</p>
+                                </div>
+                            </div>
+                            <button id = "moreInfo">More Information</button>
+                        </div>
+                        <div id="excursion" style={{backgroundImage: `url(${kelimutu})`}}>
+                            <div id="country">Indonesia</div>
+                            <div id="excursionTitle">Trekking Kelimutu Volcano</div>
+                            <div class = "priceDuration">
+                                <div id="excursionPrice">
+                                    <h1>from</h1>
+                                    <p>$60</p>
+                                </div>
+                                <div id="excursionDuration">
+                                    <h1>duration</h1>
+                                    <p>Half-Day</p>
+                                </div>
+                            </div>
+                            <button id = "moreInfo">More Information</button>
+                        </div>
+                        <div id="excursion" style={{backgroundImage: `url(${komodo})`}}>
+                            <div id="country">Indonesia</div>
+                            <div id="excursionTitle"> Komodo Dragon Watching on Komodo Island</div>
+                            <div class = "priceDuration">
+                                <div id="excursionPrice">
+                                    <h1>from</h1>
+                                    <p>$60</p>
+                                </div>
+                                <div id="excursionDuration">
+                                    <h1>duration</h1>
+                                    <p>Half-Day</p>
+                                </div>
+                            </div>
+                            <button id = "moreInfo">More Information</button>
+                        </div>
+                        <div id="excursion" style={{backgroundImage: `url(${kuta})`}}>
+                            <div id="country">Indonesia</div>
+                            <div id="excursionTitle">Surfing On Kuta Beach</div>
+                            <div class = "priceDuration">
+                                <div id="excursionPrice">
+                                    <h1>from</h1>
+                                    <p>$60</p>
+                                </div>
+                                <div id="excursionDuration">
+                                    <h1>duration</h1>
+                                    <p>Half-Day</p>
+                                </div>
+                            </div>
+                            <button id = "moreInfo">More Information</button>
+                        </div>
+                    </div> 
+                    <div class="marquee">
+                        <marquee behavior="scroll" direction="left" scrollamount="1">
+                            <img src={boat} alt="Natural"  class="boat"/>
+                        </marquee>
+                        <marquee behavior="scroll" direction="left" scrollamount="1">
+                            <img src={bromo} width="120" height="80" alt="Natural" />
+                            <img src={boat} width="120" height="80" alt="Natural"  />
+                        </marquee>
+                        <marquee behavior="scroll" direction="left" scrollamount="1">
+                            <img src={beach} width="120" height="80" alt="Natural" />
+                        </marquee>
+                    </div>      
             </div>
         </div>
     )
