@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import elephant from '../images/elephant.jpg';
-import boat from '../images/boat.jpg';
 import beach from '../images/beach.jpg';
 import food from '../images/food.jpg';
 import temple from '../images/temple.jpg'
@@ -8,24 +7,11 @@ import halong from '../images/halong.jpg';
 import hanoi from '../images/hanoi.jpg';
 import loop from '../images/loop.jpg';
 import market from '../images/market.jpg';
-import bromo from '../images/bromo.jpg';
 import kelimutu from '../images/kelimutu.jpg';
 import komodo from '../images/komodo.jpg';
 import kuta from '../images/kuta.jpg';
 import rajaampat from '../images/rajaampat.jpg';
-import marq1 from "../images/marq1.jpg";
-import marq2 from "../images/marq2.jpg";
-import marq3 from "../images/marq3.jpg";
-import marq4 from "../images/marq4.jpg";
-import marq5 from "../images/marq5.jpg";
-import marq6 from "../images/marq6.jpg";
-import marq7 from '../images/marq7.jpg';
-import marq8 from '../images/marq8.jpg';
-import marq9 from '../images/marq9.jpg';
-import marq10 from '../images/marq10.jpg';
-import marq11 from '../images/marq11.jpg';
-import marq12 from '../images/marq12.jpg';
-
+import Marquee from './Marquee';
 const Discover = () => {
     return (
         <div>
@@ -90,11 +76,11 @@ const Discover = () => {
                             <div class = "priceDuration">
                                 <div id="excursionPrice">
                                     <h1>from</h1>
-                                    <p>$60</p>
+                                    <p>$100</p>
                                 </div>
                                 <div id="excursionDuration">
                                     <h1>duration</h1>
-                                    <p>Half-Day</p>
+                                    <p>Full-Day</p>
                                 </div>
                             </div>
                             <button id = "moreInfo">More Information</button>
@@ -267,42 +253,7 @@ const Discover = () => {
                             <button id = "moreInfo">More Information</button>
                         </div>
                     </div> 
-                    <div class="marquee">
-                        <div class="marquee-content" >
-                            <img src={boat} alt="Natural"  class="boat"/>
-                            <img src={marq1} alt="Natural"  class="marq1"/>
-                            <img src={marq4} alt="Natural"  class="marq4"/>
-                            <img src={beach}  alt="Natural" class="marqBeach"/>
-                            <img src={marq3} alt="Natural"  class="marq3"/>
-                            <img src={marq8} alt="Natural"  class="marq8"/>
-                            <img src={marq10} alt="Natural"  class="marq10"/>
-                            <img src={marq12} alt="Natural"  class="marq12"/>
-                            <img src={komodo}  alt="Natural" />
-                            <img src={marq2} alt="Natural"  class="marq2"/>
-                            <img src={marq5} alt="Natural"  class="marq5"/>
-                            <img src={marq6} alt="Natural"  class="marq6"/>
-                            <img src={marq7} alt="Natural"  class="marq7"/>
-                            <img src={marq9} alt="Natural"  class="marq9"/>
-                            <img src={marq11} alt="Natural"  class="marq11"/>
-                        </div>
-                        <div class= "marquee-content" aria-hidden="true" >
-                        <img src={boat} alt="Natural"  class="boat"/>
-                            <img src={marq1} alt="Natural"  class="marq1"/>
-                            <img src={marq4} alt="Natural"  class="marq4"/>
-                            <img src={beach}  alt="Natural" class="marqBeach"/>
-                            <img src={marq3} alt="Natural"  class="marq3"/>
-                            <img src={marq8} alt="Natural"  class="marq8"/>
-                            <img src={marq10} alt="Natural"  class="marq10"/>
-                            <img src={marq12} alt="Natural"  class="marq12"/>
-                            <img src={komodo}  alt="Natural" />
-                            <img src={marq2} alt="Natural"  class="marq2"/>
-                            <img src={marq5} alt="Natural"  class="marq5"/>
-                            <img src={marq6} alt="Natural"  class="marq6"/>
-                            <img src={marq7} alt="Natural"  class="marq7"/>
-                            <img src={marq9} alt="Natural"  class="marq9"/>
-                            <img src={marq11} alt="Natural"  class="marq11"/>
-                        </div>
-                    </div>      
+                    <Marquee/>  
             </div>
         </div>
     )
