@@ -1,0 +1,25 @@
+/*contains country and trip title*/
+.titles {
+    display:flex;
+    flex-direction:column;
+    color:white;
+    margin-bottom:100px;
+    margin-left:150px;
+    gap:10px;
+}
+.countryTrip {
+    font-size:1.5rem;
+    font-style:italic;
+    letter-spacing: 1px;
+}
+.titleTrip {
+    font-size:4rem;
+}
+.moreInfo {
+    display:flex;
+    background-color:grey;
+}
+.moreInfo img {
+    height:30px;
+    width:30px;
+}

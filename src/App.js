@@ -9,13 +9,24 @@ import "./fonts/OggRegular.ttf";
 import "./fonts/OggRegularItalic.ttf";
 import "./fonts/OggThin.ttf";
 import "./fonts/OggThinItalic.ttf";
+import {BrowserRouter as Router,Routes, Route} from 'react-router-dom';
 import Discover from './components/Discover';
 import Navbar from './components/Navbar';
+import ElephantAdenture from './components/ElephantAdenture';
+import Marquee from './components/Marquee';
 function App() {
   return (
     <div>
-        <Navbar/>
-        <Discover/>
+        
+            <Navbar/>
+                <Routes>
+                    <Route path = "/" element={<Discover/>}/>
+                    <Route path ='/trips/elephant-forest-adventure' element = {<ElephantAdenture/>} />
+                </Routes>
+            <Marquee/>
+        
+    
+        
     </div>
   );
 }

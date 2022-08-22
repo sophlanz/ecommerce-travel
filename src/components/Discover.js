@@ -12,6 +12,7 @@ import komodo from '../images/komodo.jpg';
 import kuta from '../images/kuta.jpg';
 import rajaampat from '../images/rajaampat.jpg';
 import Marquee from './Marquee';
+import {Link} from 'react-router-dom';
 const Discover = () => {
     return (
         <div>
@@ -83,7 +84,7 @@ const Discover = () => {
                                     <p>Full-Day</p>
                                 </div>
                             </div>
-                            <button id = "moreInfo">More Information</button>
+                            <button id = "moreInfo"><Link to="/trips/elephant-forest-adventure">More Information</Link></button>
                         </div>
                         <div id="excursion" style={{backgroundImage: `url(${temple})`}}>
                             <div id="country">Thailand</div>
@@ -253,7 +254,7 @@ const Discover = () => {
                             <button id = "moreInfo">More Information</button>
                         </div>
                     </div> 
-                    <Marquee/>  
+                   
             </div>
         </div>
     )
