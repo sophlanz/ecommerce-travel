@@ -1,6 +1,5 @@
 import React from 'react';
 import NavBar from './Navbar';
-import Marquee from './Marquee';
 import transport from '../images/transport.png';
 import level from '../images/level.png';
 import food from '../images/food.png';
@@ -10,6 +9,9 @@ overview="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id lect
 transportType ="transport type",
 foodIncluded= "food included",
 background = "../images/cover.jpg",
+originDestination = "from here to there",
+rating="1/5",
+price = "price"
 }) => {
     return(
         <div>
@@ -20,22 +22,49 @@ background = "../images/cover.jpg",
                     <p class = "titleTrip">{title}</p>
                 </div>   
             </div>
-            <div class="tripOverview">
-                <h1>Trip Overview</h1>
-                <p class="introduction">{introduction}</p>
-                <p class="overview">{overview}</p>
-                <div class="moreInfo">
-                    <div class="transport">
-                        <img src = {transport} alt="bus"/>
-                        <p>{transportType}</p>
+            <div class = "tripInfo">
+                <div class="tripOverview">
+                        <h1>Trip Overview</h1>
+                        <p class="introduction">{introduction}</p>
+                        <p class="overview">{overview}</p>
+                        <div class="moreInfo">
+                            <div class="transport">
+                                <img src = {transport} alt="bus"/>
+                                <h2>Transport Types:</h2>
+                                <p>{transportType}</p>
+                            </div>
+                            <div class="food">
+                                <img src={food} alt="food"/>
+                                <h2>Food:</h2>
+                                <p>{foodIncluded}</p>
+                            </div>
+                            <div class = "difficulty">
+                                <img src = {level} alt="rating"/>
+                                <h2>Excursion Difficulty Rating:</h2>
+                                <p>{rating}</p>
+                            </div>
+                        </div>
+                </div>
+                <div class = "bookTrip">
+                    <div class = "dateSelect">
+                        <p>Select Date</p>
                     </div>
-                    <div class="food">
-                        <img src={food} alt="food"/>
-                        <p>{foodIncluded}</p>
+                    <p class="originDestination">{originDestination}</p>
+                    <div class = "price">
+                        <p>From</p>
+                        <div class = "pricePerson">
+                            <h1>{price}</h1>
+                            <p>/pp</p>
+                        </div>
                     </div>
-                    <div class = "difficulty">
-                        <img src = {level} alt="rating"/>
-                        
+                    <button class="bookButton">Add To Bag</button>
+                    <div class = "contactInfo">
+                        <h1>Contact Us</h1>
+                        <p>excursions@excursionescape.com</p>
+                    </div>
+                    <div class = "hoursInfo">
+                        <h1>Opening Hours</h1>
+                        <p>Mon-Fri: 9am - 5pm</p>
                     </div>
                 </div>
             </div>

@@ -15,11 +15,147 @@
 .titleTrip {
     font-size:4rem;
 }
+/*container for transportation, food, etc*/
 .moreInfo {
     display:flex;
-    background-color:grey;
+    justify-content:center;
+    align-items:center;
+    background-color:rgb(238, 234, 234);
+    height:250px;
+    margin-bottom: 60px;
+    margin-top:30px;
+    border-radius: .5rem;
+    gap:80px;
+    font-size:2rem;
 }
 .moreInfo img {
-    height:30px;
-    width:30px;
+    height:40px;
+    width:40px;
+}
+/*div of side-by-side elements*/
+.tripInfo {
+    display:flex;
+}
+/*trip Overview title*/
+.tripOverview h1 {
+    font-size:1.5rem;
+    font-weight:700;
+    font-family:"Bold";
+    margin-bottom:20px;
+    color:$black
+}
+/*introduction paragraph*/
+.introduction {
+    font-size:2.3rem;
+    font-style:italic;
+    font-family:"Medium";
+    color:$black
+}
+/*overview paragraph*/
+.overview {
+    font-size:1rem;
+    line-height:2;
+    color:$darkest-grey;
+    font-weight:700;
+    
+}
+/*container for trip overview*/
+.tripOverview {
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    padding-left:20px;
+    padding-top:100px;
+    padding-right:60px;
+    width:800px;
+}
+/*container for trip booking*/
+.bookTrip {
+    display:flex;
+    padding:60px 60px 60px 60px;
+    flex-direction: column;
+    background-color: white;
+    margin-top:100px;
+    width:230px;
+    margin-left:50px;
+    margin-bottom:60px;
+    border-radius: .5rem;
+    gap:20px;
+    
+}
+/*More info containers*/
+.transport, .food, .difficulty {
+    display:flex;
+    flex-direction:column;
+    font-size:1rem;
+    gap:30px;
+    justify-content: center;
+    font-size:1.1rem;
+    
+}
+/*labels*/
+.transport h2, .food h2, .difficulty h2 {
+    font-weight:700;
+    color:$black;
+}
+/*info*/
+.transport p, .food p, .difficulty p {
+    font-style:italic;
+    color:$grey;
+}
+.dateSelect p{
+    color:$grey;
+    font-style:italic;
+}
+.originDestination{
+    color:$grey;
+    font-size:1.5rem;
+    font-family:"Bold";
+    font-style:italic;
+}
+/*from label*/
+.price p {
+    color:$grey;
+    font-family:"Regular";
+    font-style:italic;
+}
+/*actual price label*/
+.price h1 {
+    font-size:3rem;
+    color:blue;
+    font-weight:700;
+}
+.pricePerson {
+    display:flex;
+    align-items:center;
+}
+.pricePerson p {
+    color:blue;
+}
+.bookButton {
+    height:50px;
+    width:200px;
+    background-color:white;
+    border:1px solid blue;
+    color:blue;
+    font-family: "Bold";
+    font-size:1.2rem;
+    border-radius:.5rem;
+}
+/*email*/
+.contactInfo p {
+    color:blue;
+    font-style:"Regular";
+    font-size:1.3rem;
+    font-weight:700;
+}
+/*open hours*/
+.hoursInfo p {
+    color:$black;
+    font-weight:700;
+    font-size:1.3rem;
+}
+.hoursInfo h1, .contactInfo h1 {
+    color:$grey;
+    font-style:italic;
 }
