@@ -53,8 +53,6 @@
     max-height:100%;
     object-fit:contain;
     background-size:cover;
-    /*Place header at top, so nav can sit ontop*/
-    top:0;
     display:flex;
     flex-direction:column;
     gap:40px;

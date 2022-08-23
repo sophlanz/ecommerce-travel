@@ -48,6 +48,7 @@ price = "price"
                 <div class = "bookTrip">
                     <div class = "dateSelect">
                         <p>Select Date</p>
+                        <input type="date" class="datePicker" />
                     </div>
                     <p class="originDestination">{originDestination}</p>
                     <div class = "price">

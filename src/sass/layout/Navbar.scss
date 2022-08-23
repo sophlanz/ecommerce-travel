@@ -3,11 +3,17 @@
     position:absolute;
     top:0;
     display:flex;
-    justify-content:space-between;
+    justify-content:space-evenly;
+    gap:500px;
     color:$white;
     padding:30px 0px 30px 0px;
     width:100vw;
     align-items:center;
+}
+#centerNav {
+    position:absolute;
+    left:43%;
+    
 }
 
 

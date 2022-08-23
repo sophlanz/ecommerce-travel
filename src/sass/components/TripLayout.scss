@@ -4,7 +4,7 @@
     flex-direction:column;
     color:white;
     margin-bottom:100px;
-    margin-left:150px;
+    margin-left:130px;
     gap:10px;
 }
 .countryTrip {
@@ -63,11 +63,10 @@
 .tripOverview {
     display:flex;
     flex-direction:column;
-    gap:20px;
-    padding-left:20px;
-    padding-top:100px;
+    padding-left:40px;
+    padding-top:60px;
     padding-right:60px;
-    width:800px;
+    width:700px;
 }
 /*container for trip booking*/
 .bookTrip {
@@ -75,9 +74,9 @@
     padding:60px 60px 60px 60px;
     flex-direction: column;
     background-color: white;
-    margin-top:100px;
-    width:230px;
-    margin-left:50px;
+    margin-top:60px;
+    width:280px;
+    margin-left:20px;
     margin-bottom:60px;
     border-radius: .5rem;
     gap:20px;
@@ -124,6 +123,7 @@
     font-size:3rem;
     color:blue;
     font-weight:700;
+    font-family: "Bold";
 }
 .pricePerson {
     display:flex;
@@ -138,7 +138,7 @@
     background-color:white;
     border:1px solid blue;
     color:blue;
-    font-family: "Bold";
+    font-weight:700;
     font-size:1.2rem;
     border-radius:.5rem;
 }
