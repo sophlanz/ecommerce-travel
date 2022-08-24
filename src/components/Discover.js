@@ -11,11 +11,12 @@ import kelimutu from '../images/kelimutu.jpg';
 import komodo from '../images/komodo.jpg';
 import kuta from '../images/kuta.jpg';
 import rajaampat from '../images/rajaampat.jpg';
-import Marquee from './Marquee';
+import Navbar from '../components/Navbar';
 import {Link} from 'react-router-dom';
 const Discover = () => {
     return (
         <div>
+        <Navbar/>
             <div id = "header">
                     <div class="title">
                             <p>Moments.</p>

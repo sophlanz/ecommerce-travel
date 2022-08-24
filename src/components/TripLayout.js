@@ -3,6 +3,9 @@ import NavBar from './Navbar';
 import transport from '../images/transport.png';
 import level from '../images/level.png';
 import food from '../images/food.png';
+import { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { addToBag } from '../redux/bagSlice';
 const TripLayout = ({country = "Country", title = "Title",
  introduction="Quisque eu ultricies ex, ac rutrum ligula. Mauris molestie vehicula nisi, nec rutrum lacus auctor et. Aliquam erat volutpat. Sed eleifend ante ac volutpat convallis. Maecenas eu leo nisi. ",
 overview="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id lectus suscipit eros dignissim imperdiet at sed erat. Fusce in fringilla mauris. Proin tincidunt lacinia pulvinar. Sed massa enim, cursus vitae cursus a, varius ac velit. ",
@@ -13,9 +16,20 @@ originDestination = "from here to there",
 rating="1/5",
 price = "price"
 }) => {
+    const [date,setDate] = useState('')
+    const dispatch = useDispatch();
+    const onSubmit = () => {
+                dispatch(
+                    addToBag({
+                        title:title,
+                        price:price ,
+                        date:date ,
+                    })
+                )
+        };
     return(
         <div>
-            <NavBar/>
+            <NavBar />
             <div class="headerTrip" style ={{backgroundImage : `url(${background})`}}>
                 <div class="titles">
                     <p class="countryTrip">{country}</p>
@@ -48,7 +62,7 @@ price = "price"
                 <div class = "bookTrip">
                     <div class = "dateSelect">
                         <p>Select Date</p>
-                        <input type="date" class="datePicker" />
+                        <input value ={date} type="date" class="datePicker" onChange = {(e)=> setDate(e.target.value)}/>
                     </div>
                     <p class="originDestination">{originDestination}</p>
                     <div class = "price">
@@ -58,7 +72,7 @@ price = "price"
                             <p>/pp</p>
                         </div>
                     </div>
-                    <button class="bookButton">Add To Bag</button>
+                    <button class="bookButton" onClick = {onSubmit}>Add To Bag</button>
                     <div class = "contactInfo">
                         <h1>Contact Us</h1>
                         <p>excursions@excursionescape.com</p>
