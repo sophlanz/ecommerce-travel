@@ -15,7 +15,7 @@ const ShoppingCart = () => {
     }
     useEffect(() => {
         calcTotal(items);
-  }, []);
+  }, [items]);
     return(  
  <ul className = "shoppingCart">
    
