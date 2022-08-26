@@ -4,8 +4,9 @@ import transport from '../images/transport.png';
 import level from '../images/level.png';
 import food from '../images/food.png';
 import { useState } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { addToBag } from '../redux/bagSlice';
+import { totalCount } from '../redux/countSlice';
 const TripLayout = ({country = "Country", title = "Title",
  introduction="Quisque eu ultricies ex, ac rutrum ligula. Mauris molestie vehicula nisi, nec rutrum lacus auctor et. Aliquam erat volutpat. Sed eleifend ante ac volutpat convallis. Maecenas eu leo nisi. ",
 overview="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id lectus suscipit eros dignissim imperdiet at sed erat. Fusce in fringilla mauris. Proin tincidunt lacinia pulvinar. Sed massa enim, cursus vitae cursus a, varius ac velit. ",
@@ -18,6 +19,7 @@ price = "price"
 }) => {
     const [date,setDate] = useState('')
     const dispatch = useDispatch();
+    const count = useSelector((state) => state.count[0].count)
     const onSubmit = () => {
                 dispatch(
                     addToBag({
@@ -26,6 +28,12 @@ price = "price"
                         date:date ,
                     })
                 )
+                dispatch (
+                    totalCount({
+                        count:count +1
+                    })
+                )
+            
         };
     return(
         <div>

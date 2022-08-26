@@ -11,13 +11,13 @@ export const bagSlice = createSlice({
                 price:action.payload.price,
                 date:action.payload.date
             };
-            console.log(item);
             state.push(item);
+         
         },
         deleteItem: (state,action) => {
             return state.filter((item)=> item.id !== action.payload.id )
-        }
-    },
-});
-export const { addToBag, deleteItem } = bagSlice.actions
+        },
+       
+}});
+export const { addToBag, deleteItem, totalCount } = bagSlice.actions
 export default bagSlice.reducer;
