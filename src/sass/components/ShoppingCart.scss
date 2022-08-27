@@ -1,0 +1,63 @@
+/*Modal Transition*/
+.ReactModal__Overlay {
+    opacity: 0;
+    transition: opacity 2000ms ease-in-out;
+}
+.ReactModal__Overlay--after-open{
+    opacity: 1;
+}
+.ReactModal__Overlay--before-close{
+    opacity: 0;
+}
+.Modal {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+  }
+  .Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(34, 155, 208, .7) ;
+    
+    
+   
+   
+  }
+  .taxes {
+      font-size:1.1rem;
+  }
+ .total {
+     display:flex;
+     font-size:2rem;
+     justify-content:space-between;
+     width:vw;
+     font-family:"Bold";
+ }
+ /*div with checkout info*/
+ .checkOut{
+     padding:40px 20px 40px 20px;
+     background-color: $skyblue;
+     color:rgb(243, 241, 241);
+     font-family:"Regular";
+     position:absolute;
+     bottom:0;
+     height:200px;
+     display:flex;
+     flex-direction:column;
+     justify-content:center;
+     gap:15px;
+ }
+ .checkOut button {
+     height:35px;
+     width:600px;
+     background-color:red;
+     color:rgb(243, 241, 241);
+     border:none;
+     border-radius: .5rem;
+ }

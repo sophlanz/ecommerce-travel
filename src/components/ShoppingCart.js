@@ -4,12 +4,10 @@ import CartItem from './CartItem';
 import uniqid from 'uniqid';
 import { useState, useEffect } from 'react';
 import { totalCount } from '../redux/countSlice';
-const ShoppingCart = (props) => {
+const ShoppingCart = () => {
     const [total,setTotal] = useState(0);
     const items = useSelector((state) => state.bag)
-    const count = useSelector((state) =>state.count.count);
-    console.log(count);
-   
+    const count = useSelector((state)=> state.count[0].count)
     const dispatch = useDispatch();
     const calcTotal = async (items) => {
         //reset to 0
@@ -32,22 +30,23 @@ const ShoppingCart = (props) => {
   }, [items, total]);
   console.log(useSelector((state) => state.count[0].count));
     return(  
-       
-            <div id = "modal" className= "modal"  >
-            <div id = "modalContent" className="modalContent">
-        
+    <div id = "modal" className= "modal">
+        <div className="modalLeft"></div>
+        <div id = "modalRight" className="modalRight">
         <ul className = "shoppingCart">
        { items.map((item)=> (
            <li key={uniqid()} >
         <CartItem title ={item.title} price = {item.price} date = {item.date} id = {item.id}/> 
         </li>
        ))}
-       <p>${total}</p>
-
-        </ul>
-</div> 
-        </div>
-
+       </ul>
+       <div className="checkOut">
+       <p className="taxes">Taxes will be calculated at checkout.</p>
+        <div className = "total"><p>Total</p><p>${total}</p></div>  
+        <button>Checkout</button>  
+       </div>
+        </div> 
+    </div>
         )
 }
 export default ShoppingCart;

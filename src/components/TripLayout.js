@@ -70,7 +70,7 @@ price = "price"
                 <div class = "bookTrip">
                     <div class = "dateSelect">
                         <p>Select Date</p>
-                        <input value ={date} type="date" class="datePicker" onChange = {(e)=> setDate(e.target.value)}/>
+                        <input  value ={date} type="date" class="datePicker" onChange = {(e)=> setDate(e.target.value)} required/>
                     </div>
                     <p class="originDestination">{originDestination}</p>
                     <div class = "price">
