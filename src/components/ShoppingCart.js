@@ -10,13 +10,16 @@ const ShoppingCart = () => {
     console.log(items);
     const count = useSelector((state)=> state.count[0].count)
     const dispatch = useDispatch();
+    let addTotal = 0
     const calcTotal = async (items) => {
         //reset to 0
         setTotal(0);
         let count = items.length;
         Promise.all(items.map((item) => (
-            setTotal((prev)=> prev + item.price)
-        ))).then(() => 
+            //add total based on the total of each item
+            addTotal += item.total
+           // setTotal((prev)=> prev + item.price)
+        ))).then(() => {setTotal(addTotal)}).then(() => 
             dispatch(
                 totalCount({
                     total:total,
