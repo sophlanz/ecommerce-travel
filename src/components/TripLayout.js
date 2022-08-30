@@ -5,7 +5,7 @@ import level from '../images/level.png';
 import food from '../images/food.png';
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { addToBag } from '../redux/bagSlice';
+import { addToBag, increaseQuantity } from '../redux/bagSlice';
 import { totalCount } from '../redux/countSlice';
 
 const TripLayout = ({country = "Country", title = "Title",
@@ -17,7 +17,8 @@ background = "../images/cover.jpg",
 originDestination = "from here to there",
 imageUrl="url",
 rating="1/5",
-price = "price"
+price = "price",
+id=""
 }) => {
     //change price to number for calculation
     let priceNum = Number(price)
@@ -27,14 +28,22 @@ price = "price"
     let image = imageUrl
     console.log(imageUrl)
     const onSubmit = () => {
-                dispatch(
-                    addToBag({
-                        title:title,
-                        price:priceNum ,
-                        date:date ,
-                        image:image
-                    })
-                )
+        if(count === 0 ){
+            dispatch(
+                addToBag({
+                    title:title,
+                    price:priceNum ,
+                    date:date ,
+                    image:image,
+                    id:id
+                })
+            ) 
+        } else {
+            dispatch(
+                increaseQuantity({id})
+            )
+        }
+                
                 dispatch (
                     totalCount({
                         count:count +1

@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from './TripLayout';
 import image from '../images/elephant.jpg';
-
+import uniqid from 'uniqid';
 const ElephantAdventure = () => {
     return (
         <div>
@@ -11,8 +11,9 @@ overview="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id lect
 transportType ="Bus"
 rating  ="1/5"
 price="100"
+id={uniqid()}
 originDestination="Chiang Mai to Mae Ping"
-foodIncluded= "Food Included" background = {image} imageUrl='elephant'/>
+foodIncluded= "Food Included" background = {image} imageUrl='elephant' />
         </div>
     )
 }

@@ -6,7 +6,7 @@ export const bagSlice = createSlice({
     reducers: {
         addToBag: (state,action) => {
             const item = {
-                id:uniqid(),
+                id:action.payload.id,
                 title:action.payload.title,
                 price:action.payload.price,
                 total:action.payload.price,
