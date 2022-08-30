@@ -35,7 +35,7 @@ const Navbar = () => {
                 </div>
         </div>
         <div>
-        <Modal isOpen={cartShown} className="Modal" overlayClassName="Overlay">
+        <Modal ariaHideApp={false} isOpen={cartShown} className="Modal" overlayClassName="Overlay">
                 <button onClick = {()=> setCartShown(false)}>x</button>
                 <ShoppingCart/>
         </Modal>

@@ -7,6 +7,7 @@ import { totalCount } from '../redux/countSlice';
 const ShoppingCart = () => {
     const [total,setTotal] = useState(0);
     const items = useSelector((state) => state.bag)
+    console.log(items);
     const count = useSelector((state)=> state.count[0].count)
     const dispatch = useDispatch();
     const calcTotal = async (items) => {
@@ -14,7 +15,7 @@ const ShoppingCart = () => {
         setTotal(0);
         let count = items.length;
         Promise.all(items.map((item) => (
-            setTotal((prev)=> prev + Number(item.price.substr(1)))
+            setTotal((prev)=> prev + item.price)
         ))).then(() => 
             dispatch(
                 totalCount({
@@ -36,7 +37,7 @@ const ShoppingCart = () => {
         <ul className = "shoppingCart">
        { items.map((item)=> (
            <li key={uniqid()} >
-        <CartItem title ={item.title} price = {item.price} date = {item.date} id = {item.id}/> 
+        <CartItem total = {item.total}coverPhoto={item.image} title ={item.title} price = {item.price} date = {item.date} id = {item.id}/> 
         </li>
        ))}
        </ul>
