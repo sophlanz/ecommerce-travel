@@ -169,11 +169,11 @@ const Discover = () => {
                             <div class = "priceDuration">
                                 <div id="excursionPrice">
                                     <h1>from</h1>
-                                    <p>$60</p>
+                                    <p>$150</p>
                                 </div>
                                 <div id="excursionDuration">
                                     <h1>duration</h1>
-                                    <p>Half-Day</p>
+                                    <p>Over-Night</p>
                                 </div>
                             </div>
                             <button id = "moreInfo"><Link to="/trips/ha-giang-loop-on-motorbike">More Information</Link></button>
@@ -200,7 +200,7 @@ const Discover = () => {
                             <div class = "priceDuration">
                                 <div id="excursionPrice">
                                     <h1>from</h1>
-                                    <p>$90</p>
+                                    <p>$110</p>
                                 </div>
                                 <div id="excursionDuration">
                                     <h1>duration</h1>
@@ -215,7 +215,7 @@ const Discover = () => {
                             <div class = "priceDuration">
                                 <div id="excursionPrice">
                                     <h1>from</h1>
-                                    <p>$65</p>
+                                    <p>$80</p>
                                 </div>
                                 <div id="excursionDuration">
                                     <h1>duration</h1>

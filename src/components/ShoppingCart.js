@@ -19,7 +19,6 @@ const ShoppingCart = () => {
             //add total based on the total of each item
             addTotal += item.total,
             addItems += item.counter
-            
            // setTotal((prev)=> prev + item.price)
         ))).then(() => {setTotal(addTotal)}).then(() => 
             dispatch(
@@ -53,6 +52,6 @@ const ShoppingCart = () => {
        </div>
         </div> 
     </div>
-        )
+    )
 }
 export default ShoppingCart;

@@ -15,14 +15,15 @@ const CartItem = ({id, total, title, price, date,coverPhoto}) => {
     const dispatch = useDispatch();
     const deleteHandler = () => {
         dispatch(
-            decreaseQuantity({id})
+            decreaseQuantity({title})
         )
     };
     const increaseHandler = () => {
         dispatch(
-            increaseQuantity({id})
+            increaseQuantity({title})
         )
     };
+    //import all of the images ahead of time so they can be compiled by webpack
     switch(coverPhoto){
         case "elephant":
         url=require('../images/elephant.jpg');
@@ -30,7 +31,38 @@ const CartItem = ({id, total, title, price, date,coverPhoto}) => {
         case "temple":
         url=require('../images/temple.jpg');
         break;
-
+        case "beach":
+        url=require('../images/beach.jpg');
+        break;
+        case "food":
+        url=require('../images/food.jpg');
+        break;
+        case "halong":
+        url=require('../images/halong.jpg');
+        break;
+        case "hanoi":
+        url= require('../images/hanoi.jpg');
+        break;
+        case"loop":
+        url=require('../images/loop.jpg')
+        break;
+        case "market":
+        url=require('../images/market.jpg');
+        break;
+        case "rajaampat":
+        url=require('../images/rajaampat.jpg');
+        break;
+        case "kelimutu":
+        url=require('../images/kelimutu.jpg');
+        break;
+        case "komodo" :
+        url=require('../images/komodo.jpg');
+        break;
+        case "kuta":
+        url=require('../images/kuta.jpg');
+        break;
+        default:
+        url=require('../images/cover.jpg');
     }
     return(
         <div className = "cartItem">
