@@ -93,14 +93,14 @@ const Discover = () => {
                             <div class = "priceDuration">
                                 <div id="excursionPrice">
                                     <h1>from</h1>
-                                    <p>$60</p>
+                                    <p>$30</p>
                                 </div>
                                 <div id="excursionDuration">
                                     <h1>duration</h1>
                                     <p>Half-Day</p>
                                 </div>
                             </div>
-                            <button id = "moreInfo">More Information</button>
+                            <button id = "moreInfo"><Link to="/trips/temple-tour">More Information</Link></button>
                         </div>
                         <div id="excursion" style={{backgroundImage: `url(${beach})`}}>
                             <div id="country">Thailand</div>
@@ -115,7 +115,7 @@ const Discover = () => {
                                     <p>Half-Day</p>
                                 </div>
                             </div>
-                            <button id = "moreInfo">More Information</button>
+                            <button id = "moreInfo"><Link to="/trips/koh-phi-phi-escape">More Information</Link></button>
                         </div>
                         <div id="excursion" style={{backgroundImage: `url(${food})`}}>
                             <div id="country">Thailand</div>
@@ -123,14 +123,14 @@ const Discover = () => {
                             <div class = "priceDuration">
                                 <div id="excursionPrice">
                                     <h1>from</h1>
-                                    <p>$60</p>
+                                    <p>$90</p>
                                 </div>
                                 <div id="excursionDuration">
                                     <h1>duration</h1>
-                                    <p>Half-Day</p>
+                                    <p>Over-Night</p>
                                 </div>
                             </div>
-                            <button id = "moreInfo">More Information</button>
+                            <button id = "moreInfo"><Link to="/trips/home-stay">More Information</Link></button>
                         </div>
                         {/*Vietnam*/}
                         <div id="excursion" style={{backgroundImage: `url(${halong})`}} >
@@ -139,14 +139,14 @@ const Discover = () => {
                             <div class = "priceDuration">
                                 <div id="excursionPrice">
                                     <h1>from</h1>
-                                    <p>$60</p>
+                                    <p>$50</p>
                                 </div>
                                 <div id="excursionDuration">
                                     <h1>duration</h1>
                                     <p>Half-Day</p>
                                 </div>
                             </div>
-                            <button id = "moreInfo">More Information</button>
+                            <button id = "moreInfo"><Link to="/trips/ha-long-bay-tour">More Information</Link></button>
                         </div>
                         <div id="excursion" style={{backgroundImage: `url(${hanoi})`}}>
                             <div id="country">Vietnam</div>
@@ -154,14 +154,14 @@ const Discover = () => {
                             <div class = "priceDuration">
                                 <div id="excursionPrice">
                                     <h1>from</h1>
-                                    <p>$60</p>
+                                    <p>$30</p>
                                 </div>
                                 <div id="excursionDuration">
                                     <h1>duration</h1>
                                     <p>Half-Day</p>
                                 </div>
                             </div>
-                            <button id = "moreInfo">More Information</button>
+                            <button id = "moreInfo"><Link to="/trips/hanoi-walking-tour">More Information</Link></button>
                         </div>
                         <div id="excursion" style={{backgroundImage: `url(${loop})`}}>
                             <div id="country">Vietnam</div>
@@ -176,7 +176,7 @@ const Discover = () => {
                                     <p>Half-Day</p>
                                 </div>
                             </div>
-                            <button id = "moreInfo">More Information</button>
+                            <button id = "moreInfo"><Link to="/trips/ha-giang-loop-on-motorbike">More Information</Link></button>
                         </div>
                         <div id="excursion" style={{backgroundImage: `url(${market})`}}>
                             <div id="country">Vietnam</div>
@@ -184,14 +184,14 @@ const Discover = () => {
                             <div class = "priceDuration">
                                 <div id="excursionPrice">
                                     <h1>from</h1>
-                                    <p>$60</p>
+                                    <p>$40</p>
                                 </div>
                                 <div id="excursionDuration">
                                     <h1>duration</h1>
                                     <p>Half-Day</p>
                                 </div>
                             </div>
-                            <button id = "moreInfo">More Information</button>
+                            <button id = "moreInfo"><Link to="/trips/market-tour-and-cooking-class">More Information</Link></button>
                         </div>
                         {/*Indonesia*/}
                         <div id="excursion" style={{backgroundImage: `url(${rajaampat})`}} >
@@ -200,14 +200,14 @@ const Discover = () => {
                             <div class = "priceDuration">
                                 <div id="excursionPrice">
                                     <h1>from</h1>
-                                    <p>$60</p>
+                                    <p>$90</p>
                                 </div>
                                 <div id="excursionDuration">
                                     <h1>duration</h1>
-                                    <p>Half-Day</p>
+                                    <p>Full-Day</p>
                                 </div>
                             </div>
-                            <button id = "moreInfo">More Information</button>
+                            <button id = "moreInfo"><Link to="/trips/scuba-diving-at-raja-ampat">More Information</Link></button>
                         </div>
                         <div id="excursion" style={{backgroundImage: `url(${kelimutu})`}}>
                             <div id="country">Indonesia</div>
@@ -215,14 +215,14 @@ const Discover = () => {
                             <div class = "priceDuration">
                                 <div id="excursionPrice">
                                     <h1>from</h1>
-                                    <p>$60</p>
+                                    <p>$65</p>
                                 </div>
                                 <div id="excursionDuration">
                                     <h1>duration</h1>
-                                    <p>Half-Day</p>
+                                    <p>Full-Day</p>
                                 </div>
                             </div>
-                            <button id = "moreInfo">More Information</button>
+                            <button id = "moreInfo"><Link to="/trips/trekking-kelimutu-volcano">More Information</Link></button>
                         </div>
                         <div id="excursion" style={{backgroundImage: `url(${komodo})`}}>
                             <div id="country">Indonesia</div>
@@ -230,14 +230,14 @@ const Discover = () => {
                             <div class = "priceDuration">
                                 <div id="excursionPrice">
                                     <h1>from</h1>
-                                    <p>$60</p>
+                                    <p>$50</p>
                                 </div>
                                 <div id="excursionDuration">
                                     <h1>duration</h1>
                                     <p>Half-Day</p>
                                 </div>
                             </div>
-                            <button id = "moreInfo">More Information</button>
+                            <button id = "moreInfo"><Link to="/trips/komodo-dragon-watching-on-komodo-island">More Information</Link></button>
                         </div>
                         <div id="excursion" style={{backgroundImage: `url(${kuta})`}}>
                             <div id="country">Indonesia</div>
@@ -245,14 +245,14 @@ const Discover = () => {
                             <div class = "priceDuration">
                                 <div id="excursionPrice">
                                     <h1>from</h1>
-                                    <p>$60</p>
+                                    <p>$75</p>
                                 </div>
                                 <div id="excursionDuration">
                                     <h1>duration</h1>
                                     <p>Half-Day</p>
                                 </div>
                             </div>
-                            <button id = "moreInfo">More Information</button>
+                            <button id = "moreInfo"><Link to="/trips/surfing-on-kuta-beach">More Information</Link></button>
                         </div>
                     </div> 
                    

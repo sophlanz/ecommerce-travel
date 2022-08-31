@@ -8,6 +8,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addToBag, increaseQuantity } from '../redux/bagSlice';
 import { totalCount } from '../redux/countSlice';
 
+
 const TripLayout = ({country = "Country", title = "Title",
  introduction="Quisque eu ultricies ex, ac rutrum ligula. Mauris molestie vehicula nisi, nec rutrum lacus auctor et. Aliquam erat volutpat. Sed eleifend ante ac volutpat convallis. Maecenas eu leo nisi. ",
 overview="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id lectus suscipit eros dignissim imperdiet at sed erat. Fusce in fringilla mauris. Proin tincidunt lacinia pulvinar. Sed massa enim, cursus vitae cursus a, varius ac velit. ",
@@ -18,7 +19,6 @@ originDestination = "from here to there",
 imageUrl="url",
 rating="1/5",
 price = "price",
-id=""
 }) => {
     //change price to number for calculation
     let priceNum = Number(price)
@@ -26,30 +26,36 @@ id=""
     const dispatch = useDispatch();
     const count = useSelector((state) => state.count[0].count)
     let image = imageUrl
-    console.log(imageUrl)
+    //get items, and get count
+    //if there aren't any items, set items to null
+  let items=0;
+  let item = 0;
+  items = useSelector((state)=> state.bag)
+  console.log(items);
+
+    
+    
     const onSubmit = () => {
-        if(count === 0 ){
+        const titleExist = items.findIndex(item => item.title === title)
+        //if the items array is empty or there is no matching title
+        if(items.length === 0 || titleExist === -1) {
             dispatch(
                 addToBag({
                     title:title,
                     price:priceNum ,
                     date:date ,
                     image:image,
-                    id:id
                 })
             ) 
         } else {
             dispatch(
-                increaseQuantity({id})
+                increaseQuantity({title})
             )
-        }
-                
-                dispatch (
+        }            dispatch (
                     totalCount({
                         count:count +1
                     })
                 )
-            
         };
     return(
         <div>

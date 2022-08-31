@@ -1,6 +1,6 @@
 import React from 'react';
-import Layout from './TripLayout';
-import image from '../images/elephant.jpg';
+import Layout from '../TripLayout';
+import image from '../../images/elephant.jpg';
 import uniqid from 'uniqid';
 const ElephantAdventure = () => {
     return (

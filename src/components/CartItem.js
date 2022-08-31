@@ -27,6 +27,9 @@ const CartItem = ({id, total, title, price, date,coverPhoto}) => {
         case "elephant":
         url=require('../images/elephant.jpg');
         break;
+        case "temple":
+        url=require('../images/temple.jpg');
+        break;
 
     }
     return(

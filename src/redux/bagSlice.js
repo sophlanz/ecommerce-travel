@@ -6,7 +6,7 @@ export const bagSlice = createSlice({
     reducers: {
         addToBag: (state,action) => {
             const item = {
-                id:action.payload.id,
+                id:uniqid(),
                 title:action.payload.title,
                 price:action.payload.price,
                 total:action.payload.price,
@@ -21,24 +21,32 @@ export const bagSlice = createSlice({
         increaseQuantity: (state,action) => {
             console.log(current(state));
             //get index of item to be changed
-            const index = state.findIndex(item => item.id === action.payload.id)
+            const index = state.findIndex(item => item.title === action.payload.title)
             console.log(index);
-            
-            //map to get item with matching index, duplicate the item and change the quantity
-            //also multiply the price
-         return  state.map((item,i)=> (
-                
+            //if there's already another item make a new one 
+            if(index===-1){
+               return state.map((item,i)=> (
+                    index===i ? [...state,{...item,counter:item.counter +1 ,total:item.total + item.price}] : item
+                )) 
+            } else{
+                  //map to get item with matching index, duplicate the item and change the quantity
+                //also multiply the price
+                return  state.map((item,i)=> (
                 index===i ? {...item,counter:item.counter +1 ,total:item.total + item.price} : item
-            )) 
+        )) 
+            }
+          
         },
         decreaseQuantity: (state,action) => {
             //get index of item to be changed
-            const index = state.findIndex(item => item.id === action.payload.id)
+            const index = state.findIndex(item => item.title === action.payload.title)
             //find object by index and check counter value
-            let item = state.find(item => item.id === action.payload.id);
+            let item = state.find(item => item.title === action.payload.title);
+            
+
             //if counter is 1, we want to delete the object
             if(item.counter ===1 ) {
-                return state.filter((item)=> item.id !== action.payload.id )
+                return state.filter((item)=> item.title !== action.payload.title )
             } 
             //map to get item with matching index, duplicate the item and change the quantity
             //change price

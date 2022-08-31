@@ -11,9 +11,10 @@ import "./fonts/OggThin.ttf";
 import "./fonts/OggThinItalic.ttf";
 import {BrowserRouter as Router,Routes, Route} from 'react-router-dom';
 import Discover from './components/Discover';
-import ElephantAdenture from './components/ElephantAdenture';
+import ElephantAdenture from './components/excursions/ElephantAdenture';
 import Marquee from './components/Marquee';
 import ShoppingCart from './components/ShoppingCart';
+import TempleTour from './components/excursions/TempleTour';
 function App() {
   return (
     <div>
@@ -22,6 +23,7 @@ function App() {
                 <Routes>
                     <Route path = "/" element={<Discover/>}/>
                     <Route path ='/trips/elephant-forest-adventure' element = {<ElephantAdenture/>} />
+                    <Route path='/trips/temple-tour' element={<TempleTour/>}/>
                     <Route path ='/shopping-cart' element = {<ShoppingCart/>}/>
                 </Routes>
             <Marquee/>

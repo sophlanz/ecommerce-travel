@@ -8,13 +8,13 @@ const ShoppingCart = () => {
     const [total,setTotal] = useState(0);
     const items = useSelector((state) => state.bag)
     console.log(items);
+    console.log(items);
     const dispatch = useDispatch();
     let addTotal = 0
     let addItems = 0;
     const calcTotal = async (items) => {
         //reset to 0
         setTotal(0);
-        
         Promise.all(items.map((item) => (
             //add total based on the total of each item
             addTotal += item.total,
