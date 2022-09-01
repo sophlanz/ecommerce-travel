@@ -9,13 +9,16 @@ import Modal from 'react-modal';
 
 const Navbar = () => {
         const total = useSelector((state) => state.count[0].count)
+        console.log(total);
         const [totalDisplay, setTotalDisplay] = useState(0);
         const [cartShown, setCartShown] = useState(false);
        
         //update the total state everytime it changes
         useEffect(() => {
               setTotalDisplay(total)
-          }, [total]);
+              const body = document.querySelector('body');
+              body.style.overflow = cartShown? 'hidden' : 'auto';
+          }, [total,cartShown]);
     return (
             <div>
         <div id = 'navBar'>
@@ -36,7 +39,10 @@ const Navbar = () => {
         </div>
         <div>
         <Modal ariaHideApp={false} isOpen={cartShown} className="Modal" overlayClassName="Overlay">
-                <button onClick = {()=> setCartShown(false)}>x</button>
+                <div className="cartTop">
+                        <div className="cartHeader"><h1>YOUR BAG</h1><p>({totalDisplay})</p></div>
+                        <button className="closeCart" onClick = {()=> setCartShown(false)}>x</button>
+                </div>
                 <ShoppingCart/>
         </Modal>
         

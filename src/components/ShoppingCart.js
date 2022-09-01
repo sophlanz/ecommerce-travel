@@ -35,23 +35,23 @@ const ShoppingCart = () => {
   }, [items, total]);
   console.log(useSelector((state) => state.count[0].count));
     return(  
-    <div id = "modal" className= "modal">
-        <div className="modalLeft"></div>
-        <div id = "modalRight" className="modalRight">
-        <ul className = "shoppingCart">
-       { items.map((item)=> (
-           <li key={uniqid()} >
-        <CartItem total = {item.total}coverPhoto={item.image} title ={item.title} price = {item.price} date = {item.date} id = {item.id}/> 
-        </li>
-       ))}
-       </ul>
-       <div className="checkOut">
-       <p className="taxes">Taxes will be calculated at checkout.</p>
-        <div className = "total"><p>Total</p><p>${total}</p></div>  
-        <button>Checkout</button>  
-       </div>
+        <div id = "modal" className="modal">
+            <div className="cartList">
+                  <ul className = "shoppingCart">
+                 { items.map((item)=> (
+                     <li key={uniqid()} >
+                  <CartItem total = {item.total}coverPhoto={item.image} title ={item.title} price = {item.price} date = {item.date} id = {item.id}/> 
+                  </li>
+                 ))}
+                 </ul>
+            </div>
+            <div className="checkOut">
+                <p className="taxes">Taxes will be calculated at checkout.</p>
+                <div className = "total"><p>Total</p><p>${total}</p></div>  
+                <button>Checkout</button>  
+            </div>
         </div> 
-    </div>
+ 
     )
 }
 export default ShoppingCart;

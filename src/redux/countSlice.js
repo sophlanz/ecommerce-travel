@@ -7,7 +7,9 @@ export const countSlice = createSlice({
     reducers: {
         totalCount: (state,action) => {
             const total = {
+                //total cost
                 total: action.payload.total,
+                //number of items
                 count: action.payload.count
             };
             //clear the old state

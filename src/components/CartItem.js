@@ -67,11 +67,18 @@ const CartItem = ({id, total, title, price, date,coverPhoto}) => {
     return(
         <div className = "cartItem">
             <img src={url}/>
-            <p>{title}</p>
-            <div className="changeQuantity"><button onClick={deleteHandler} className="delete">-</button><div className="bagCount">{item[0].counter}</div><button onClick={increaseHandler} className="add">+</button></div>
-            <p>${total}</p>
-            <p>{date}</p>
-           
+            <div className="itemInfo">
+                <div className="itemName">
+                    <h1>{title}</h1>
+                    <p>{date}</p>
+                </div>
+                <div className="changeQuantity">
+                    <button onClick={deleteHandler} className="delete">-</button>
+                    <div className="bagCount">{item[0].counter}</div>
+                    <button onClick={increaseHandler} className="add">+</button>
+                </div>
+            </div>
+            <p className="totalItem">${total}</p>
         </div>
     )
 }

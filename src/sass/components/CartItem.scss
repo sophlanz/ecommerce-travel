@@ -1,7 +1,60 @@
 .cartItem img{
-    max-height:80px;
-    max-width:80px;
+    height:140px;
+    width:140px;
+    object-fit:cover;
 }
 .cartItem{
     display:flex;
+    position:relative;
+    margin:20px;
+}
+/*container for name and quantity divs*/
+.itemInfo {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-left:20px;
+}
+/*item name and date*/
+.itemName{
+    display:flex;
+    flex-direction:column;
+}
+
+/*container for display of number of items and add/delete buttons*/
+.changeQuantity {
+    display:flex;
+    align-items:center;
+    gap:5px;
+    font-family:"Bold";
+}
+/*minus button*/
+.delete {
+    border-radius:2rem;
+   height:30px;
+   width:30px;
+}
+/*plus button*/
+.add {
+    border-radius: 2rem;
+    height:30px;
+    width:30px;
+}
+.itemName h1{
+    font-family:"Bold";
+    font-size:1.3rem;
+}
+.itemName p {
+    font-family:"Regular";
+    font-style:italic;
+    font-size:.8rem;
+}
+.totalItem{
+    font-family: "Bold";
+    font-size:1.5rem;
+    position:absolute;
+    bottom:0px;
+    right:0px;
 }
