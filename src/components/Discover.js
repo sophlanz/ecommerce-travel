@@ -18,7 +18,29 @@ const Discover = () => {
     const[thailand, setThailand] = useState(true)
     console.log(thailand);
     const [vietnam, setVietnam] = useState(true);
-    
+    const[fullDay,setFullDay] = useState(true);
+    const[halfDay,setHalfDay] = useState(true);
+    const[overNight,setOverNight] = useState(true);
+    const handleFilterDuration = (e) => {
+        const value = e.target.value;
+       
+        switch(value){
+        //0, half-day
+        case "0" :
+            return setHalfDay(true), setFullDay(false), setOverNight(false);
+         //1, full-day
+          case "1":
+            return setFullDay(true), setHalfDay(false), setOverNight(false);
+        //2, over-night
+        case "2":
+            return setOverNight(true), setHalfDay(false), setFullDay(false);
+        //3 any
+        case "3":
+            return  setFullDay(true), setHalfDay(true), setOverNight(true);
+        }
+        
+
+    }
     const handleSortCountry = (e)=> {
         //get value from event
         const value = e.target.value
@@ -38,6 +60,11 @@ const Discover = () => {
             case "Vietnam":
                 setThailand(false)
                 setIndonesia(false)
+                setVietnam(true)
+                break;
+            case "Any":
+                setThailand(true)
+                setIndonesia(true)
                 setVietnam(true)
                 break;
 
@@ -78,17 +105,18 @@ const Discover = () => {
                                 <option value ="Indonesia"/>
                                 <option value ="Thailand"/>
                                 <option value ="Vietnam"/>
+                                <option value ="Any"/>
                             </datalist>
                         </div>
                         <div class = "duration">
                             <h1>Duration</h1>
                             <p>Select length of the excursion...</p>
-                            <input type = "range" list="tickmarks"  step="1" min="0" max="3"/>
+                            <input onChange={(e)=> handleFilterDuration(e)}  type = "range" list="tickmarks"  step="1" min="0" max="3"/>
                             <datalist id= "tickmarks">
-                                <option value ="0" label="Any"></option>
-                                <option value="1" label="Half-Day"/>
-                                <option value="2" label = "Full-Day"/>
-                                <option value="3" label = "Over-Night"/>
+                                <option value="0" label="Half-Day"/>
+                                <option value="1" label = "Full-Day"/>
+                                <option value="2" label = "Over-Night"/>
+                                <option value ="3" label="Any"/>
                             </datalist>
                         </div>
                         <div class = "budget">
@@ -97,15 +125,15 @@ const Discover = () => {
                             <input type = "range" list = "tickmarks" step="1"min="0" max="3"/>
                             <datalist id = "tickmarks">
                                 <option value = "0" label="Any"></option>
-                                <option value = "1">$0-$100</option>
-                                <option value = "2">$101-$250</option>
-                                <option value = "3">$250+</option>
+                                <option value = "1">$0-$50</option>
+                                <option value = "2">$51-$100</option>
+                                <option value = "3">$101+</option>
                             </datalist>
                         </div>
                     </div>
                     <div id="exploreTrips">
                     {/*Thailand*/}
-                        <div  id="excursion" style={{backgroundImage: `url(${elephant})`, display: thailand===true ? "flex" : null }} >
+                        <div  id="excursion" style={{backgroundImage: `url(${elephant})`, display: thailand && fullDay ? "flex" : null }} >
                             <div id="country">Thailand</div>
                             <div id="excursionTitle">Elephant Forest Adventure</div>
                             <div class = "priceDuration">
@@ -120,7 +148,7 @@ const Discover = () => {
                             </div>
                             <button id = "moreInfo"><Link to="/trips/elephant-forest-adventure">More Information</Link></button>
                         </div>
-                        <div id="excursion" style={{backgroundImage: `url(${temple})`, display: thailand ? "flex" : null }}>
+                        <div id="excursion" style={{backgroundImage: `url(${temple})`, display: thailand && halfDay ? "flex" : null  }}>
                             <div id="country">Thailand</div>
                             <div id="excursionTitle">Temple Tour</div>
                             <div class = "priceDuration">
@@ -135,7 +163,7 @@ const Discover = () => {
                             </div>
                             <button id = "moreInfo"><Link to="/trips/temple-tour">More Information</Link></button>
                         </div>
-                        <div id="excursion" style={{backgroundImage: `url(${beach})`, display: thailand ? "flex" : null }}>
+                        <div id="excursion" style={{backgroundImage: `url(${beach})`, display: thailand && halfDay ? "flex" : null }}>
                             <div id="country">Thailand</div>
                             <div id="excursionTitle">Koh Phi Phi Espcape</div>
                             <div class = "priceDuration">
@@ -150,7 +178,7 @@ const Discover = () => {
                             </div>
                             <button id = "moreInfo"><Link to="/trips/koh-phi-phi-escape">More Information</Link></button>
                         </div>
-                        <div id="excursion" style={{backgroundImage: `url(${food})`, display: thailand ? "flex" : null }}>
+                        <div id="excursion" style={{backgroundImage: `url(${food})`, display: thailand && overNight ? "flex" : null }}>
                             <div id="country">Thailand</div>
                             <div id="excursionTitle">Home Stay</div>
                             <div class = "priceDuration">
@@ -166,7 +194,7 @@ const Discover = () => {
                             <button id = "moreInfo"><Link to="/trips/home-stay">More Information</Link></button>
                         </div>
                         {/*Vietnam*/}
-                        <div id="excursion" style={{backgroundImage: `url(${halong})`, display: vietnam ? "flex" : null }} >
+                        <div id="excursion" style={{backgroundImage: `url(${halong})`, display: vietnam && halfDay ? "flex" : null }} >
                             <div id="country">Vietnam</div>
                             <div id="excursionTitle"> Ha Long Bay Tour </div>
                             <div class = "priceDuration">
@@ -181,7 +209,7 @@ const Discover = () => {
                             </div>
                             <button id = "moreInfo"><Link to="/trips/ha-long-bay-tour">More Information</Link></button>
                         </div>
-                        <div id="excursion" style={{backgroundImage: `url(${hanoi})`, display: vietnam ? "flex" : null }}>
+                        <div id="excursion" style={{backgroundImage: `url(${hanoi})`, display: vietnam && halfDay ? "flex" : null }}>
                             <div id="country">Vietnam</div>
                             <div id="excursionTitle">Hanoi walking tour</div>
                             <div class = "priceDuration">
@@ -196,7 +224,7 @@ const Discover = () => {
                             </div>
                             <button id = "moreInfo"><Link to="/trips/hanoi-walking-tour">More Information</Link></button>
                         </div>
-                        <div id="excursion" style={{backgroundImage: `url(${loop})`, display: vietnam ? "flex" : null }}>
+                        <div id="excursion" style={{backgroundImage: `url(${loop})`, display: vietnam && overNight ? "flex" : null  }}>
                             <div id="country">Vietnam</div>
                             <div id="excursionTitle">Ha Giang Loop On Motorbike</div>
                             <div class = "priceDuration">
@@ -211,7 +239,7 @@ const Discover = () => {
                             </div>
                             <button id = "moreInfo"><Link to="/trips/ha-giang-loop-on-motorbike">More Information</Link></button>
                         </div>
-                        <div id="excursion" style={{backgroundImage: `url(${market})`, display: vietnam ? "flex" : null }}>
+                        <div id="excursion" style={{backgroundImage: `url(${market})`, display: vietnam && halfDay ? "flex" : null }}>
                             <div id="country">Vietnam</div>
                             <div id="excursionTitle">Market Tour and Cooking Class</div>
                             <div class = "priceDuration">
@@ -227,7 +255,7 @@ const Discover = () => {
                             <button id = "moreInfo"><Link to="/trips/market-tour-and-cooking-class">More Information</Link></button>
                         </div>
                         {/*Indonesia*/}
-                        <div id="excursion" style={{backgroundImage: `url(${rajaampat})`, display: indonesia ? "flex" : null }} >
+                        <div id="excursion" style={{backgroundImage: `url(${rajaampat})`, display: indonesia && fullDay ? "flex" : null }} >
                             <div id="country">Indonesia</div>
                             <div id="excursionTitle">Scuba Diving at Raja Ampat</div>
                             <div class = "priceDuration">
@@ -242,7 +270,7 @@ const Discover = () => {
                             </div>
                             <button id = "moreInfo"><Link to="/trips/scuba-diving-at-raja-ampat">More Information</Link></button>
                         </div>
-                        <div id="excursion" style={{backgroundImage: `url(${kelimutu})`, display: indonesia ? "flex" : null }}>
+                        <div id="excursion" style={{backgroundImage: `url(${kelimutu})`, display: indonesia && fullDay ? "flex" : null  }}>
                             <div id="country">Indonesia</div>
                             <div id="excursionTitle">Trekking Kelimutu Volcano</div>
                             <div class = "priceDuration">
@@ -257,7 +285,7 @@ const Discover = () => {
                             </div>
                             <button id = "moreInfo"><Link to="/trips/trekking-kelimutu-volcano">More Information</Link></button>
                         </div>
-                        <div id="excursion" style={{backgroundImage: `url(${komodo})`, display: indonesia ? "flex" : null }}>
+                        <div id="excursion" style={{backgroundImage: `url(${komodo})`, display: indonesia && halfDay ? "flex" : null }}>
                             <div id="country">Indonesia</div>
                             <div id="excursionTitle"> Komodo Dragon Watching on Komodo Island</div>
                             <div class = "priceDuration">
@@ -272,7 +300,7 @@ const Discover = () => {
                             </div>
                             <button id = "moreInfo"><Link to="/trips/komodo-dragon-watching-on-komodo-island">More Information</Link></button>
                         </div>
-                        <div id="excursion" style={{backgroundImage: `url(${kuta})`, display: indonesia ? "flex" : null }}>
+                        <div id="excursion" style={{backgroundImage: `url(${kuta})`, display: indonesia && halfDay ? "flex" : null  }}>
                             <div id="country">Indonesia</div>
                             <div id="excursionTitle">Surfing On Kuta Beach</div>
                             <div class = "priceDuration">
