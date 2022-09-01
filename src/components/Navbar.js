@@ -20,18 +20,18 @@ const Navbar = () => {
             <div>
         <div id = 'navBar'>
                 <div id="leftNav">
-                        <li> <Link to={"./Disocver"}>Discover</Link></li>
-                        <li> <Link to={"./About"}>About</Link></li>
-                        <li> <Link to={"./Contact"}>Contact</Link></li>
+                        <li> <Link to={"/"}>Discover</Link></li>
+                        <li> <Link to={"/About"}>About</Link></li>
+                        <li> <Link to={"/Contact"}>Contact</Link></li>
                 </div>
                 <div id = "centerNav">
-                        <a href="">Excursion Escape</a>
+                        <li><Link to={'/'} >Excursion Escape</Link></li>
                 </div>
                 <div id = "rightNav">
                 <li  id="bagContainer" className="shoppingBag" onClick =  {()=> setCartShown(true)}>{totalDisplay}</li>
-                        <Facebook class = "facebook" alt="facebook"/>
-                        <Twitter class = "twitter" alt= "twitter"/>
-                        <Instagram class = "instagram" alt="instagram"/>
+                        <a href="https://facebook.com" target="_blank"><Facebook class = "facebook" alt="facebook" /></a>
+                        <a href="https://twitter.com" target="_blank"><Twitter class = "twitter" alt= "twitter"/></a>
+                        <a href="https://instagram.com" target="_blank"><Instagram class = "instagram" alt="instagram"/></a>
                 </div>
         </div>
         <div>

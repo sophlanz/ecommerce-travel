@@ -64,7 +64,8 @@
 /*each excursion itself*/
 #excursion {
     /*style div*/
-    display:flex;
+    
+   display:none;
     flex-direction:column;
     flex-wrap:wrap;
     height:400px;
