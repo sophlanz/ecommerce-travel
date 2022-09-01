@@ -54,8 +54,11 @@ export const bagSlice = createSlice({
                 index===i ? {...item,counter:item.counter - 1, total:item.total - item.price} : item
             ))
             
-        },
+        }, deleteItem: (state,action) => {
+            //get passed id, and filter out the one that matches
+            return state.filter((item)=> item.id !== action.payload.id )
+        }
        
 }});
-export const { addToBag, decreaseQuantity, totalCount, increaseQuantity } = bagSlice.actions
+export const { addToBag, decreaseQuantity, totalCount, increaseQuantity, deleteItem } = bagSlice.actions
 export default bagSlice.reducer;

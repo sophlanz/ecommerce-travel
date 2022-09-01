@@ -17,7 +17,7 @@ const Navbar = () => {
         useEffect(() => {
               setTotalDisplay(total)
               const body = document.querySelector('body');
-              body.style.overflow = cartShown? 'hidden' : 'auto';
+              body.style.overflow = cartShown? 'hidden' : null;
           }, [total,cartShown]);
     return (
             <div>

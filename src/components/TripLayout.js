@@ -32,9 +32,12 @@ price = "price",
   let item = 0;
   items = useSelector((state)=> state.bag)
   console.log(items);
-
-    
-    
+    const handleDate = (e) => {
+        let date =e.target.value;
+       let newDate = new Date(date).toLocaleDateString("en-US");
+       console.log(newDate);
+        setDate(newDate);
+    }
     const onSubmit = () => {
         const titleExist = items.findIndex(item => item.title === title)
         //if the items array is empty or there is no matching title
@@ -51,7 +54,7 @@ price = "price",
             dispatch(
                 increaseQuantity({title})
             )
-        }            dispatch (
+        }         dispatch (
                     totalCount({
                         count:count +1
                     })
@@ -92,7 +95,7 @@ price = "price",
                 <div class = "bookTrip">
                     <div class = "dateSelect">
                         <p>Select Date</p>
-                        <input  value ={date} type="date" class="datePicker" onChange = {(e)=> setDate(e.target.value)} required/>
+                        <input  value ={date} type="date" class="datePicker" onChange = {(e) => handleDate(e)} required/>
                     </div>
                     <p class="originDestination">{originDestination}</p>
                     <div class = "price">

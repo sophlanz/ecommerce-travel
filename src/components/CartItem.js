@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { decreaseQuantity } from '../redux/bagSlice';
-import { increaseQuantity } from '../redux/bagSlice';
+import { increaseQuantity, deleteItem } from '../redux/bagSlice';
 
 const CartItem = ({id, total, title, price, date,coverPhoto}) => {
     let url="";
@@ -13,7 +13,7 @@ const CartItem = ({id, total, title, price, date,coverPhoto}) => {
     
     console.log(item);
     const dispatch = useDispatch();
-    const deleteHandler = () => {
+    const decreaseHandler = () => {
         dispatch(
             decreaseQuantity({title})
         )
@@ -23,6 +23,12 @@ const CartItem = ({id, total, title, price, date,coverPhoto}) => {
             increaseQuantity({title})
         )
     };
+    const deleteHandler = ()=>{
+        dispatch(
+            deleteItem({id})
+        )
+    }
+    
     //import all of the images ahead of time so they can be compiled by webpack
     switch(coverPhoto){
         case "elephant":
@@ -73,9 +79,10 @@ const CartItem = ({id, total, title, price, date,coverPhoto}) => {
                     <p>{date}</p>
                 </div>
                 <div className="changeQuantity">
-                    <button onClick={deleteHandler} className="delete">-</button>
+                    <button onClick={decreaseHandler} className="delete">-</button>
                     <div className="bagCount">{item[0].counter}</div>
                     <button onClick={increaseHandler} className="add">+</button>
+                    <button className="remove"onClick={deleteHandler}>REMOVE</button>
                 </div>
             </div>
             <p className="totalItem">${total}</p>

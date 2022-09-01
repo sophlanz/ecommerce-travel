@@ -21,8 +21,8 @@
 .itemName{
     display:flex;
     flex-direction:column;
+    gap:7px;
 }
-
 /*container for display of number of items and add/delete buttons*/
 .changeQuantity {
     display:flex;
@@ -35,12 +35,16 @@
     border-radius:2rem;
    height:30px;
    width:30px;
+   background-color:white;
+   border:1px solid black;
 }
 /*plus button*/
 .add {
     border-radius: 2rem;
     height:30px;
     width:30px;
+    background-color:white;
+    border:1px solid black;
 }
 .itemName h1{
     font-family:"Bold";
@@ -57,4 +61,15 @@
     position:absolute;
     bottom:0px;
     right:0px;
+}
+button.remove {
+    background-color:white;
+    border:none;
+    border-bottom:1px solid black;
+    width:auto;
+    font-family:"Regular";
+}
+button.remove:hover {
+    font-size:1rem;
+    font-family:"Bold";
 }
