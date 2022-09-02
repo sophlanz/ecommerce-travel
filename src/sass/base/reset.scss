@@ -38,6 +38,10 @@ body {
 	overflow-x:hidden;
 	background-color:$white;
 }
+
+  video::-webkit-media-controls {
+	display: none;
+  }
 ol, ul {
 	list-style: none;
 }

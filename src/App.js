@@ -11,6 +11,7 @@ import "./fonts/OggThin.ttf";
 import "./fonts/OggThinItalic.ttf";
 import {BrowserRouter as Router,Routes, Route} from 'react-router-dom';
 import Discover from './components/Discover';
+import About from './components/About';
 import ElephantAdenture from './components/excursions/ElephantAdenture';
 import Marquee from './components/Marquee';
 import ShoppingCart from './components/ShoppingCart';
@@ -30,6 +31,7 @@ function App() {
     <div>
                 <Routes>
                     <Route path = "/" element={<Discover/>}/>
+                    <Route path="/About" element={<About/>}/>
                     <Route path ='/trips/elephant-forest-adventure' element = {<ElephantAdenture/>} />
                     <Route path='/trips/temple-tour' element={<TempleTour/>}/>
                     <Route path="/trips/koh-phi-phi-escape" element={<KohPhiPhi/>}/>
