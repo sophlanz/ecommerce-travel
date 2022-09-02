@@ -40,25 +40,34 @@
  }
  /*div with checkout info*/
  .checkOut{
-     padding:40px 20px 40px 20px;
      background-color: $skyblue;
      color:rgb(243, 241, 241);
      font-family:"Regular";
      position:absolute;
      bottom:0;
-     height:100px;
+     left:0;
+     right:0;
+     height:180px;
      display:flex;
      flex-direction:column;
-     justify-content:center;
-     gap:15px;
+     padding-top:20px;
+     padding-left:30px;
+     padding-right:40px;
+     gap:20px;
  }
  .checkOut button {
-     height:35px;
-     width:600px;
-     background-color:red;
+     height:50px;
+     width:250px;
+     background-color:$skyblue;
      color:rgb(243, 241, 241);
-     border:none;
+     border:1px solid white;
      border-radius: .5rem;
+   
+     font-family:"Bold";
+     font-size:1.2rem;
+ }
+ .checkOut button:hover {
+     background-color:black;
  }
  /*top section of shopping cart*/
  .cartTop{
@@ -92,4 +101,40 @@
  .cartList {
      overflow-y:scroll;
      height:450px;
+     display:flex;
+     flex-direction:column;
+     position:absolute;
+     left:0;
+     right:0;
+ }
+ /*container that shows when there are 0 items*/
+ .emptyBag {
+     display:flex;
+     flex-direction:column;
+     position:absolute;
+     
+     justify-content:center;
+     align-items:center;
+     gap:10px;
+    
+ }
+ .emptyBag h1{
+     font-size:1.5rem;
+     font-family:"Bold";
+ }
+ .emptyBag p{
+     border-bottom:1px solid black;
+     font-family:"Regular";
+ }
+ .emptyBag p:hover {
+     font-size:1rem;
+     font-family:"Bold";
+ }
+ .coupon{
+     display:flex;
+    justify-content:space-between;
+    align-items:center;
+ }
+ input#coupon {
+     width:auto;
  }

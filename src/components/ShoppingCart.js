@@ -4,6 +4,7 @@ import CartItem from './CartItem';
 import uniqid from 'uniqid';
 import { useState, useEffect } from 'react';
 import { totalCount } from '../redux/countSlice';
+import { Link } from "react-router-dom";
 const ShoppingCart = () => {
     const [total,setTotal] = useState(0);
     const items = useSelector((state) => state.bag)
@@ -36,7 +37,17 @@ const ShoppingCart = () => {
   console.log(useSelector((state) => state.count[0].count));
     return(  
         <div id = "modal" className="modal">
-            <div className="cartList">
+            {/*when showing empty bag display, center the content*/}
+            <div className="cartList" style={{alignItems: total===0 ? "center" : null, justifyContent:total===0 ? "center" : null}}>
+                {/*display for empty bag */}
+                {total=== 0 ?
+                <div className="emptyBag">
+                <h1>Looks like your bag is empty!</h1>
+                <p><Link to={"/"}>Get Shopping</Link></p>
+                </div>
+                
+                : null
+                }{/*map the items and put them in a list */}
                   <ul className = "shoppingCart">
                  { items.map((item)=> (
                      <li key={uniqid()} >
@@ -45,10 +56,15 @@ const ShoppingCart = () => {
                  ))}
                  </ul>
             </div>
+            {/*display the total at checkout */}
             <div className="checkOut">
                 <p className="taxes">Taxes will be calculated at checkout.</p>
                 <div className = "total"><p>Total</p><p>${total}</p></div>  
-                <button>Checkout</button>  
+                <div className="coupon">
+                    <div><input type = "checkbox" id="coupon" name="coupon"/>
+                    <label for="coupon">Coupon Code</label></div>
+                    <button>Checkout</button>  
+                </div>
             </div>
         </div> 
  
