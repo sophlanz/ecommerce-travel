@@ -19,6 +19,7 @@ originDestination = "from here to there",
 imageUrl="url",
 rating="1/5",
 price = "price",
+position="bottom"
 }) => {
     //change price to number for calculation
     let priceNum = Number(price)
@@ -63,7 +64,7 @@ price = "price",
     return(
         <div>
             <NavBar />
-            <div class="headerTrip" style ={{backgroundImage : `url(${background})`}}>
+            <div class="headerTrip" style ={{backgroundImage : `url(${background})`, backgroundPosition:`${position}`}}>
                 <div class="titles">
                     <p class="countryTrip">{country}</p>
                     <p class = "titleTrip">{title}</p>

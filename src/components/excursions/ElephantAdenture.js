@@ -13,6 +13,7 @@ rating  ="1/5"
 price="100"
 id={uniqid()}
 originDestination="Chiang Mai to Mae Ping"
+position="center"
 foodIncluded= "Food Included" background = {image} imageUrl='elephant' />
         </div>
     )

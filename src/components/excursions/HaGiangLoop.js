@@ -11,7 +11,7 @@ overview="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id lect
 transportType ="Bus"
 rating  ="3/5"
 price="150"
-
+position="center"
 originDestination="Hà Giang to Dong Van"
 foodIncluded= "Food Not Included" background = {image} imageUrl='loop' />
         </div>

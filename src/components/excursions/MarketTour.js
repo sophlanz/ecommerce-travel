@@ -11,6 +11,7 @@ overview="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id lect
 transportType ="Walking"
 rating  ="1/5"
 price="40"
+position="center"
 originDestination="Bangkok to Local Market"
 foodIncluded= "Food Included" background = {image} imageUrl='market' />
         </div>

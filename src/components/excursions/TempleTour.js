@@ -11,6 +11,7 @@ overview="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id lect
 transportType ="Bus"
 rating  ="1/5"
 price="30"
+position="top"
 originDestination="Chiang Mai to Chaing Rai"
 foodIncluded= "Food Not Included" background = {image} imageUrl='temple' />
         </div>

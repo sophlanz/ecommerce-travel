@@ -10,6 +10,7 @@ overview="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id lect
 transportType ="Boat"
 rating  ="4/5"
 price="110"
+position="top"
 originDestination="West Papua to Raja Ampat"
 foodIncluded= "Food Not Included" background = {image} imageUrl='rajaampat' />
         </div>
