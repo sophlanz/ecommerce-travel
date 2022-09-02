@@ -2,8 +2,8 @@
   "name": "ecommerce-travel",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://sophlanz.github.io/ecommerce-travel",
-  "proxy": "http://localhost:5000",
+  "homepage": ".",
+  
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.5",
     "@testing-library/jest-dom": "^5.16.5",
