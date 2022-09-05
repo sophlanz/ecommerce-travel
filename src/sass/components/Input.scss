@@ -7,3 +7,8 @@ input {
     width:100px;
     margin-top:10px;
 }
+input[type=range]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    background:$skyblue;
+  }

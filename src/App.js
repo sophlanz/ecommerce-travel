@@ -27,6 +27,7 @@ import RajaAmpat from './components/excursions/ScubaDiving';
 import TrekkingKelimutu from './components/excursions/Trekking';
 import KomodoDragon from './components/excursions/KomodoDragon';
 import KutaSurfing from './components/excursions/Surfing';
+import Footer from './components/Footer';
 function App() {
   return (
     <div>
@@ -49,6 +50,7 @@ function App() {
                     <Route path ='/shopping-cart' element = {<ShoppingCart/>}/>
                 </Routes>
             <Marquee/>
+          <Footer/>
     </div>
   );
 }

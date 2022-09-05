@@ -12,7 +12,13 @@ datalist {
     display:flex;
 }
 /*style tickmarks*/
-datalist#tickmarks {
+.budget datalist#tickmarks {
     display:flex;
-    gap:40px;
+    justify-content:space-evenly;
+    gap:100px;
+}
+.duration datalist#tickmarks {
+    display:flex;
+    justify-content:space-evenly;
+    gap:25px;
 }

@@ -112,9 +112,9 @@ const Discover = () => {
                             <p>Select from the dropdown below your dream destination...</p>
                             <label for="destinationInput">
                             <input value="" 
-    onMouseOver="focus();old = value;" 
-    onMouseDown = "value = '';" 
-    onMouseUp="value = old;" onChange={(e)=>handleSortCountry(e)}  list = "destinations" placeholder="Select your destination..." name = "destinationInput" id="destinationInput"/>
+                            onMouseOver="focus();old = value;" 
+                            onMouseDown = "value = '';" 
+                            onMouseUp="value = old;" onChange={(e)=>handleSortCountry(e)}  list = "destinations" placeholder="Select your destination..." name = "destinationInput" id="destinationInput"/>
                             </label>
                             <datalist id="destinations" >
                                 <option value ="Indonesia"/>
