@@ -11,6 +11,7 @@ import "./fonts/OggThin.ttf";
 import "./fonts/OggThinItalic.ttf";
 import {BrowserRouter as Router,Routes, Route} from 'react-router-dom';
 import Discover from './components/Discover';
+import Contact from './components/Contact';
 import About from './components/About';
 import ElephantAdenture from './components/excursions/ElephantAdenture';
 import Marquee from './components/Marquee';
@@ -32,6 +33,7 @@ function App() {
                 <Routes>
                     <Route path = "/" element={<Discover/>}/>
                     <Route path="/About" element={<About/>}/>
+                    <Route path="/Contact" element={<Contact/>}/>
                     <Route path ='/trips/elephant-forest-adventure' element = {<ElephantAdenture/>} />
                     <Route path='/trips/temple-tour' element={<TempleTour/>}/>
                     <Route path="/trips/koh-phi-phi-escape" element={<KohPhiPhi/>}/>

@@ -14,7 +14,7 @@ return(
         <div className="aboutInfo">
             <div className="quoteAbout">
                 <p>We Provide The Way.</p>
-                <p>You Provide The Memories.</p>
+                <p>You Provide The Energy.</p>
             </div>
             <div className="overviewAbout">
                 <p>Excursion Escape is the future of booking excursions that will reveal to you
