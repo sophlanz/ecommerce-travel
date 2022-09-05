@@ -121,7 +121,7 @@
 /*actual price label*/
 .price h1 {
     font-size:3rem;
-    color:blue;
+    color:$skyblue;
     font-weight:700;
     font-family: "Bold";
 }
@@ -130,21 +130,21 @@
     align-items:center;
 }
 .pricePerson p {
-    color:blue;
+    color:$skyblue;
 }
 .bookButton {
     height:50px;
     width:200px;
     background-color:white;
-    border:1px solid blue;
-    color:blue;
+    border:1px solid $skyblue;
+    color:$skyblue;
     font-weight:700;
     font-size:1.2rem;
     border-radius:.5rem;
 }
 /*email*/
 .contactInfo p {
-    color:blue;
+    color:$skyblue;
     font-style:"Regular";
     font-size:1.3rem;
     font-weight:700;
