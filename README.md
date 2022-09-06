@@ -11,7 +11,7 @@ Ecommerce website that allows users to browse excursions and add them to their s
 ## Features 
 - Filter the excursions of your choice based on budget, duration, and location. 
 - Fully functional shopping cart.
-##Screenshots
+## Screenshots
 <img width="1264" alt="Captura de pantalla 2022-09-06 a las 13 44 58" src="https://user-images.githubusercontent.com/75180391/188629761-6200fa89-c2b7-4301-87e6-339d315519b5.png">
 <img width="1265" alt="Captura de pantalla 2022-09-06 a las 13 45 17" src="https://user-images.githubusercontent.com/75180391/188629802-cc0a7257-7871-4545-a897-74158eb8f59d.png">
 <img width="1266" alt="Captura de pantalla 2022-09-06 a las 13 45 27" src="https://user-images.githubusercontent.com/75180391/188629858-49c46421-e487-4e6a-8ba5-f8be9b1b6eb8.png">
