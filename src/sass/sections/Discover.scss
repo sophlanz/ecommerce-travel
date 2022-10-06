@@ -78,6 +78,7 @@
     gap:10px;
     padding:130px 20px 20px 20px;
     color:$white;
+    filter: grayscale(10%);
 }
 /*country name */
 #country {
@@ -119,4 +120,11 @@
     padding-top:10px;
     padding-bottom:10px;
     margin-top:10px;
+}
+.cardImage {
+    z-index:0;
+}
+#country, #excursionTitle, #priceDuration {
+    z-index:1;
+    position:relative;
 }

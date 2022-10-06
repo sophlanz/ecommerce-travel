@@ -6,10 +6,12 @@
     justify-content:space-evenly;
     gap:500px;
     color:$white;
-    padding:30px 0px 30px 0px;
+    padding:45px 0px 30px 0px;
     width:100vw;
     align-items:center;
-    margin-top:15px;
+    background-image:linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
+    box-sizing: border-box;
+    
 }
 #centerNav {
     position:absolute;

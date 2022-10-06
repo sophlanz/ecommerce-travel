@@ -1,5 +1,6 @@
+
 import React, {useState} from 'react';
-import elephant from '../images/elephant.jpg';
+import elephant from '../images/elephant.jpg'
 import beach from '../images/beach.jpg';
 import food from '../images/food.jpg';
 import temple from '../images/temple.jpg'
@@ -13,6 +14,9 @@ import kuta from '../images/kuta.jpg';
 import rajaampat from '../images/rajaampat.jpg';
 import Navbar from '../components/Navbar';
 import {Link} from 'react-router-dom';
+import Image from 'next/image'
+
+
 const Discover = () => {
     const[indonesia,setIndonesia]= useState(true)
     const[thailand, setThailand] = useState(true)
@@ -89,6 +93,7 @@ const Discover = () => {
     return (
         <div>
         <Navbar/>
+        
             <div id = "header">
                     <div class="title">
                             <p>Moments.</p>
@@ -97,6 +102,7 @@ const Discover = () => {
                     </div>
                     <button class ="imageButton"></button>
             </div>
+            
             <div class = "quote">Discover cutlure in an intimate setting. Discover
                             the hidden gems cherished by locals. Discover Excursion 
                             Escape.
@@ -145,9 +151,12 @@ const Discover = () => {
                             </datalist>
                         </div>
                     </div>
+                   
                     <div id="exploreTrips">
                     {/*Thailand*/}
-                        <div  id="excursion" style={{backgroundImage: `url(${elephant})`, display: thailand && fullDay && budget100 ? "flex" : null }} >
+                        
+                        <div  id="excursion"  style={{ display: thailand && fullDay && budget100 ? "flex" : null }}>
+                            <Image className="cardImage" src='/images/elephant.jpg' alt = "elephant" layout="fill"/>
                             <div id="country">Thailand</div>
                             <div id="excursionTitle">Elephant Forest Adventure</div>
                             <div class = "priceDuration">
@@ -159,8 +168,8 @@ const Discover = () => {
                                     <h1>duration</h1>
                                     <p>Full-Day</p>
                                 </div>
+                                <button id = "moreInfo"><Link to="/trips/elephant-forest-adventure">More Information</Link></button>
                             </div>
-                            <button id = "moreInfo"><Link to="/trips/elephant-forest-adventure">More Information</Link></button>
                         </div>
                         <div id="excursion" style={{backgroundImage: `url(${temple})`, display: thailand && halfDay && budget50 ? "flex" : null  }}>
                             <div id="country">Thailand</div>
