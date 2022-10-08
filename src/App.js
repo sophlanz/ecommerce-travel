@@ -1,4 +1,4 @@
-import './sass/App.scss'
+//import './sass/global.scss'
 import './fonts/OggBold.ttf';
 import "./fonts/OggBoldItalic.ttf";
 import "./fonts/OggLight.ttf";

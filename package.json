@@ -8,6 +8,11 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "@types/node": "^18.8.3",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "@zeit/next-sass": "^1.0.1",
+    "core-util-is": "^1.0.3",
     "next": "^12.3.1",
     "path-browserify": "^1.0.1",
     "react": "^18.2.0",
@@ -46,7 +51,10 @@
     ]
   },
   "devDependencies": {
+    "file-loader": "^6.2.0",
     "gh-pages": "^4.0.0",
-    "sass": "^1.54.4"
+    "sass": "^1.54.4",
+    "ttf-loader": "^1.0.2",
+    "typescript": "4.8.4"
   }
 }

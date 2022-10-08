@@ -1,21 +1,21 @@
 
 import React, {useState} from 'react';
-import elephant from '../images/elephant.jpg'
-import beach from '../images/beach.jpg';
-import food from '../images/food.jpg';
-import temple from '../images/temple.jpg'
-import halong from '../images/halong.jpg';
-import hanoi from '../images/hanoi.jpg';
-import loop from '../images/loop.jpg';
-import market from '../images/market.jpg';
-import kelimutu from '../images/kelimutu.jpg';
-import komodo from '../images/komodo.jpg';
-import kuta from '../images/kuta.jpg';
-import rajaampat from '../images/rajaampat.jpg';
+import beach from '../../public/images/beach.jpg';
+import elephant from '../../public/images/elephant.jpg';
+import food from '../../public/images/food.jpg';
+import temple from '../../public/images/temple.jpg'
+import halong from '../../public/images/halong.jpg';
+import hanoi from '../../public/images/hanoi.jpg';
+import loop from '../../public/images/loop.jpg';
+import market from '../../public/images/market.jpg';
+import kelimutu from '../../public/images/kelimutu.jpg';
+import komodo from '../../public/images/komodo.jpg';
+import kuta from '../../public/images/kuta.jpg';
+import rajaampat from '../../public/images/rajaampat.jpg';
 import Navbar from '../components/Navbar';
-import {Link} from 'react-router-dom';
-import Image from 'next/image'
-
+//import {Link} from 'react-router-dom';
+import Image from 'next/image';
+import Link from 'next/Link';
 
 const Discover = () => {
     const[indonesia,setIndonesia]= useState(true)
@@ -168,7 +168,7 @@ const Discover = () => {
                                     <h1>duration</h1>
                                     <p>Full-Day</p>
                                 </div>
-                                <button id = "moreInfo"><Link to="/trips/elephant-forest-adventure">More Information</Link></button>
+                                <button id = "moreInfo"><Link href="/excursions/elephant-forest-adventure">More Information</Link></button>
                             </div>
                         </div>
                         <div id="excursion" style={{backgroundImage: `url(${temple})`, display: thailand && halfDay && budget50 ? "flex" : null  }}>
@@ -184,7 +184,7 @@ const Discover = () => {
                                     <p>Half-Day</p>
                                 </div>
                             </div>
-                            <button id = "moreInfo"><Link to="/trips/temple-tour">More Information</Link></button>
+                            <button id = "moreInfo"><Link href="/excursions/temple-tour">More Information</Link></button>
                         </div>
                         <div id="excursion" style={{backgroundImage: `url(${beach})`, display: thailand && halfDay && budget100 ? "flex" : null }}>
                             <div id="country">Thailand</div>
@@ -199,7 +199,7 @@ const Discover = () => {
                                     <p>Half-Day</p>
                                 </div>
                             </div>
-                            <button id = "moreInfo"><Link to="/trips/koh-phi-phi-escape">More Information</Link></button>
+                            <button id = "moreInfo"><Link href="/excursions/koh-phi-phi-escape">More Information</Link></button>
                         </div>
                         <div id="excursion" style={{backgroundImage: `url(${food})`, display: thailand && overNight && budget100 ? "flex" : null }}>
                             <div id="country">Thailand</div>
@@ -214,7 +214,7 @@ const Discover = () => {
                                     <p>Over-Night</p>
                                 </div>
                             </div>
-                            <button id = "moreInfo"><Link to="/trips/home-stay">More Information</Link></button>
+                            <button id = "moreInfo"><Link href="/excursions/home-stay">More Information</Link></button>
                         </div>
                         {/*Vietnam*/}
                         <div id="excursion" style={{backgroundImage: `url(${halong})`, display: vietnam && halfDay && budget50 ? "flex" : null }} >
@@ -230,7 +230,7 @@ const Discover = () => {
                                     <p>Half-Day</p>
                                 </div>
                             </div>
-                            <button id = "moreInfo"><Link to="/trips/ha-long-bay-tour">More Information</Link></button>
+                            <button id = "moreInfo"><Link href="/excursions/ha-long-bay-tour">More Information</Link></button>
                         </div>
                         <div id="excursion" style={{backgroundImage: `url(${hanoi})`, display: vietnam && halfDay && budget50 ? "flex" : null }}>
                             <div id="country">Vietnam</div>
@@ -245,7 +245,7 @@ const Discover = () => {
                                     <p>Half-Day</p>
                                 </div>
                             </div>
-                            <button id = "moreInfo"><Link to="/trips/hanoi-walking-tour">More Information</Link></button>
+                            <button id = "moreInfo"><Link href="/excursions/hanoi-walking-tour">More Information</Link></button>
                         </div>
                         <div id="excursion" style={{backgroundImage: `url(${loop})`, display: vietnam && overNight && budget150 ? "flex" : null  }}>
                             <div id="country">Vietnam</div>
@@ -260,7 +260,7 @@ const Discover = () => {
                                     <p>Over-Night</p>
                                 </div>
                             </div>
-                            <button id = "moreInfo"><Link to="/trips/ha-giang-loop-on-motorbike">More Information</Link></button>
+                            <button id = "moreInfo"><Link href="/excursions/ha-giang-loop-on-motorbike">More Information</Link></button>
                         </div>
                         <div id="excursion" style={{backgroundImage: `url(${market})`, display: vietnam && halfDay && budget50 ? "flex" : null }}>
                             <div id="country">Vietnam</div>
@@ -275,7 +275,7 @@ const Discover = () => {
                                     <p>Half-Day</p>
                                 </div>
                             </div>
-                            <button id = "moreInfo"><Link to="/trips/market-tour-and-cooking-class">More Information</Link></button>
+                            <button id = "moreInfo"><Link href="/excursions/market-tour-and-cooking-class">More Information</Link></button>
                         </div>
                         {/*Indonesia*/}
                         <div id="excursion" style={{backgroundImage: `url(${rajaampat})`, display: indonesia && fullDay && budget150  ? "flex" : null }} >
@@ -291,7 +291,7 @@ const Discover = () => {
                                     <p>Full-Day</p>
                                 </div>
                             </div>
-                            <button id = "moreInfo"><Link to="/trips/scuba-diving-at-raja-ampat">More Information</Link></button>
+                            <button id = "moreInfo"><Link href="/excursions/scuba-diving-at-raja-ampat">More Information</Link></button>
                         </div>
                         <div id="excursion" style={{backgroundImage: `url(${kelimutu})`, display: indonesia && fullDay && budget100 ? "flex" : null  }}>
                             <div id="country">Indonesia</div>
@@ -306,7 +306,7 @@ const Discover = () => {
                                     <p>Full-Day</p>
                                 </div>
                             </div>
-                            <button id = "moreInfo"><Link to="/trips/trekking-kelimutu-volcano">More Information</Link></button>
+                            <button id = "moreInfo"><Link href="/excusrions/trekking-kelimutu-volcano">More Information</Link></button>
                         </div>
                         <div id="excursion" style={{backgroundImage: `url(${komodo})`, display: indonesia && halfDay && budget50 ? "flex" : null }}>
                             <div id="country">Indonesia</div>
@@ -321,7 +321,7 @@ const Discover = () => {
                                     <p>Half-Day</p>
                                 </div>
                             </div>
-                            <button id = "moreInfo"><Link to="/trips/komodo-dragon-watching-on-komodo-island">More Information</Link></button>
+                            <button id = "moreInfo"><Link href="/excursions/komodo-dragon-watching-on-komodo-island">More Information</Link></button>
                         </div>
                         <div id="excursion" style={{backgroundImage: `url(${kuta})`, display: indonesia && halfDay && budget100 ? "flex" : null  }}>
                             <div id="country">Indonesia</div>
@@ -336,7 +336,7 @@ const Discover = () => {
                                     <p>Half-Day</p>
                                 </div>
                             </div>
-                            <button id = "moreInfo"><Link to="/trips/surfing-on-kuta-beach">More Information</Link></button>
+                            <button id = "moreInfo"><Link href="/excursions/surfing-on-kuta-beach">More Information</Link></button>
                         </div>
                     </div> 
                    

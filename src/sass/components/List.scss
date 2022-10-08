@@ -1,16 +1,6 @@
-a {
-    /*remove underlines*/
-    text-decoration:none;
-    /*remove link coloring*/
-    color:inherit;
-}
-li{
-    /*remove bullets*/
-    list-style:none;
-}
-datalist {
-    display:flex;
-}
+
+
+
 /*style tickmarks*/
 .budget datalist#tickmarks {
     display:flex;
