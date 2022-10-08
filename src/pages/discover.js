@@ -1,21 +1,22 @@
 //import discover component
 import React, {useState} from 'react';
-import beach from '../public/images/beach.jpg';
-import elephant from '../public/images/elephant.jpg';
-import food from '../public/images/food.jpg';
-import temple from '../public/images/temple.jpg'
-import halong from '../public/images/halong.jpg';
-import hanoi from '../public/images/hanoi.jpg';
-import loop from '../public/images/loop.jpg';
-import market from '../public/images/market.jpg';
-import kelimutu from '../public/images/kelimutu.jpg';
-import komodo from '../public/images/komodo.jpg';
-import kuta from '../public/images/kuta.jpg';
-import rajaampat from '../public/images/rajaampat.jpg';
-//import Navbar from '../src/components/Navbar';
+import beach from '../../public/images/beach.jpg';
+import elephant from '../../public/images/elephant.jpg';
+import food from '../../public/images/food.jpg';
+import temple from '../../public/images/temple.jpg'
+import halong from '../../public/images/halong.jpg';
+import hanoi from '../../public/images/hanoi.jpg';
+import loop from '../../public/images/loop.jpg';
+import market from '../../public/images/market.jpg';
+import kelimutu from '../../public/images/kelimutu.jpg';
+import komodo from '../../public/images/komodo.jpg';
+import kuta from '../../public/images/kuta.jpg';
+import rajaampat from '../../public/images/rajaampat.jpg';
+import Navbar from '../components/Navbar';
 //import {Link} from 'react-router-dom';
 import Image from 'next/image';
 import Link from 'next/Link';
+import '../sass/sections/discover.module.scss'
 export default function DiscoverComponent() {
     const[indonesia,setIndonesia]= useState(true)
     const[thailand, setThailand] = useState(true)

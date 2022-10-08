@@ -1,12 +1,11 @@
 import React, {useState, useEffect} from "react";
-import {Link} from "react-router-dom";
-import {ReactComponent as Facebook} from '../images/facebook.svg';
-import {ReactComponent as Instagram} from '../images/instagram.svg';
-import {ReactComponent as Twitter} from '../images/twitter.svg';
+import {ReactComponent as Facebook} from '../../public/images/facebook.svg';
+import {ReactComponent as Instagram} from '../../public/images/instagram.svg';
+import {ReactComponent as Twitter} from '../../public/images/twitter.svg';
 import { useSelector } from 'react-redux';
-import ShoppingCart from "./ShoppingCart";
+//import ShoppingCart from "./ShoppingCart";
 import Modal from 'react-modal';
-
+import Link from 'next/Link';
 const Navbar = () => {
         const total = useSelector((state) => state.count[0].count)
         console.log(total);
@@ -23,12 +22,12 @@ const Navbar = () => {
             <div>
         <div id = 'navBar'>
                 <div id="leftNav">
-                        <li> <Link to={"/"}>Discover</Link></li>
-                        <li> <Link to={"/About"}>About</Link></li>
-                        <li> <Link to={"/Contact"}>Contact</Link></li>
+                        <li> <Link href="/">Discover</Link></li>
+                        <li> <Link href="/About">About</Link></li>
+                        <li> <Link href="/Contact">Contact</Link></li>
                 </div>
                 <div id = "centerNav">
-                        <li><Link to={'/'} >Excursion Escape</Link></li>
+                        <li><Link href='/' >Excursion Escape</Link></li>
                 </div>
                 <div id = "rightNav">
                 <li  id="bagContainer" className="shoppingBag" onClick =  {()=> setCartShown(true)}>{totalDisplay}</li>
@@ -43,7 +42,7 @@ const Navbar = () => {
                         <div className="cartHeader"><h1>YOUR BAG</h1><p>({totalDisplay})</p></div>
                         <button className="closeCart" onClick = {()=> setCartShown(false)}>x</button>
                 </div>
-                <ShoppingCart/>
+                {/*<ShoppingCart/>*/}
         </Modal>
         
         </div>

@@ -32,43 +32,43 @@ const CartItem = ({id, total, title, price, date,coverPhoto}) => {
     //import all of the images ahead of time so they can be compiled by webpack
     switch(coverPhoto){
         case "elephant":
-        url=require('../images/elephant.jpg');
+        url=require('../../public/images/elephant.jpg');
         break;
         case "temple":
-        url=require('../images/temple.jpg');
+        url=require('../../public/images/temple.jpg');
         break;
         case "beach":
-        url=require('../images/beach.jpg');
+        url=require('../../public/images/beach.jpg');
         break;
         case "food":
-        url=require('../images/food.jpg');
+        url=require('../../public/images/food.jpg');
         break;
         case "halong":
-        url=require('../images/halong.jpg');
+        url=require('../../public/images/halong.jpg');
         break;
         case "hanoi":
-        url= require('../images/hanoi.jpg');
+        url= require('../../public/images/hanoi.jpg');
         break;
         case"loop":
-        url=require('../images/loop.jpg')
+        url=require('../../public/images/loop.jpg')
         break;
         case "market":
-        url=require('../images/market.jpg');
+        url=require('../../public/images/market.jpg');
         break;
         case "rajaampat":
-        url=require('../images/rajaampat.jpg');
+        url=require('../../public/images/rajaampat.jpg');
         break;
         case "kelimutu":
-        url=require('../images/kelimutu.jpg');
+        url=require('../../public/images/kelimutu.jpg');
         break;
         case "komodo" :
-        url=require('../images/komodo.jpg');
+        url=require('../../public/images/komodo.jpg');
         break;
         case "kuta":
-        url=require('../images/kuta.jpg');
+        url=require('../../public/images/kuta.jpg');
         break;
         default:
-        url=require('../images/cover.jpg');
+        url=require('../../public/images/cover.jpg');
     }
     return(
         <div className = "cartItem">
