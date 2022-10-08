@@ -121,10 +121,15 @@
     padding-bottom:10px;
     margin-top:10px;
 }
+/*image z-index 0 so we can set it as the background, then layer the other divs on top*/
 .cardImage {
     z-index:0;
+
 }
-#country, #excursionTitle, #priceDuration {
+#country, #excursionTitle, .priceDuration, #moreInfo {
     z-index:1;
     position:relative;
+}
+img.cardImage {
+    border-radius: 0.5rem;
 }
