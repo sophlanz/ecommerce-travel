@@ -1,11 +1,12 @@
 import React, {useState, useEffect} from "react";
-import {ReactComponent as Facebook} from '../../public/images/facebook.svg';
+//import {ReactComponent as Facebook} from '../../public/images/facebook.svg';
 import {ReactComponent as Instagram} from '../../public/images/instagram.svg';
 import {ReactComponent as Twitter} from '../../public/images/twitter.svg';
 import { useSelector } from 'react-redux';
 //import ShoppingCart from "./ShoppingCart";
 import Modal from 'react-modal';
 import Link from 'next/Link';
+import Image from 'next/image';
 const Navbar = () => {
         const total = useSelector((state) => state.count[0].count)
         console.log(total);
@@ -31,9 +32,9 @@ const Navbar = () => {
                 </div>
                 <div id = "rightNav">
                 <li  id="bagContainer" className="shoppingBag" onClick =  {()=> setCartShown(true)}>{totalDisplay}</li>
-                        <a href="https://facebook.com" target="_blank"><Facebook class = "facebook" alt="facebook" /></a>
-                        <a href="https://twitter.com" target="_blank"><Twitter class = "twitter" alt= "twitter"/></a>
-                        <a href="https://instagram.com" target="_blank"><Instagram class = "instagram" alt="instagram"/></a>
+                        <a href="https://facebook.com" target="_blank"><Image src="/images/facebook.svg" class = "facebook" alt="facebook" height={30} width={30} /></a>
+                        <a href="https://twitter.com" target="_blank"><Image src='/images/twitter.svg' class = "twitter" alt= "twitter" height={30} width={30}/></a>
+                        <a href="https://instagram.com" target="_blank"><Image src="/images/instagram.svg" class = "instagram" alt="instagram" height={30} width={30}/></a>
                 </div>
         </div>
         <div>

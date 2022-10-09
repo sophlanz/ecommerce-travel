@@ -130,8 +130,16 @@
     z-index:1;
     position:relative;
 }
-img.cardImage {
+.cardImage {
     border-radius: 0.5rem;
     /*add a blur filter to improve readibility*/
-    filter:blur(.5px)l
+    filter:blur(.5px)
 }
+/*on more information hover, blur background image*/
+#moreInfo:hover {
+    background-color:rgba(0,0,0,.5);
+}
+#moreInfo:hover+.cardImage {
+    filter:blur(3px);
+}
+

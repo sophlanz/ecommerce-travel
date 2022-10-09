@@ -1,17 +1,6 @@
 //import discover component
 import React, {useState} from 'react';
-import beach from '../../public/images/beach.jpg';
-import elephant from '../../public/images/elephant.jpg';
-import food from '../../public/images/food.jpg';
-import temple from '../../public/images/temple.jpg'
-import halong from '../../public/images/halong.jpg';
-import hanoi from '../../public/images/hanoi.jpg';
-import loop from '../../public/images/loop.jpg';
-import market from '../../public/images/market.jpg';
-import kelimutu from '../../public/images/kelimutu.jpg';
-import komodo from '../../public/images/komodo.jpg';
-import kuta from '../../public/images/kuta.jpg';
-import rajaampat from '../../public/images/rajaampat.jpg';
+
 import Navbar from '../components/Navbar';
 //import {Link} from 'react-router-dom';
 import Image from 'next/image';
@@ -92,10 +81,10 @@ export default function DiscoverComponent() {
     }
     return (
         <div>
-        {/*<Navbar/>*/}
+        <Navbar/>
         
             <div id = "header">
-                    <Image className="coverPhoto" src='/images/cover.jpg' blurDataURL='/images/cover.jpg' alt = "beach" layout="fill" placeholder="blur"/>
+                    <Image className="coverPhoto" src='/images/cover.jpg' blurDataURL='/images/cover.jpg' alt = "beach" layout="fill" objectFit="cover" placeholder="blur"/>
                     <div class="title">
                             <p>Moments.</p>
                             <p>Enjoyed.</p>
@@ -173,7 +162,7 @@ export default function DiscoverComponent() {
                             <button id = "moreInfo"><Link href="/excursions/elephant-forest-adventure">More Information</Link></button>
                         </div>
                         <div id="excursion" style={{ display: thailand && halfDay && budget50 ? "flex" : null  }}>
-                            <Image className="cardImage" src='/images/temple.jpg' alt = "temple" layout="fill" blurDataURL='/images/temple.jpg' placeholder="blur"/>
+                            
                             <div id="country">Thailand</div>
                             <div id="excursionTitle">Temple Tour</div>
                             <div class = "priceDuration">
@@ -187,6 +176,7 @@ export default function DiscoverComponent() {
                                 </div>
                             </div>
                             <button id = "moreInfo"><Link href="/excursions/temple-tour">More Information</Link></button>
+                            <Image className="cardImage" src='/images/temple.jpg' alt = "temple" layout="fill" blurDataURL='/images/temple.jpg' placeholder="blur"/>
                         </div>
                         <div id="excursion" style={{display: thailand && halfDay && budget100 ? "flex" : null }}>
                             <Image className="cardImage" src='/images/beach.jpg' alt = "beach" layout="fill" blurDataURL='/images/beach.jpg' placeholder="blur"/>
