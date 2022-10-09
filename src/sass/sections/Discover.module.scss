@@ -132,4 +132,6 @@
 }
 img.cardImage {
     border-radius: 0.5rem;
+    /*add a blur filter to improve readibility*/
+    filter:blur(.5px)l
 }

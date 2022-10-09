@@ -95,7 +95,7 @@ export default function DiscoverComponent() {
         {/*<Navbar/>*/}
         
             <div id = "header">
-                    <Image className="coverPhoto" src='/images/cover.jpg' alt = "beach" layout="fill" placeholder="blur"/>
+                    <Image className="coverPhoto" src='/images/cover.jpg' blurDataURL='/images/cover.jpg' alt = "beach" layout="fill" placeholder="blur"/>
                     <div class="title">
                             <p>Moments.</p>
                             <p>Enjoyed.</p>
@@ -157,7 +157,7 @@ export default function DiscoverComponent() {
                     {/*Thailand*/}
                         
                         <div  id="excursion"  style={{ display: thailand && fullDay && budget100 ? "flex" : null }}>
-                            <Image className="cardImage" src='/images/elephant.jpg' alt = "elephant" layout="fill"/>
+                            <Image className="cardImage" src='/images/elephant.jpg' alt = "elephant" layout= "fill" blurDataURL='/images/elephant.jpg' placeholder="blur"/>
                             <div id="country">Thailand</div>
                             <div id="excursionTitle">Elephant Forest Adventure</div>
                             <div class = "priceDuration">
@@ -173,7 +173,7 @@ export default function DiscoverComponent() {
                             <button id = "moreInfo"><Link href="/excursions/elephant-forest-adventure">More Information</Link></button>
                         </div>
                         <div id="excursion" style={{ display: thailand && halfDay && budget50 ? "flex" : null  }}>
-                            <Image className="cardImage" src='/images/temple.jpg' alt = "temple" layout="fill"/>
+                            <Image className="cardImage" src='/images/temple.jpg' alt = "temple" layout="fill" blurDataURL='/images/temple.jpg' placeholder="blur"/>
                             <div id="country">Thailand</div>
                             <div id="excursionTitle">Temple Tour</div>
                             <div class = "priceDuration">
@@ -189,7 +189,7 @@ export default function DiscoverComponent() {
                             <button id = "moreInfo"><Link href="/excursions/temple-tour">More Information</Link></button>
                         </div>
                         <div id="excursion" style={{display: thailand && halfDay && budget100 ? "flex" : null }}>
-                            <Image className="cardImage" src='/images/beach.jpg' alt = "beach" layout="fill"/>
+                            <Image className="cardImage" src='/images/beach.jpg' alt = "beach" layout="fill" blurDataURL='/images/beach.jpg' placeholder="blur"/>
                             <div id="country">Thailand</div>
                             <div id="excursionTitle">Koh Phi Phi Espcape</div>
                             <div class = "priceDuration">
@@ -205,7 +205,7 @@ export default function DiscoverComponent() {
                             <button id = "moreInfo"><Link href="/excursions/koh-phi-phi-escape">More Information</Link></button>
                         </div>
                         <div id="excursion" style={{display: thailand && overNight && budget100 ? "flex" : null }}>
-                            <Image className="cardImage" src='/images/food.jpg' alt = "food" layout="fill"/>
+                            <Image className="cardImage" src='/images/food.jpg' alt = "food" layout="fill" blurDataURL='/images/food.jpg' placeholder="blur"/>
                             <div id="country">Thailand</div>
                             <div id="excursionTitle">Home Stay</div>
                             <div class = "priceDuration">
@@ -222,7 +222,7 @@ export default function DiscoverComponent() {
                         </div>
                         {/*Vietnam*/}
                         <div id="excursion" style={{ display: vietnam && halfDay && budget50 ? "flex" : null }} >
-                            <Image className="cardImage" src='/images/halong.jpg' alt = "Halong Bay" layout="fill"/>
+                            <Image className="cardImage" src='/images/halong.jpg' alt = "Halong Bay" layout="fill" blurDataURL='/images/halong.jpg' placeholder="blur"/>
                             <div id="country">Vietnam</div>
                             <div id="excursionTitle"> Ha Long Bay Tour </div>
                             <div class = "priceDuration">
@@ -238,7 +238,7 @@ export default function DiscoverComponent() {
                             <button id = "moreInfo"><Link href="/excursions/ha-long-bay-tour">More Information</Link></button>
                         </div>
                         <div id="excursion" style={{display: vietnam && halfDay && budget50 ? "flex" : null }}>
-                            <Image className="cardImage" src='/images/hanoi.jpg' alt = "hanoi" layout="fill"/>
+                            <Image className="cardImage" src='/images/hanoi.jpg' alt = "hanoi" layout="fill" blurDataURL='/images/hanoi.jpg' placeholder="blur"/>
                             <div id="country">Vietnam</div>
                             <div id="excursionTitle">Hanoi walking tour</div>
                             <div class = "priceDuration">
@@ -254,7 +254,7 @@ export default function DiscoverComponent() {
                             <button id = "moreInfo"><Link href="/excursions/hanoi-walking-tour">More Information</Link></button>
                         </div>
                         <div id="excursion" style={{display: vietnam && overNight && budget150 ? "flex" : null  }}>
-                            <Image className="cardImage" src='/images/loop.jpg' alt = "Ha Giang Loop" layout="fill"/>
+                            <Image className="cardImage" src='/images/loop.jpg' alt = "Ha Giang Loop" layout="fill" blurDataURL='/images/loop.jpg' placeholder="blur"/>
                             <div id="country">Vietnam</div>
                             <div id="excursionTitle">Ha Giang Loop On Motorbike</div>
                             <div class = "priceDuration">
@@ -270,7 +270,7 @@ export default function DiscoverComponent() {
                             <button id = "moreInfo"><Link href="/excursions/ha-giang-loop-on-motorbike">More Information</Link></button>
                         </div>
                         <div id="excursion" style={{ display: vietnam && halfDay && budget50 ? "flex" : null }}>
-                            <Image className="cardImage" src='/images/market.jpg' alt = "Vietnam Market" layout="fill"/>
+                            <Image className="cardImage" src='/images/market.jpg' alt = "Vietnam Market" layout="fill" blurDataURL='/images/market.jpg' placeholder="blur"/>
                             <div id="country">Vietnam</div>
                             <div id="excursionTitle">Market Tour and Cooking Class</div>
                             <div class = "priceDuration">
@@ -287,7 +287,7 @@ export default function DiscoverComponent() {
                         </div>
                         {/*Indonesia*/}
                         <div id="excursion" style={{ display: indonesia && fullDay && budget150  ? "flex" : null }} >
-                        <Image className="cardImage" src='/images/rajaampat.jpg' alt = "rajaampat indonesia" layout="fill"/>
+                        <Image className="cardImage" src='/images/rajaampat.jpg' alt = "rajaampat indonesia" layout="fill" blurDataURL='/images/rajaampat.jpg' placeholder="blur"/>
                             <div id="country">Indonesia</div>
                             <div id="excursionTitle">Scuba Diving at Raja Ampat</div>
                             <div class = "priceDuration">
@@ -303,7 +303,7 @@ export default function DiscoverComponent() {
                             <button id = "moreInfo"><Link href="/excursions/scuba-diving-at-raja-ampat">More Information</Link></button>
                         </div>
                         <div id="excursion" style={{display: indonesia && fullDay && budget100 ? "flex" : null  }}>
-                            <Image className="cardImage" src='/images/kelimutu.jpg' alt = "kelimutu indonesia" layout="fill"/>
+                            <Image className="cardImage" src='/images/kelimutu.jpg' alt = "kelimutu indonesia" layout="fill" blurDataURL='/images/kelimutu.jpg' placeholder="blur"/>
                             <div id="country">Indonesia</div>
                             <div id="excursionTitle">Trekking Kelimutu Volcano</div>
                             <div class = "priceDuration">
@@ -319,7 +319,7 @@ export default function DiscoverComponent() {
                             <button id = "moreInfo"><Link href="/excusrions/trekking-kelimutu-volcano">More Information</Link></button>
                         </div>
                         <div id="excursion" style={{display: indonesia && halfDay && budget50 ? "flex" : null }}>
-                            <Image className="cardImage" src='/images/komodo.jpg' alt = "komodo island" layout="fill"/>
+                            <Image className="cardImage" src='/images/komodo.jpg' alt = "komodo island" layout="fill" blurDataURL='/images/komodo.jpg' placeholder="blur"/>
                             <div id="country">Indonesia</div>
                             <div id="excursionTitle"> Komodo Dragon Watching on Komodo Island</div>
                             <div class = "priceDuration">
@@ -335,7 +335,7 @@ export default function DiscoverComponent() {
                             <button id = "moreInfo"><Link href="/excursions/komodo-dragon-watching-on-komodo-island">More Information</Link></button>
                         </div>
                         <div id="excursion" style={{ display: indonesia && halfDay && budget100 ? "flex" : null  }}>
-                            <Image className="cardImage" src='/images/kuta.jpg' alt = "kuta indonesia" layout="fill"/>
+                            <Image className="cardImage" src='/images/kuta.jpg' alt = "kuta indonesia" layout="fill" blurDataURL='/images/kuta.jpg' placeholder="blur"/>
                             <div id="country">Indonesia</div>
                             <div id="excursionTitle">Surfing On Kuta Beach</div>
                             <div class = "priceDuration">
