@@ -1,19 +1,19 @@
 import React from "react";
-import marq1 from "../images/marq1.jpg";
-import marq2 from "../images/marq2.jpg";
-import marq3 from "../images/marq3.jpg";
-import marq4 from "../images/marq4.jpg";
-import marq5 from "../images/marq5.jpg";
-import marq6 from "../images/marq6.jpg";
-import marq7 from '../images/marq7.jpg';
-import marq8 from '../images/marq8.jpg';
-import marq9 from '../images/marq9.jpg';
-import marq10 from '../images/marq10.jpg';
-import marq11 from '../images/marq11.jpg';
-import marq12 from '../images/marq12.jpg';
-import boat from '../images/boat.jpg';
-import beach from '../images/beach.jpg';
-import komodo from '../images/komodo.jpg';
+import marq1 from "../../public/images/marq1.jpg";
+import marq2 from "../../public/images/marq2.jpg";
+import marq3 from "../../public/images/marq3.jpg";
+import marq4 from "../../public/images/marq4.jpg";
+import marq5 from "../../public/images/marq5.jpg";
+import marq6 from "../../public/images/marq6.jpg";
+import marq7 from '../../public/images/marq7.jpg';
+import marq8 from '../../public/images/marq8.jpg';
+import marq9 from '../../public/images/marq9.jpg';
+import marq10 from '../../public/images/marq10.jpg';
+import marq11 from '../../public/images/marq11.jpg';
+import marq12 from '../../public/images/marq12.jpg';
+import boat from '../../public/images/boat.jpg';
+import beach from '../../public/images/beach.jpg';
+import komodo from '../../public/images/komodo.jpg';
 const Marquee = () => {
     return(
        <div class="marquee">

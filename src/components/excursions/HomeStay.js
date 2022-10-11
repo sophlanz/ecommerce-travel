@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../TripLayout';
-import image from '../../images/food.jpg';
+import image from '../../../public/images/food.jpg';
 
 const HomeStay = () => {
     return (

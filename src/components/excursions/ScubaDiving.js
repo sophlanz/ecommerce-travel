@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../TripLayout';
-import image from '../../images/rajaampat.jpg';
+import image from '../../../public/mages/rajaampat.jpg';
 const RajaAmpat = () => {
     return (
         <div>

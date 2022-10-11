@@ -107,7 +107,7 @@ export default function DiscoverComponent() {
                             <h1>Destination</h1>
                             <p>Select from the dropdown below your dream destination...</p>
                             <label for="destinationInput">
-                            <input value="" 
+                            <input defaultValue="Any" 
                             onMouseOver="focus();old = value;" 
                             onMouseDown = "value = '';" 
                             onMouseUp="value = old;" onChange={(e)=>handleSortCountry(e)}  list = "destinations" placeholder="Select your destination..." name = "destinationInput" id="destinationInput"/>
@@ -122,7 +122,7 @@ export default function DiscoverComponent() {
                         <div class = "duration">
                             <h1>Duration</h1>
                             <p>Select length of the excursion...</p>
-                            <input onChange={(e)=> handleFilterDuration(e)}  type = "range" list="tickmarks"  step="1" min="0" max="3"/>
+                            <input onChange={(e)=> handleFilterDuration(e)}  defaultValue = "3" type = "range" list="tickmarks"  step="1" min="0" max="3"/>
                             <datalist id= "tickmarks">
                                 <option value="0" label="Half-Day"/>
                                 <option value="1" label = "Full-Day"/>
@@ -133,7 +133,7 @@ export default function DiscoverComponent() {
                         <div class = "budget">
                             <h1>Budget</h1>
                             <p>How much are you looking to spend?</p>
-                            <input onChange={(e)=> handleFilterBudget(e)} type = "range" list = "tickmarks" step="1"min="0" max="2"/>
+                            <input onChange={(e)=> handleFilterBudget(e)} defaultValue = "2" type = "range" list = "tickmarks" step="1"min="0" max="2"/>
                             <datalist id = "tickmarks">
                                 <option value = "0">$50</option>
                                 <option value = "1">$100</option>

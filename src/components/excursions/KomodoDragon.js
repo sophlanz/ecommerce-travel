@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../TripLayout';
-import image from '../../images/komodo.jpg';
+import image from '../../../public/images/komodo.jpg';
 const KomodoDragon = () => {
     return (
         <div>

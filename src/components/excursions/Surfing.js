@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../TripLayout';
-import image from '../../images/kuta.jpg';
+import image from '../../../public/images/kuta.jpg';
 const KutaBeach = () => {
     return (
         <div>

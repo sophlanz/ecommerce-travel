@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../TripLayout';
-import image from '../../images/market.jpg';
+import image from '../../../public/images/market.jpg';
 
 const MarketTour = () => {
     return (

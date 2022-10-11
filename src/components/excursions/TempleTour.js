@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../TripLayout';
-import image from '../../images/temple.jpg';
+import image from '../../../public/images/temple.jpg';
 
 const TempleTour = () => {
     return (

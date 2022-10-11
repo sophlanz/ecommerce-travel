@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../TripLayout';
-import image from '../../images/loop.jpg';
+import image from '../../../public/images/loop.jpg';
 
 const HaGiangLoop = () => {
     return (

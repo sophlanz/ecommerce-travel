@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../TripLayout';
-import image from '../../images/hanoi.jpg';
+import image from '../../../public/images/hanoi.jpg';
 import uniqid from 'uniqid';
 const HanoiTour = () => {
     return (

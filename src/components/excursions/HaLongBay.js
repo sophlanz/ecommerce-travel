@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../TripLayout';
-import image from '../../images/halong.jpg';
+import image from '../../../public/images/halong.jpg';
 
 const HaLongTour = () => {
     return (

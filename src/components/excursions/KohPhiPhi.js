@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../TripLayout';
-import image from '../../images/beach.jpg';
+import image from '../../../public/images/beach.jpg';
 
 const KohPhiPhi = () => {
     return (

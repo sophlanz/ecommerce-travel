@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../TripLayout';
-import image from '../../images/kelimutu.jpg';
+import image from '../../../public/images/kelimutu.jpg';
 const TrekkingKelimutu = () => {
     return (
         <div>
