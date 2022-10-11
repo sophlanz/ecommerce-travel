@@ -7,7 +7,7 @@ import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToBag, increaseQuantity } from '../redux/bagSlice';
 import { totalCount } from '../redux/countSlice';
-
+import Image from 'next/image';
 
 const TripLayout = ({country = "Country", title = "Title",
  introduction="Quisque eu ultricies ex, ac rutrum ligula. Mauris molestie vehicula nisi, nec rutrum lacus auctor et. Aliquam erat volutpat. Sed eleifend ante ac volutpat convallis. Maecenas eu leo nisi. ",
@@ -61,10 +61,12 @@ position="bottom"
                     })
                 )
         };
+        console.log(background);
+        console.log(imageUrl)
     return(
         <div>
             <NavBar />
-            <div class="headerTrip" style ={{backgroundImage : `url(${background})`, backgroundPosition:`${position}`}}>
+            <div class="headerTrip" style ={{backgroundImage : `url(/images/${imageUrl})`, backgroundPosition:`${position}`}}>
                 <div class="titles">
                     <p class="countryTrip">{country}</p>
                     <p class = "titleTrip">{title}</p>
@@ -77,17 +79,24 @@ position="bottom"
                         <p class="overview">{overview}</p>
                         <div class="moreInfo">
                             <div class="transport">
-                                <img src = {transport} alt="bus"/>
+                                <div>
+                                <Image src = "/images/transport.png" alt="bus" height="50px" width="50px"/>
+                                </div>
+                                
                                 <h2>Transport Types:</h2>
                                 <p>{transportType}</p>
                             </div>
                             <div class="food">
-                                <img src={food} alt="food"/>
+                                <div>
+                                <Image src = "/images/food.png" alt="bus" height="50px" width="50px"/>
+                                </div>
                                 <h2>Food:</h2>
                                 <p>{foodIncluded}</p>
                             </div>
                             <div class = "difficulty">
-                                <img src = {level} alt="rating"/>
+                                <div>
+                                <Image src = "/images/level.png" alt="bus" height="50px" width="50px"/>
+                                </div>
                                 <h2>Excursion Difficulty Rating:</h2>
                                 <p>{rating}</p>
                             </div>

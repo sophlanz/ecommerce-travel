@@ -1,4 +1,4 @@
-import React from 'react';
+/* import React from 'react';
 //import './sass/global.scss'
 import '../fonts/OggBold.ttf';
 import "../fonts/OggBoldItalic.ttf";
@@ -28,11 +28,11 @@ import RajaAmpat from '../components/excursions/ScubaDiving';
 import TrekkingKelimutu from '../components/excursions/Trekking';
 import KomodoDragon from '../components/excursions/KomodoDragon';
 import KutaSurfing from '../components/excursions/Surfing';
-import Footer from '../components/Footer';
-import '../src/sass/sections/Discover.module.scss'
+import Footer from '../components/Footer'; */
 export default function Home () {
     return (
-        <div>
+        <h1>Homepage</h1>
+/*         <div>
                     <Routes>
                         <Route path = "/" element={<Discover/>}/>
                         <Route path="/About" element={<About/>}/>
@@ -53,6 +53,6 @@ export default function Home () {
                     </Routes>
                 <Marquee/>
               <Footer/>
-        </div>
+        </div> */
       );
 }

@@ -1,5 +1,8 @@
 {
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js"
+  "/_document": "pages/_document.js",
+  "/": "pages/index.js",
+  "/excursions/trekking-kelimutu-volcano": "pages/excursions/trekking-kelimutu-volcano.js",
+  "/discover": "pages/discover.js"
 }
