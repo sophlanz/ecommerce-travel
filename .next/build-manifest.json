@@ -29,16 +29,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
-    ],
-    "/discover": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/discover.js"
-    ],
-    "/excursions/trekking-kelimutu-volcano": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/excursions/trekking-kelimutu-volcano.js"
     ]
   },
   "ampFirstPages": []
