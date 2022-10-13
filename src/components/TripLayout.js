@@ -66,11 +66,12 @@ position="bottom"
     return(
         <div>
             <NavBar />
-            <div class="headerTrip" style ={{backgroundImage : `url(/images/${imageUrl})`, backgroundPosition:`${position}`}}>
+            <div class="headerTrip">
+                <Image src = {`/images/${imageUrl}`} alt="bus" layout='fill' objectFit="cover" style ={{ backgroundPosition:`${position}`}} />
                 <div class="titles">
                     <p class="countryTrip">{country}</p>
                     <p class = "titleTrip">{title}</p>
-                </div>   
+                </div>    
             </div>
             <div class = "tripInfo">
                 <div class="tripOverview">

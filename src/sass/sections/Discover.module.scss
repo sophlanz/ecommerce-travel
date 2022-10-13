@@ -11,7 +11,38 @@
     line-height:1.6;
     font-style:italic;
     font-family:"Regular";
+    position:relative;
 }
+/*give content to the block quotes*/
+blockquote::before {
+    content: open-quote;
+    top: 70px;
+    left: 70px;
+    color:$skyblue;
+
+  }
+  blockquote::after {
+    content: close-quote;
+    bottom: 70px;
+    right: 70px;
+    color:$skyblue;
+  }
+  /*make quotes a circle*/
+  blockquote::before,
+blockquote::after {
+  background-color: white;
+  display: block;
+  width: 60px;
+  height: 60px;
+  /*center quotes in circle*/
+  line-height: 1.1;
+  font-size: 6rem;
+  /*circle*/
+  border-radius: 50%;
+  text-align: center;
+  position: absolute;
+}
+
 #instruction {
     margin-left:20px;
     display:flex;
@@ -32,9 +63,10 @@
     display:flex;
     margin:30px 20px 30px 20px;
     padding:20px;
-    background-color:$light-grey;
+    background-color:white;
     gap:10px;
     justify-content:space-between;
+    align-items:center;
 }
 .filterTrips h1 {
     font-family:"Bold";

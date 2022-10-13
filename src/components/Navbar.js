@@ -17,11 +17,13 @@ const Navbar = () => {
         useEffect(() => {
               setTotalDisplay(total)
               const body = document.querySelector('body');
+              /*no scroll, hide overflow */
               body.style.overflow = cartShown? 'hidden' : null;
           }, [total,cartShown]);
     return (
             <div>
-        <div id = 'navBar'>
+            {/*if cart shown, set z-index of navbar back to 0 */}
+        <div id = 'navBar' style={{zIndex: cartShown ? "0" : "1" }}>
                 <div id="leftNav">
                         <li> <Link href="/">Discover</Link></li>
                         <li> <Link href="/About">About</Link></li>
@@ -31,6 +33,7 @@ const Navbar = () => {
                         <li><Link href='/' >Excursion Escape</Link></li>
                 </div>
                 <div id = "rightNav">
+                {/* onclick of shopping bag, change cartShown to true*/}
                 <li  id="bagContainer" className="shoppingBag" onClick =  {()=> setCartShown(true)}>{totalDisplay}</li>
                         <a href="https://facebook.com" target="_blank"><Image src="/images/facebook.svg" class = "facebook" alt="facebook" height={30} width={30} /></a>
                         <a href="https://twitter.com" target="_blank"><Image src='/images/twitter.svg' class = "twitter" alt= "twitter" height={30} width={30}/></a>

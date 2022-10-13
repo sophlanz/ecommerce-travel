@@ -9,25 +9,18 @@
     padding:45px 0px 30px 0px;
     width:100vw;
     align-items:center;
-    background-image:linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
     box-sizing: border-box;
-    /*set ontop of image*/
-    z-index: 1;
     
 }
 #centerNav {
     position:absolute;
     left:43%;
-    
 }
-
-
 /*default set for icons*/
 .facebook, .twitter, .instagram {
     height:30px;
     width:30px;
     fill:white;
-   
 }
 
 /*shopping bag icon*/

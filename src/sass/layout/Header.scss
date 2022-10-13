@@ -16,7 +16,8 @@
     position:absolute;
     font-family:"Bold";
     color:$white;
-    margin-left:20px;
+    margin-left:40px;
+    margin-bottom:40px;
     letter-spacing: 20px;
 }
 .welcome {
@@ -54,5 +55,8 @@
     flex-direction:column;
     gap:40px;
     justify-content:flex-end;
- 
+    position:relative
+}
+#header img {
+    z-index:-1
 }

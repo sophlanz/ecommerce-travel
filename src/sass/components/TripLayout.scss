@@ -6,6 +6,8 @@
     margin-bottom:100px;
     margin-left:130px;
     gap:10px;
+    /*lay titles over image*/
+    z-index:1;
 }
 .countryTrip {
     font-size:1.5rem;
@@ -141,8 +143,38 @@
     font-weight:700;
     font-size:1.2rem;
     border-radius:.5rem;
+    position:relative;
+    z-index:1;
+    
 }
+/*hover event, swap colors, add transition top to bottom*/
+
+/*transition from bottom to top with transform and transform-origin*/
 /*email*/
+.bookButton:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform:scaleY(0);
+    transform-origin:bottom center;
+    background-color:$skyblue;
+    border:1px solid white;
+    color:white;
+    transition: transform 0.3s;
+    border-radius:.5rem;
+   z-index:-1;
+}
+.bookButton:hover::after {
+    transform:scaleY(1);
+    color:white;
+}
+.bookButton:hover {
+    color:white;
+}
+
 .contactInfo p {
     color:$skyblue;
     font-style:"Regular";

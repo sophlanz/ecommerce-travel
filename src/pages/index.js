@@ -30,6 +30,8 @@ export default function DiscoverComponent() {
     const [budget50, setBudget50] = useState(true);
     const [budget100, setBudget100] = useState(true);
     const [budget150, setBudget150] = useState(true);
+    //value of datalist county selection, default is any
+    const [value,setValue] = useState("Any")
     const handleFilterDuration = (e) => {
         const value = e.target.value;
         switch(value){
@@ -70,6 +72,8 @@ export default function DiscoverComponent() {
         const value = e.target.value
         //turn display off for all non countries
         console.log(value);
+        //set new value
+        setValue(value);
         //set state of the other countries to false
         switch(value) {
             case "Indonesia":
@@ -92,6 +96,10 @@ export default function DiscoverComponent() {
         }
         //when state is set to true we'll display the div. Default display will be none
     }
+   const clear = (e) => {
+       //clear for on focus of input
+       setValue('');
+   };
     return (
         <div>
         <Navbar/>
@@ -106,10 +114,10 @@ export default function DiscoverComponent() {
                     <button class ="imageButton"></button>
             </div>
             
-            <div class = "quote">Discover cutlure in an intimate setting. Discover
+            <blockquote class = "quote">Discover cutlure in an intimate setting. Discover
                             the hidden gems cherished by locals. Discover Excursion 
                             Escape.
-            </div>
+            </blockquote>
             <div id = "trips">
                     <div id="instruction">
                         <h1>Find your dream excursion</h1>
@@ -118,12 +126,12 @@ export default function DiscoverComponent() {
                     <div class="filterTrips">
                         <div class = "destination">
                             <h1>Destination</h1>
-                            <p>Select from the dropdown below your dream destination...</p>
+                            <p>Select your dream destination...</p>
                             <label for="destinationInput">
                             <input 
-                            onMouseOver="focus();old = value;" 
-                            onMouseDown = "value = '';" 
-                            onMouseUp="value = old;" onChange={(e)=>handleSortCountry(e)}  list = "destinations" placeholder="Select your destination..." name = "destinationInput" id="destinationInput"/>
+                            value= {value}
+                            onFocus={(e)=> clear(e)}
+                         onChange={(e)=>handleSortCountry(e)}  list = "destinations" placeholder="Select your destination..." name = "destinationInput" id="destinationInput"/>
                             </label>
                             <datalist id="destinations" >
                                 <option value ="Indonesia"/>
