@@ -1,10 +1,11 @@
 import React from 'react';
 import copyRight from '../../public/images/copyright.png';
 import gitHub from '../../public/images/github.png';
+import Image from 'next/image'
 const Footer = () => {
     return(
         <footer>
-            <p>Copyright <img src={copyRight} style={{height:"20px", width:"20px"}}/> 2022 <img src={gitHub} style={{height:"20px", width:"20px"}}/> sophlanz</p>
+            <p>Copyright <Image src='/images/copyright.png' height="20px" width="20px"/> 2022 <Image src="/images/github.png" height="20px" width="20px"/> sophlanz</p>
         </footer>
     )
 }

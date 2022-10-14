@@ -50,6 +50,7 @@ textarea.message:focus{
 .signUpContainer form {
     display:flex;
     flex-direction:column;
+    
 }
 .nameEmail{
     display:flex;
@@ -122,12 +123,14 @@ textarea.message {
     font-family:"Bold";
     font-size:1.5rem;
     border-radius:.5rem;
+    transition: color 1s ease-in-out, box-shadow 1s ease-in-out;
 }
 .signUpContainer button:hover {
    font-size:1.7rem;
    border:2px solid white;
    background-color:black;
    color:white;
+   box-shadow: inset 200px 0 0 0 black;;
 }
 video.surf {
     background-position:bottom;

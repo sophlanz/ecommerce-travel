@@ -2,6 +2,7 @@
 import React from 'react';
 import '../sass/global.scss'
 import Marquee from '../components/Marquee';
+import Footer from '../components/Footer';
 //import provider and redux store
 import { Provider } from 'react-redux';
 import store from '../redux/store';
@@ -9,6 +10,7 @@ import store from '../redux/store';
     return <Provider store={store}>
                <Component {...pageProps} />
                <Marquee/>
+               <Footer/>
             </Provider>
   }
   

@@ -5,7 +5,7 @@
     display:flex;
     justify-content:space-evenly;
     gap:500px;
-    color:$white;
+    color:$cream;
     padding:45px 0px 30px 0px;
     width:100vw;
     align-items:center;
@@ -64,7 +64,29 @@ transition: all 1s .25s;
     font-family:"Regular";
     margin-left:10px;
     letter-Spacing:2px;
+  
 }
+/* Slide in */
+#leftNav li {
+    position:relative;
+  }
+  
+  #leftNav li::after {
+    position: absolute;
+    content: "";
+    background: black;
+    bottom: 0;
+    right: 0;
+    height: 2px;
+    width: 0%;
+    transition: 300ms ease-in-out;
+  }
+  
+  li:hover::after{
+    width: 100%;
+  left: 0;
+  }
+
 #centerNav {
     font-size:3rem;
     text-align:center;
@@ -79,3 +101,4 @@ transition: all 1s .25s;
     width:auto;
     direction:rtl;
 }
+
