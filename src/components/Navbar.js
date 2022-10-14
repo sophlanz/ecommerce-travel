@@ -26,8 +26,8 @@ const Navbar = () => {
         <div id = 'navBar' style={{zIndex: cartShown ? "0" : "1" }}>
                 <div id="leftNav">
                         <li> <Link href="/">Discover</Link></li>
-                        <li> <Link href="/About">About</Link></li>
-                        <li> <Link href="/Contact">Contact</Link></li>
+                        <li> <Link href="/about">About</Link></li>
+                        <li> <Link href="/contact">Contact</Link></li>
                 </div>
                 <div id = "centerNav">
                         <li><Link href='/' >Excursion Escape</Link></li>

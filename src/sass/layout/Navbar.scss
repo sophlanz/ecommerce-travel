@@ -21,8 +21,14 @@
     height:30px;
     width:30px;
     fill:white;
-}
+    
 
+}
+/*spin on hover*/
+.facebook:hover, .twitter:hover, .instagram:hover  {
+transition: all 1s .25s;
+  transform: rotateY(360deg);
+}
 /*shopping bag icon*/
 .shoppingBag {
     height:30px;
@@ -46,6 +52,12 @@
     align-items:center;
     justify-content:center;
     gap:5px;
+}
+/*spin on hover, .25s delay, change cursor to shopping bag*/
+#bagContainer:hover {
+    transition: all 1s .25s;
+  transform: rotateY(360deg);
+  cursor: url('/images/shopping-bag.svg'), auto;
 }
 #leftNav {
     font-size:1.2rem;

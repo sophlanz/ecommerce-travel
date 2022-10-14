@@ -24,9 +24,10 @@ video::-webkit-media-controls {
 }
 .overviewAbout {
     font-family:"Regular";
-    padding:50px 150px 50px 250px;
+    padding:70px 200px 70px 200px;
     font-style:italic;
     font-size:2rem;
     line-height:3rem;
     color:$grey;
+    position:relative;
 }
