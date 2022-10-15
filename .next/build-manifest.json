@@ -1,49 +1,153 @@
 {
   "polyfillFiles": [
-    "static/chunks/polyfills.js"
+    "static/chunks/polyfills-c67a75d1b6f99dc8.js"
   ],
-  "devFiles": [
-    "static/chunks/react-refresh.js"
-  ],
-  "ampDevFiles": [
-    "static/chunks/webpack.js",
-    "static/chunks/amp.js"
-  ],
+  "devFiles": [],
+  "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/development/_buildManifest.js",
-    "static/development/_ssgManifest.js"
+    "static/aKxv7WZZBhXhrET-blX8c/_buildManifest.js",
+    "static/aKxv7WZZBhXhrET-blX8c/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
     "/": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/index.js"
+      "static/chunks/webpack-9b312e20a4e32339.js",
+      "static/chunks/framework-7dc8a65f4a0cda33.js",
+      "static/chunks/main-18053c3f67c4d467.js",
+      "static/chunks/400-565b74456083662d.js",
+      "static/chunks/34-18035f847ca4efd9.js",
+      "static/chunks/pages/index-19f875b54ad0c673.js"
     ],
     "/_app": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/_app.js"
+      "static/chunks/webpack-9b312e20a4e32339.js",
+      "static/chunks/framework-7dc8a65f4a0cda33.js",
+      "static/chunks/main-18053c3f67c4d467.js",
+      "static/css/70c034f919f6c8e2.css",
+      "static/chunks/pages/_app-813d5e29e40334b9.js"
     ],
     "/_error": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/_error.js"
+      "static/chunks/webpack-9b312e20a4e32339.js",
+      "static/chunks/framework-7dc8a65f4a0cda33.js",
+      "static/chunks/main-18053c3f67c4d467.js",
+      "static/chunks/pages/_error-a4ba2246ff8fb532.js"
     ],
     "/about": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/about.js"
+      "static/chunks/webpack-9b312e20a4e32339.js",
+      "static/chunks/framework-7dc8a65f4a0cda33.js",
+      "static/chunks/main-18053c3f67c4d467.js",
+      "static/chunks/400-565b74456083662d.js",
+      "static/chunks/34-18035f847ca4efd9.js",
+      "static/chunks/pages/about-0ad37d51c64fed56.js"
     ],
     "/contact": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/contact.js"
+      "static/chunks/webpack-9b312e20a4e32339.js",
+      "static/chunks/framework-7dc8a65f4a0cda33.js",
+      "static/chunks/main-18053c3f67c4d467.js",
+      "static/chunks/400-565b74456083662d.js",
+      "static/chunks/34-18035f847ca4efd9.js",
+      "static/chunks/pages/contact-49f59d6c6e34a5cf.js"
+    ],
+    "/excursions/elephant-forest-adventure": [
+      "static/chunks/webpack-9b312e20a4e32339.js",
+      "static/chunks/framework-7dc8a65f4a0cda33.js",
+      "static/chunks/main-18053c3f67c4d467.js",
+      "static/chunks/400-565b74456083662d.js",
+      "static/chunks/34-18035f847ca4efd9.js",
+      "static/chunks/pages/excursions/elephant-forest-adventure-559a266e4a107d04.js"
+    ],
+    "/excursions/ha-giang-loop-on-motorbike": [
+      "static/chunks/webpack-9b312e20a4e32339.js",
+      "static/chunks/framework-7dc8a65f4a0cda33.js",
+      "static/chunks/main-18053c3f67c4d467.js",
+      "static/chunks/400-565b74456083662d.js",
+      "static/chunks/34-18035f847ca4efd9.js",
+      "static/chunks/pages/excursions/ha-giang-loop-on-motorbike-82880468e9cf35ab.js"
+    ],
+    "/excursions/ha-long-bay-tour": [
+      "static/chunks/webpack-9b312e20a4e32339.js",
+      "static/chunks/framework-7dc8a65f4a0cda33.js",
+      "static/chunks/main-18053c3f67c4d467.js",
+      "static/chunks/400-565b74456083662d.js",
+      "static/chunks/34-18035f847ca4efd9.js",
+      "static/chunks/pages/excursions/ha-long-bay-tour-54623df2d93f3939.js"
+    ],
+    "/excursions/hanoi-walking-tour": [
+      "static/chunks/webpack-9b312e20a4e32339.js",
+      "static/chunks/framework-7dc8a65f4a0cda33.js",
+      "static/chunks/main-18053c3f67c4d467.js",
+      "static/chunks/400-565b74456083662d.js",
+      "static/chunks/34-18035f847ca4efd9.js",
+      "static/chunks/pages/excursions/hanoi-walking-tour-ab25f649e164b380.js"
+    ],
+    "/excursions/home-stay": [
+      "static/chunks/webpack-9b312e20a4e32339.js",
+      "static/chunks/framework-7dc8a65f4a0cda33.js",
+      "static/chunks/main-18053c3f67c4d467.js",
+      "static/chunks/400-565b74456083662d.js",
+      "static/chunks/34-18035f847ca4efd9.js",
+      "static/chunks/pages/excursions/home-stay-e95e91aeff034d94.js"
     ],
     "/excursions/koh-phi-phi-escape": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/excursions/koh-phi-phi-escape.js"
+      "static/chunks/webpack-9b312e20a4e32339.js",
+      "static/chunks/framework-7dc8a65f4a0cda33.js",
+      "static/chunks/main-18053c3f67c4d467.js",
+      "static/chunks/400-565b74456083662d.js",
+      "static/chunks/34-18035f847ca4efd9.js",
+      "static/chunks/pages/excursions/koh-phi-phi-escape-cb98a3142ee690ef.js"
+    ],
+    "/excursions/komodo-dragon-watching-on-komodo-island": [
+      "static/chunks/webpack-9b312e20a4e32339.js",
+      "static/chunks/framework-7dc8a65f4a0cda33.js",
+      "static/chunks/main-18053c3f67c4d467.js",
+      "static/chunks/400-565b74456083662d.js",
+      "static/chunks/34-18035f847ca4efd9.js",
+      "static/chunks/pages/excursions/komodo-dragon-watching-on-komodo-island-49af4bfc18cc4544.js"
+    ],
+    "/excursions/market-tour-and-cooking-class": [
+      "static/chunks/webpack-9b312e20a4e32339.js",
+      "static/chunks/framework-7dc8a65f4a0cda33.js",
+      "static/chunks/main-18053c3f67c4d467.js",
+      "static/chunks/400-565b74456083662d.js",
+      "static/chunks/34-18035f847ca4efd9.js",
+      "static/chunks/pages/excursions/market-tour-and-cooking-class-de8d0b8726d271a6.js"
+    ],
+    "/excursions/scuba-diving-at-raja-ampat": [
+      "static/chunks/webpack-9b312e20a4e32339.js",
+      "static/chunks/framework-7dc8a65f4a0cda33.js",
+      "static/chunks/main-18053c3f67c4d467.js",
+      "static/chunks/400-565b74456083662d.js",
+      "static/chunks/34-18035f847ca4efd9.js",
+      "static/chunks/pages/excursions/scuba-diving-at-raja-ampat-845162afb751732f.js"
+    ],
+    "/excursions/surfing-on-kuta-beach": [
+      "static/chunks/webpack-9b312e20a4e32339.js",
+      "static/chunks/framework-7dc8a65f4a0cda33.js",
+      "static/chunks/main-18053c3f67c4d467.js",
+      "static/chunks/400-565b74456083662d.js",
+      "static/chunks/34-18035f847ca4efd9.js",
+      "static/chunks/pages/excursions/surfing-on-kuta-beach-48ac3f11774241dc.js"
+    ],
+    "/excursions/temple-tour": [
+      "static/chunks/webpack-9b312e20a4e32339.js",
+      "static/chunks/framework-7dc8a65f4a0cda33.js",
+      "static/chunks/main-18053c3f67c4d467.js",
+      "static/chunks/400-565b74456083662d.js",
+      "static/chunks/34-18035f847ca4efd9.js",
+      "static/chunks/pages/excursions/temple-tour-f81238d681638487.js"
+    ],
+    "/excursions/trekking-kelimutu-volcano": [
+      "static/chunks/webpack-9b312e20a4e32339.js",
+      "static/chunks/framework-7dc8a65f4a0cda33.js",
+      "static/chunks/main-18053c3f67c4d467.js",
+      "static/chunks/400-565b74456083662d.js",
+      "static/chunks/34-18035f847ca4efd9.js",
+      "static/chunks/pages/excursions/trekking-kelimutu-volcano-4c2c2f788a6301fd.js"
+    ],
+    "/shopping-cart": [
+      "static/chunks/webpack-9b312e20a4e32339.js",
+      "static/chunks/framework-7dc8a65f4a0cda33.js",
+      "static/chunks/main-18053c3f67c4d467.js",
+      "static/chunks/pages/shopping-cart-448109cbbfdc7dd3.js"
     ]
   },
   "ampFirstPages": []
