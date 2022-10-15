@@ -51,7 +51,7 @@ const Navbar = () => {
                 <div className="cartList">
                 <div className="emptyBag">
                 <h1>Looks like your bag is empty!</h1>
-                <button onClick={()=> setCartShown(false)}>Get Shopping</button>
+                <button onClick={()=> setCartShown(false)}>Get Shopping Now!</button>
                 </div>  
                 </div>
                  

@@ -86,7 +86,7 @@
     filter: grayscale(10%);
 }
 #excursion:after {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.1);
     content:""; 
     position:absolute; 
     top:0; 
@@ -94,6 +94,9 @@
     bottom:0; 
     right:0; 
     border-radius:.5rem;
+}
+#excursion:hover:after{
+    background-color: rgba(0, 0, 0, 0);
 }
 
 
@@ -121,7 +124,7 @@
 /*amout labels*/
 #excursionPrice p, #excursionDuration p {
     font-family:"Bold";
-    font-size:1.3rem;
+    font-size:1.2rem;
 }
 /*div container of 'from' and 'duration'*/
 .priceDuration {
