@@ -2,6 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
+  "/contact": "pages/contact.js",
+  "/about": "pages/about.js",
   "/excursions/koh-phi-phi-escape": "pages/excursions/koh-phi-phi-escape.js",
   "/": "pages/index.js"
 }

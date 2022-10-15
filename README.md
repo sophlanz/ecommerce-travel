@@ -6,11 +6,13 @@ Ecommerce website that allows users to browse excursions and add them to their s
 - Javascript 
 - HTML
 - SCSS
-- React, React-Router
+- React
 - Redux, Redux-Toolkit
+- Next JS
 ## Features 
 - Filter the excursions of your choice based on budget, duration, and location. 
 - Fully functional shopping cart.
+- Image optimization
 ## Future Updates
 - Responsive mobile design
 ## Screenshots

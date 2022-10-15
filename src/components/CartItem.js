@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { decreaseQuantity } from '../redux/bagSlice';
 import { increaseQuantity, deleteItem } from '../redux/bagSlice';
-
+import Image from 'next/image';
 const CartItem = ({id, total, title, price, date,coverPhoto}) => {
     let url="";
     const items = useSelector((state)=>state.bag);
@@ -32,49 +32,52 @@ const CartItem = ({id, total, title, price, date,coverPhoto}) => {
     
     //import all of the images ahead of time so they can be compiled by webpack
     switch(coverPhoto){
-        case "elephant":
-        url=require('../../public/images/elephant.jpg');
+        case "elephant.jpg":
+        url='/images/elephant.jpg'
         break;
-        case "temple":
-        url=require('../../public/images/temple.jpg');
+        case "temple.jpg":
+        url='/images/temple.jpg'
         break;
-        case "beach":
-        url=require('../../public/images/beach.jpg');
+        case "beach.jpg":
+        url='/images/beach.jpg'
         break;
-        case "food":
-        url=require('../../public/images/food.jpg');
+        case "food.jpg":
+        url='/images/food.jpg'
         break;
-        case "halong":
-        url=require('../../public/images/halong.jpg');
+        case "halong.jpg":
+        url='/images/halong.jpg'
         break;
-        case "hanoi":
-        url= require('../../public/images/hanoi.jpg');
+        case "hanoi.jpg":
+        url= '/images/hanoi.jpg'
         break;
-        case"loop":
-        url=require('../../public/images/loop.jpg')
+        case"loop.jpg":
+        url='/images/loop.jpg'
         break;
-        case "market":
-        url=require('../../public/images/market.jpg');
+        case "market.jpg":
+        url='/images/market.jpg'
         break;
-        case "rajaampat":
-        url=require('../../public/images/rajaampat.jpg');
+        case "rajaampat.jpg":
+        url='/images/rajaampat.jpg'
         break;
-        case "kelimutu":
-        url=require('../../public/images/kelimutu.jpg');
+        case "kelimutu.jpg":
+        url='/images/kelimutu.jpg'
         break;
-        case "komodo" :
-        url=require('../../public/images/komodo.jpg');
+        case "komodo.jpg" :
+        url='/images/komodo.jpg'
         break;
-        case "kuta":
-        url=require('../../public/images/kuta.jpg');
+        case "kuta.jpg":
+        url='/images/kuta.jpg'
         break;
         default:
-        url=require('../../public/images/cover.jpg');
+        url='/images/cover.jpg'
     }
-    console.log(items)
+    console.log(coverPhoto)
+    console.log(url)
     return(
         <div className = "cartItem">
-            <img src={url}/>
+            <div className="cartImage">
+            <Image src={url} layout="fill" objectFit="cover"/>
+            </div>
             <div className="itemInfo">
                 <div className="itemName">
                     <h1>{title}</h1>
