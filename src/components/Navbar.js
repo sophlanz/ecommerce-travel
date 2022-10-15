@@ -3,7 +3,7 @@ import React, {useState, useEffect} from "react";
 import {ReactComponent as Instagram} from '../../public/images/instagram.svg';
 import {ReactComponent as Twitter} from '../../public/images/twitter.svg';
 import { useSelector } from 'react-redux';
-//import ShoppingCart from "./ShoppingCart";
+import ShoppingCart from "./ShoppingCart";
 import Modal from 'react-modal';
 import Link from 'next/Link';
 import Image from 'next/image';
@@ -46,7 +46,27 @@ const Navbar = () => {
                         <div className="cartHeader"><h1>YOUR BAG</h1><p>({totalDisplay})</p></div>
                         <button className="closeCart" onClick = {()=> setCartShown(false)}>x</button>
                 </div>
-                {/*<ShoppingCart/>*/}
+                {totalDisplay === 0 ? 
+                <div>
+                <div className="cartList">
+                <div className="emptyBag">
+                <h1>Looks like your bag is empty!</h1>
+                <button onClick={()=> setCartShown(false)}>Get Shopping</button>
+                </div>  
+                </div>
+                 
+            <div className="checkOut">
+                <p className="taxes">Taxes will be calculated at checkout.</p>
+                <div className = "total"><p>Total</p><p>${total}</p></div>  
+                <div className="coupon">
+                    <div><input type = "checkbox" id="coupon" name="coupon"/>
+                    <label for="coupon">Coupon Code</label></div>
+                    <button>Checkout</button>  
+                </div>
+            </div>
+            </div>
+                : <ShoppingCart/>
+                }
         </Modal>
         
         </div>

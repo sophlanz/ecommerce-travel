@@ -6,6 +6,7 @@ import { increaseQuantity, deleteItem } from '../redux/bagSlice';
 const CartItem = ({id, total, title, price, date,coverPhoto}) => {
     let url="";
     const items = useSelector((state)=>state.bag);
+  
     //get specific item
     const item = items.filter(item=> {
         return item.id === id;
@@ -70,6 +71,7 @@ const CartItem = ({id, total, title, price, date,coverPhoto}) => {
         default:
         url=require('../../public/images/cover.jpg');
     }
+    console.log(items)
     return(
         <div className = "cartItem">
             <img src={url}/>

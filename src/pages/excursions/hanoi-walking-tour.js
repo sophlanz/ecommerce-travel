@@ -12,7 +12,7 @@ transportType ="walking"
 rating  ="1/5"
 price="30"
 originDestination="Hanoi to The Old City"
-foodIncluded= "Food Not Included" background = {image} imageUrl='hanoi.jpg' />
+foodIncluded= "Food Not Included" background = {image} imageUrl='hanoi.jpg' position="top" />
         </div>
     )
 }

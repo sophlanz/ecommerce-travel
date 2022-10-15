@@ -4,12 +4,11 @@ import CartItem from './CartItem';
 import uniqid from 'uniqid';
 import { useState, useEffect } from 'react';
 import { totalCount } from '../redux/countSlice';
-import { Link } from "react-router-dom";
+import Link from 'next/Link';
 const ShoppingCart = () => {
     const [total,setTotal] = useState(0);
     const items = useSelector((state) => state.bag)
-    console.log(items);
-    console.log(items);
+
     const dispatch = useDispatch();
     let addTotal = 0
     let addItems = 0;
@@ -35,15 +34,16 @@ const ShoppingCart = () => {
         calcTotal(items);
   }, [items, total]);
   console.log(useSelector((state) => state.count[0].count));
+  
     return(  
         <div id = "modal" className="modal">
             {/*when showing empty bag display, center the content*/}
             <div className="cartList" style={{alignItems: total===0 ? "center" : null, justifyContent:total===0 ? "center" : null}}>
                 {/*display for empty bag */}
-                {total=== 0 ?
+                {total === 0 ?
                 <div className="emptyBag">
                 <h1>Looks like your bag is empty!</h1>
-                <p><Link to={"/"}>Get Shopping</Link></p>
+                <p><Link href="/">Get Shopping</Link></p>
                 </div>
                 
                 : null

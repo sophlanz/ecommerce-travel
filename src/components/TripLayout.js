@@ -67,7 +67,7 @@ position="bottom"
         <div>
             <NavBar />
             <div class="headerTrip">
-                <Image src = {`/images/${imageUrl}`} alt="bus" layout='fill' objectFit="cover" style ={{ backgroundPosition:`${position}`}} />
+                <Image src = {`/images/${imageUrl}`} alt="bus" layout='fill' objectPosition={position} objectFit="cover" />
                 <div class="titles">
                     <p class="countryTrip">{country}</p>
                     <p class = "titleTrip">{title}</p>

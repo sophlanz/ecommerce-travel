@@ -85,21 +85,27 @@
     color:$white;
     filter: grayscale(10%);
 }
-/*on div hover, add a darker layover*/
-#excursion:hover:after {
+#excursion:after {
+    background-color: rgba(0, 0, 0, 0.5);
     content:""; 
     position:absolute; 
     top:0; 
     left:0; 
     bottom:0; 
     right:0; 
-    background-color: rgba(0,0,0,0.8);
     border-radius:.5rem;
-    
+}
+
+
+/*on hover of excursion div, blur the image for better readibility*/
+#excursion:hover .cardImage {
+    filter:blur(3px);
+    border-radius:.5rem;
 }
 /*country name */
 #country {
     color:rgba(255, 255, 255, 0.6);
+    font-size:1.3rem;
 }
 /*excursion name*/
 #excursionTitle {
@@ -110,11 +116,12 @@
 /*'from' and 'duration' labels*/
 #excursionPrice h1, #excursionDuration h1 {
     color:rgba(255, 255, 255, 0.6);
+    font-size:1.3rem;
 }
 /*amout labels*/
 #excursionPrice p, #excursionDuration p {
     font-family:"Bold";
-    size:1.1rem;
+    font-size:1.3rem;
 }
 /*div container of 'from' and 'duration'*/
 .priceDuration {

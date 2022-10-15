@@ -141,7 +141,8 @@
     border:1px solid $skyblue;
     color:$skyblue;
     font-weight:700;
-    font-size:1.2rem;
+    font-size:1.5rem;
+    font-family:"Bold";
     border-radius:.5rem;
     position:relative;
     z-index:1;
@@ -150,8 +151,12 @@
 }
 /*hover event, swap colors, add transition top to bottom*/
 .bookButton:hover {
-    color:white;
-  box-shadow: inset 200px 0 0 0 $skyblue;;
+   
+  font-size: 1.7rem;
+  border: 2px solid white;
+  background-color: black;
+  color: white;
+  box-shadow: inset 200px 0 0 0 black;
 }
 /*transition from bottom to top with transform and transform-origin*/
 /*email*/

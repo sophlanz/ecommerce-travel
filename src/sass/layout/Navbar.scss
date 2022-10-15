@@ -10,7 +10,6 @@
     width:100vw;
     align-items:center;
     box-sizing: border-box;
-    
 }
 #centerNav {
     position:absolute;
@@ -64,11 +63,17 @@ transition: all 1s .25s;
     font-family:"Regular";
     margin-left:10px;
     letter-Spacing:2px;
-  
+    
+}
+#leftNav li:hover {
+    border-bottom: 1px solid $white;
 }
 /* Slide in */
 #leftNav li {
     position:relative;
+    /*give transparent border so it doesn't move when we add it on hover*/
+    border-bottom:1px solid transparent;
+    padding-bottom:5px;
   }
   
   #leftNav li::after {
