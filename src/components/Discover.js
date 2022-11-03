@@ -1,7 +1,6 @@
 
 import React, {useState} from 'react';
 import beach from '../../public/images/beach.jpg';
-import elephant from '../../public/images/elephant.jpg';
 import food from '../../public/images/food.jpg';
 import temple from '../../public/images/temple.jpg'
 import halong from '../../public/images/halong.jpg';

@@ -4,6 +4,9 @@ module.exports = {
         includePaths: [path.join(__dirname, 'styles')],
         prependData: `@import "./src/sass/utilities/variables.scss";`
       },
+      images: {
+        disableStaticImages: true
+    },
     webpack: (config, options) => {
       config.module.rules.push({
         test: /\.(woff|woff2|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
