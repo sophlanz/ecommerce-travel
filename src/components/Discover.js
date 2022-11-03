@@ -14,7 +14,7 @@ import rajaampat from '../../public/images/rajaampat.jpg';
 import Navbar from '../components/Navbar';
 //import {Link} from 'react-router-dom';
 import Image from 'next/image';
-import Link from 'next/Link';
+import Link from 'next/link';
 
 const Discover = () => {
     const[indonesia,setIndonesia]= useState(true)

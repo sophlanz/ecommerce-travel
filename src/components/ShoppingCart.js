@@ -4,7 +4,7 @@ import CartItem from './CartItem';
 import uniqid from 'uniqid';
 import { useState, useEffect } from 'react';
 import { totalCount } from '../redux/countSlice';
-import Link from 'next/Link';
+import Link from 'next/link';
 const ShoppingCart = () => {
     const [total,setTotal] = useState(0);
     const items = useSelector((state) => state.bag)

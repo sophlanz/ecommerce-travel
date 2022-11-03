@@ -17,7 +17,7 @@ import React, {useState} from 'react';
 import Navbar from '../components/Navbar';
 //import {Link} from 'react-router-dom';
 import Image from 'next/image';
-import Link from 'next/Link';
+import Link from 'next/link';
 import '../sass/sections/discover.module.scss'
 export default function DiscoverComponent() {
     const[indonesia,setIndonesia]= useState(true)

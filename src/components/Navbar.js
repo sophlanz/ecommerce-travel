@@ -5,7 +5,7 @@ import {ReactComponent as Twitter} from '../../public/images/twitter.svg';
 import { useSelector } from 'react-redux';
 import ShoppingCart from "./ShoppingCart";
 import Modal from 'react-modal';
-import Link from 'next/Link';
+import Link from 'next/link';
 import Image from 'next/image';
 const Navbar = () => {
         const total = useSelector((state) => state.count[0].count)
