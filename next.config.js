@@ -42,7 +42,8 @@ module.exports = {
   module.exports = withImages({
     images: {
       disableStaticImages: true,
-        domains: ['localhost:3000','excursion-escape.up.railway.app']
+      
+        domains: ['excursion-escape.up.railway.app']
     },
     webpack(config, options) {
         return config;
