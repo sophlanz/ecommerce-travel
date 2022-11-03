@@ -1,4 +1,5 @@
 const path = require('path')
+
 module.exports = {
     sassOptions: {
         includePaths: [path.join(__dirname, 'styles')],
@@ -7,6 +8,8 @@ module.exports = {
       images: {
         disableStaticImages: true
     },
+   
+    
     webpack: (config, options) => {
       config.module.rules.push({
         test: /\.(woff|woff2|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
@@ -20,6 +23,15 @@ module.exports = {
           },
         ],
       }),
+      /*app was unable to read .png files error*/
+      config.module.rules.push(
+        {
+          test: /\.(png|jpeg|jpg|gif|svg)$/,
+          use: {
+            loader: "file-loader"
+          },
+        }
+      ),
       config.module.rules.push({
         
             test: /\.mp4$/,
@@ -29,5 +41,8 @@ module.exports = {
   
       return config
     },
-  };  
     
+  };  
+
+
+
