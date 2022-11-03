@@ -47,7 +47,7 @@ const Marquee = () => {
                 <Image src= '/images/marq9.jpg' alt="Natural"   height="160px" width="160px"   className="marq9"/>
            </div>
            <div>
-                <Image src= '/images/marq11.jpg' alt="Natural" height="160px" width="160px"   classNames="marq11"/>
+                <Image src= '/images/marq11.jpg' alt="Natural" height="160px" width="160px"   className="marq11"/>
            </div>
        </div>
        <div className= "marquee-content" aria-hidden="true" >
@@ -94,7 +94,7 @@ const Marquee = () => {
                 <Image src= '/images/marq9.jpg' alt="Natural"   height="160px" width="160px"   className="marq9"/>
            </div>
            <div>
-                <Image src= '/images/marq11.jpg' alt="Natural" height="160px" width="160px"   classNames="marq11"/>
+                <Image src= '/images/marq11.jpg' alt="Natural" height="160px" width="160px"   className="marq11"/>
            </div>
        </div>
    </div>    

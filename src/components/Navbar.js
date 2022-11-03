@@ -60,7 +60,7 @@ const Navbar = () => {
                 <div className = "total"><p>Total</p><p>${total}</p></div>  
                 <div className="coupon">
                     <div><input type = "checkbox" id="coupon" name="coupon"/>
-                    <label for="coupon">Coupon Code</label></div>
+                    <label htmlFor="coupon">Coupon Code</label></div>
                     <button>Checkout</button>  
                 </div>
             </div>

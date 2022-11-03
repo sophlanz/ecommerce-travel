@@ -94,10 +94,10 @@ const Discover = () => {
         <Navbar/>
         
             <div id = "header">
-                    <div class="title">
+                    <div className="title">
                             <p>Moments.</p>
                             <p>Enjoyed.</p>
-                            <p class="welcome">Welcome to Excursion Escape!</p>
+                            <p className="welcome">Welcome to Excursion Escape!</p>
                     </div>
                     <button className="imageButton"></button>
             </div>
@@ -111,11 +111,11 @@ const Discover = () => {
                         <h1>Find your dream excursion</h1>
                         <p>Explore all of our excursions, or apply a filter to narrow your search...</p>
                     </div> 
-                    <div class="filterTrips">
+                    <div className="filterTrips">
                         <div className= "destination">
                             <h1>Destination</h1>
                             <p>Select from the dropdown below your dream destination...</p>
-                            <label for="destinationInput">
+                            <label htmlFor="destinationInput">
                             <input value="" 
                             onMouseOver="focus();old = value;" 
                             onMouseDown = "value = '';" 

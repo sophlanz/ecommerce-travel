@@ -63,20 +63,20 @@ position="bottom"
     return(
         <div>
             <NavBar />
-            <div class="headerTrip">
+            <div className="headerTrip">
                 <Image src = {`/images/${imageUrl}`} alt="bus" layout='fill' objectPosition={position} objectFit="cover" />
-                <div class="titles">
-                    <p class="countryTrip">{country}</p>
+                <div className="titles">
+                    <p className="countryTrip">{country}</p>
                     <p className= "titleTrip">{title}</p>
                 </div>    
             </div>
             <div className= "tripInfo">
-                <div class="tripOverview">
+                <div className="tripOverview">
                         <h1>Trip Overview</h1>
-                        <p class="introduction">{introduction}</p>
-                        <p class="overview">{overview}</p>
-                        <div class="moreInfo">
-                            <div class="transport">
+                        <p className="introduction">{introduction}</p>
+                        <p className="overview">{overview}</p>
+                        <div className="moreInfo">
+                            <div className="transport">
                                 <div>
                                 <Image src = "/images/transport.png" alt="bus" height="50px" width="50px"/>
                                 </div>
@@ -84,7 +84,7 @@ position="bottom"
                                 <h2>Transport Types:</h2>
                                 <p>{transportType}</p>
                             </div>
-                            <div class="food">
+                            <div className="food">
                                 <div>
                                 <Image src = "/images/food.png" alt="bus" height="50px" width="50px"/>
                                 </div>
@@ -103,9 +103,9 @@ position="bottom"
                 <div className= "bookTrip">
                     <div className= "dateSelect">
                         <p>Select Date</p>
-                        <input  value ={date} type="date" class="datePicker" onChange = {(e) => handleDate(e)} required/>
+                        <input  value ={date} type="date" className="datePicker" onChange = {(e) => handleDate(e)} required/>
                     </div>
-                    <p class="originDestination">{originDestination}</p>
+                    <p className="originDestination">{originDestination}</p>
                     <div className= "price">
                         <p>From</p>
                         <div className= "pricePerson">
@@ -113,7 +113,7 @@ position="bottom"
                             <p>/pp</p>
                         </div>
                     </div>
-                    <button class="bookButton" onClick = {onSubmit}>Add To Bag</button>
+                    <button className="bookButton" onClick = {onSubmit}>Add To Bag</button>
                     <div className= "contactInfo">
                         <h1>Contact Us</h1>
                         <p>excursions@excursionescape.com</p>
