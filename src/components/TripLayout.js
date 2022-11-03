@@ -1,8 +1,5 @@
 import React from 'react';
 import NavBar from './Navbar';
-import transport from '../../public/images/transport.png';
-import level from '../../public/images/level.png';
-import food from '../../public/images/food.png';
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToBag, increaseQuantity } from '../redux/bagSlice';
