@@ -35,9 +35,9 @@ const Navbar = () => {
                 <div id = "rightNav">
                 {/* onclick of shopping bag, change cartShown to true*/}
                 <li  id="bagContainer" className="shoppingBag" onClick =  {()=> setCartShown(true)}>{totalDisplay}</li>
-                        <a href="https://facebook.com" target="_blank"><Image src="/images/facebook.svg" class = "facebook" alt="facebook" height={30} width={30} /></a>
-                        <a href="https://twitter.com" target="_blank"><Image src='/images/twitter.svg' class = "twitter" alt= "twitter" height={30} width={30}/></a>
-                        <a href="https://instagram.com" target="_blank"><Image src="/images/instagram.svg" class = "instagram" alt="instagram" height={30} width={30}/></a>
+                        <a href="https://facebook.com" target="_blank"><Image src="/images/facebook.svg" className= "facebook" alt="facebook" height={30} width={30} /></a>
+                        <a href="https://twitter.com" target="_blank"><Image src='/images/twitter.svg' className= "twitter" alt= "twitter" height={30} width={30}/></a>
+                        <a href="https://instagram.com" target="_blank"><Image src="/images/instagram.svg" className= "instagram" alt="instagram" height={30} width={30}/></a>
                 </div>
         </div>
         <div>

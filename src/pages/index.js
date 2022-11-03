@@ -111,10 +111,10 @@ export default function DiscoverComponent() {
                             <p>Enjoyed.</p>
                             <p class="welcome">Welcome to Excursion Escape!</p>
                     </div>
-                    <button class ="imageButton"></button>
+                    <button className="imageButton"></button>
             </div>
             
-            <blockquote class = "quote">Discover cutlure in an intimate setting. Discover
+            <blockquote className= "quote">Discover cutlure in an intimate setting. Discover
                             the hidden gems cherished by locals. Discover Excursion 
                             Escape.
             </blockquote>
@@ -124,7 +124,7 @@ export default function DiscoverComponent() {
                         <p>Explore all of our excursions, or apply a filter to narrow your search...</p>
                     </div> 
                     <div class="filterTrips">
-                        <div class = "destination">
+                        <div className= "destination">
                             <h1>Destination</h1>
                             <p>Select your dream destination...</p>
                             <label for="destinationInput">
@@ -140,7 +140,7 @@ export default function DiscoverComponent() {
                                 <option value ="Any"/>
                             </datalist>
                         </div>
-                        <div class = "duration">
+                        <div className= "duration">
                             <h1>Duration</h1>
                             <p>Select length of the excursion...</p>
                             <input onChange={(e)=> handleFilterDuration(e)}  defaultValue = "3" type = "range" list="tickmarks"  step="1" min="0" max="3"/>
@@ -151,7 +151,7 @@ export default function DiscoverComponent() {
                                 <option value ="3" label="Any"/>
                             </datalist>
                         </div>
-                        <div class = "budget">
+                        <div className= "budget">
                             <h1>Budget</h1>
                             <p>How much are you looking to spend?</p>
                             <input onChange={(e)=> handleFilterBudget(e)} defaultValue = "2" type = "range" list = "tickmarks" step="1"min="0" max="2"/>
@@ -170,7 +170,7 @@ export default function DiscoverComponent() {
                             <Image className="cardImage" src='/images/elephant2.jpg' alt = "elephant" layout= "fill" blurDataURL='/images/elephant2.jpg' placeholder="blur"/>
                             <div id="country">Thailand</div>
                             <div id="excursionTitle">Elephant Forest Adventure</div>
-                            <div class = "priceDuration">
+                            <div className= "priceDuration">
                                 <div id="excursionPrice">
                                     <h1>from</h1>
                                     <p>$100</p>
@@ -186,7 +186,7 @@ export default function DiscoverComponent() {
                             
                             <div id="country">Thailand</div>
                             <div id="excursionTitle">Temple Tour</div>
-                            <div class = "priceDuration">
+                            <div className= "priceDuration">
                                 <div id="excursionPrice">
                                     <h1>from</h1>
                                     <p>$30</p>
@@ -203,7 +203,7 @@ export default function DiscoverComponent() {
                             <Image className="cardImage" src='/images/beach2.jpg' alt = "beach" layout="fill" blurDataURL='/images/beach2.jpg' placeholder="blur"/>
                             <div id="country">Thailand</div>
                             <div id="excursionTitle">Koh Phi Phi Espcape</div>
-                            <div class = "priceDuration">
+                            <div className= "priceDuration">
                                 <div id="excursionPrice">
                                     <h1>from</h1>
                                     <p>$60</p>
@@ -219,7 +219,7 @@ export default function DiscoverComponent() {
                             <Image className="cardImage" src='/images/food2.jpg' alt = "food" layout="fill" blurDataURL='/images/food2.jpg' placeholder="blur"/>
                             <div id="country">Thailand</div>
                             <div id="excursionTitle">Home Stay</div>
-                            <div class = "priceDuration">
+                            <div className= "priceDuration">
                                 <div id="excursionPrice">
                                     <h1>from</h1>
                                     <p>$90</p>
@@ -236,7 +236,7 @@ export default function DiscoverComponent() {
                             <Image className="cardImage" src='/images/halong2.jpg' alt = "Halong Bay" layout="fill" blurDataURL='/images/halong2.jpg' placeholder="blur"/>
                             <div id="country">Vietnam</div>
                             <div id="excursionTitle"> Ha Long Bay Tour </div>
-                            <div class = "priceDuration">
+                            <div className= "priceDuration">
                                 <div id="excursionPrice">
                                     <h1>from</h1>
                                     <p>$50</p>
@@ -252,7 +252,7 @@ export default function DiscoverComponent() {
                             <Image className="cardImage" src='/images/hanoi2.jpg' alt = "hanoi" layout="fill" blurDataURL='/images/hanoi2.jpg' placeholder="blur"/>
                             <div id="country">Vietnam</div>
                             <div id="excursionTitle">Hanoi walking tour</div>
-                            <div class = "priceDuration">
+                            <div className= "priceDuration">
                                 <div id="excursionPrice">
                                     <h1>from</h1>
                                     <p>$30</p>
@@ -265,10 +265,11 @@ export default function DiscoverComponent() {
                             <button id = "moreInfo"><Link href="/excursions/hanoi-walking-tour">More Information</Link></button>
                         </div>
                         <div id="excursion" style={{display: vietnam && overNight && budget150 ? "flex" : null  }}>
-                            <Image className="cardImage" src='/images/loop2.jpg' alt = "Ha Giang Loop" layout="fill" blurDataURL='/images/loop2.jpg' placeholder="blur"/>
+                            <Image  className="cardImage" src='/images/loop2.jpg' alt = "Ha Giang Loop" layout="fill" blurDataURL='/images/loop2.jpg' placeholder="blur"/>
                             <div id="country">Vietnam</div>
+
                             <div id="excursionTitle">Ha Giang Loop On Motorbike</div>
-                            <div class = "priceDuration">
+                            <div className= "priceDuration">
                                 <div id="excursionPrice">
                                     <h1>from</h1>
                                     <p>$150</p>
@@ -284,7 +285,7 @@ export default function DiscoverComponent() {
                             <Image className="cardImage" src='/images/market2.jpg' alt = "Vietnam Market" layout="fill" blurDataURL='/images/market2.jpg' placeholder="blur"/>
                             <div id="country">Vietnam</div>
                             <div id="excursionTitle">Market Tour and Cooking Class</div>
-                            <div class = "priceDuration">
+                            <div className= "priceDuration">
                                 <div id="excursionPrice">
                                     <h1>from</h1>
                                     <p>$40</p>
@@ -301,7 +302,7 @@ export default function DiscoverComponent() {
                         <Image className="cardImage" src='/images/rajaampat2.jpg' alt = "rajaampat indonesia" layout="fill" blurDataURL='/images/rajaampat2.jpg' placeholder="blur"/>
                             <div id="country">Indonesia</div>
                             <div id="excursionTitle">Scuba Diving at Raja Ampat</div>
-                            <div class = "priceDuration">
+                            <div className= "priceDuration">
                                 <div id="excursionPrice">
                                     <h1>from</h1>
                                     <p>$110</p>
@@ -317,7 +318,7 @@ export default function DiscoverComponent() {
                             <Image className="cardImage" src='/images/kelimutu2.jpg' alt = "kelimutu indonesia" layout="fill" blurDataURL='/images/kelimutu2.jpg' placeholder="blur"/>
                             <div id="country">Indonesia</div>
                             <div id="excursionTitle">Trekking Kelimutu Volcano</div>
-                            <div class = "priceDuration">
+                            <div className= "priceDuration">
                                 <div id="excursionPrice">
                                     <h1>from</h1>
                                     <p>$80</p>
@@ -333,7 +334,7 @@ export default function DiscoverComponent() {
                             <Image className="cardImage" src='/images/komodo2.jpg' alt = "komodo island" layout="fill" blurDataURL='/images/komodo2.jpg' placeholder="blur"/>
                             <div id="country">Indonesia</div>
                             <div id="excursionTitle"> Komodo Dragon Watching on Komodo Island</div>
-                            <div class = "priceDuration">
+                            <div className= "priceDuration">
                                 <div id="excursionPrice">
                                     <h1>from</h1>
                                     <p>$50</p>
@@ -349,7 +350,7 @@ export default function DiscoverComponent() {
                             <Image className="cardImage" src='/images/kuta2.jpg' alt = "kuta indonesia" layout="fill" blurDataURL='/images/kuta2.jpg' placeholder="blur"/>
                             <div id="country">Indonesia</div>
                             <div id="excursionTitle">Surfing On Kuta Beach</div>
-                            <div class = "priceDuration">
+                            <div className= "priceDuration">
                                 <div id="excursionPrice">
                                     <h1>from</h1>
                                     <p>$75</p>

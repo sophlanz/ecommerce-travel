@@ -96,7 +96,7 @@
     border-radius:.5rem;
 }
 #excursion:hover:after{
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 
@@ -108,7 +108,12 @@
 /*country name */
 #country {
     color:rgba(255, 255, 255, 0.6);
-    font-size:1.3rem;
+    font-size:1.6rem;
+    font-weight:800;
+    letter-spacing:1.5px;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
 }
 /*excursion name*/
 #excursionTitle {
@@ -120,6 +125,9 @@
 #excursionPrice h1, #excursionDuration h1 {
     color:rgba(255, 255, 255, 0.6);
     font-size:1.3rem;
+    font-weight:700;
+ 
+
 }
 /*amout labels*/
 #excursionPrice p, #excursionDuration p {
@@ -168,6 +176,8 @@
     color: white;
     opacity: .6;
 }
-
+#excursion img {
+    filter:brightness(0.8);
+}
 
 

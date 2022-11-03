@@ -70,10 +70,10 @@ position="bottom"
                 <Image src = {`/images/${imageUrl}`} alt="bus" layout='fill' objectPosition={position} objectFit="cover" />
                 <div class="titles">
                     <p class="countryTrip">{country}</p>
-                    <p class = "titleTrip">{title}</p>
+                    <p className= "titleTrip">{title}</p>
                 </div>    
             </div>
-            <div class = "tripInfo">
+            <div className= "tripInfo">
                 <div class="tripOverview">
                         <h1>Trip Overview</h1>
                         <p class="introduction">{introduction}</p>
@@ -94,7 +94,7 @@ position="bottom"
                                 <h2>Food:</h2>
                                 <p>{foodIncluded}</p>
                             </div>
-                            <div class = "difficulty">
+                            <div className= "difficulty">
                                 <div>
                                 <Image src = "/images/level.png" alt="bus" height="50px" width="50px"/>
                                 </div>
@@ -103,25 +103,25 @@ position="bottom"
                             </div>
                         </div>
                 </div>
-                <div class = "bookTrip">
-                    <div class = "dateSelect">
+                <div className= "bookTrip">
+                    <div className= "dateSelect">
                         <p>Select Date</p>
                         <input  value ={date} type="date" class="datePicker" onChange = {(e) => handleDate(e)} required/>
                     </div>
                     <p class="originDestination">{originDestination}</p>
-                    <div class = "price">
+                    <div className= "price">
                         <p>From</p>
-                        <div class = "pricePerson">
+                        <div className= "pricePerson">
                             <h1>{price}</h1>
                             <p>/pp</p>
                         </div>
                     </div>
                     <button class="bookButton" onClick = {onSubmit}>Add To Bag</button>
-                    <div class = "contactInfo">
+                    <div className= "contactInfo">
                         <h1>Contact Us</h1>
                         <p>excursions@excursionescape.com</p>
                     </div>
-                    <div class = "hoursInfo">
+                    <div className= "hoursInfo">
                         <h1>Opening Hours</h1>
                         <p>Mon-Fri: 9am - 5pm</p>
                     </div>
