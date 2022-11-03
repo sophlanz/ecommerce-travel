@@ -6,10 +6,11 @@ module.exports = {
         prependData: `@import "./src/sass/utilities/variables.scss";`
       },
       images: {
-        disableStaticImages: true
+        disableStaticImages: true,
+        /*for production */
+        domains: ['localhost','excursion-escape.up.railway.app'],
     },
    
-    
     webpack: (config, options) => {
       config.module.rules.push({
         test: /\.(woff|woff2|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
@@ -32,6 +33,7 @@ module.exports = {
           },
         }
       ),
+      
       config.module.rules.push({
         
             test: /\.mp4$/,
@@ -43,6 +45,7 @@ module.exports = {
     },
     
   };  
+  
 
 
 
