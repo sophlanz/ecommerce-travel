@@ -1,16 +1,10 @@
 const path = require('path')
-
+const withImages= require('next-images')
 module.exports = {
     sassOptions: {
         includePaths: [path.join(__dirname, 'styles')],
         prependData: `@import "./src/sass/utilities/variables.scss";`
       },
-      images: {
-        disableStaticImages: true,
-        /*for production */
-        domains: ['localhost','excursion-escape.up.railway.app'],
-    },
-   
     webpack: (config, options) => {
       config.module.rules.push({
         test: /\.(woff|woff2|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
@@ -45,7 +39,15 @@ module.exports = {
     },
     
   };  
-  
+  module.exports = withImages({
+    images: {
+      disableStaticImages: true,
+        domains: ['localhost:3000','excursion-escape.up.railway.app']
+    },
+    webpack(config, options) {
+        return config;
+    }
+});
 
 
 
