@@ -41,9 +41,16 @@ module.exports = {
   };  
   module.exports = withImages({
     images: {
+      remotePatterns: [
+        {
+          protocol: 'https',
+          /*allow all subdomains as well */
+          hostname: '**excursion-escape.up.railway.app/',
+        },
+      ],
       disableStaticImages: true,
       
-        domains: ['excursion-escape.up.railway.app']
+        domains: ['excursion-escape.up.railway.app'],
     },
     webpack(config, options) {
         return config;
