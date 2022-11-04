@@ -45,7 +45,7 @@ module.exports = {
         {
           protocol: 'https',
           /*allow all subdomains as well */
-          hostname: '**excursion-escape.up.railway.app/',
+          hostname: 'excursion-escape.up.railway.app**',
         },
       ],
       disableStaticImages: true,
