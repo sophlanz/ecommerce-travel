@@ -1,6 +1,5 @@
 import React from 'react';
-import copyRight from '../../public/images/copyright.png';
-import gitHub from '../../public/images/github.png';
+
 import Image from 'next/image'
 const Footer = () => {
     return(

@@ -48,7 +48,7 @@ module.exports = {
           hostname: 'excursion-escape.up.railway.app**',
         },
       ],
-      disableStaticImages: true,
+ /*      disableStaticImages: true, */
       
         domains: ['excursion-escape.up.railway.app'],
     },
