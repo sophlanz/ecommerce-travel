@@ -45,14 +45,14 @@ module.exports=withImages({
         {
           protocol: 'https',
           /*allow all subdomains as well */
-          hostname: 'excursion-escape.up.railway.app',
+          hostname: 'localhost',
           port: ' ',
           pathname:'/images/**' 
 
         },
       ],
       disableStaticImages: true,
-      domains: ['excursion-escape.up.railway.app'],
+      domains: ['excursion-escape.up.railway.app', 'localhost'],
     },
 });
 
