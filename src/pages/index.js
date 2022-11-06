@@ -106,7 +106,7 @@ export default function DiscoverComponent() {
         <Navbar/>
         
             <div id = "header">
-                    <Image className="coverPhoto" src={cover} blurDataURL='/images/cover.jpg' alt = "beach" layout="fill" objectFit="cover" placeholder="blur"/>
+                    <img className="coverPhoto" src={cover} blurDataURL='/images/cover.jpg' alt = "beach" layout="fill" objectFit="cover" placeholder="blur"/>
                     <div className="title">
                             <p>Moments.</p>
                             <p>Enjoyed.</p>
