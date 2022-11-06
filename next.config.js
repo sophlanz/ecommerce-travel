@@ -50,9 +50,9 @@ module.exports = {
     },
     
   };  
-/*   module.exports = withImages({
+  module.exports = withImages({
     images: {
       disableStaticImages: true,
     },
-  }); */
+  });
 
