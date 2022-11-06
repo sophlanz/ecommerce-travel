@@ -106,7 +106,7 @@ export default function DiscoverComponent() {
         <Navbar/>
         
             <div id = "header">
-                    <Image className="coverPhoto" src='/images/cover.jpg' blurDataURL='/images/cover.jpg' alt = "beach" layout="fill" objectFit="cover" placeholder="blur"/>
+                    <Image className="coverPhoto" src={'/images/cover.jpg'} blurDataURL='/images/cover.jpg' alt = "beach" layout="fill" objectFit="cover" placeholder="blur"/>
                     <div className="title">
                             <p>Moments.</p>
                             <p>Enjoyed.</p>
@@ -168,7 +168,7 @@ export default function DiscoverComponent() {
                     {/*Thailand*/}
                         
                         <div  id="excursion"  style={{ display: thailand && fullDay && budget100 ? "flex" : null }}>
-                            <Image className="cardImage" src='/static/images/elephant2.jpg' alt = "elephant" layout= "fill" blurDataURL='/images/elephant2.jpg' placeholder="blur"/>
+                            <Image className="cardImage" src='/images/elephant2.jpg' alt = "elephant" layout= "fill" blurDataURL='/images/elephant2.jpg' placeholder="blur"/>
                             <div id="country">Thailand</div>
                             <div id="excursionTitle">Elephant Forest Adventure</div>
                             <div className= "priceDuration">
