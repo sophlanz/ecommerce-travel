@@ -10,7 +10,7 @@ import "../fonts/OggRegular.ttf";
 import "../fonts/OggRegularItalic.ttf";
 import "../fonts/OggThin.ttf";
 import "../fonts/OggThinItalic.ttf"; */
-import cover from '../../public/images/cover.jpg'
+
 //import discover component
 import React, {useState} from 'react';
 
@@ -106,7 +106,7 @@ export default function DiscoverComponent() {
         <Navbar/>
         
             <div id = "header">
-                    <Image className="coverPhoto" src={cover} blurDataURL='/images/cover.jpg' alt = "beach" layout="fill" objectFit="cover" placeholder="blur"/>
+                    <Image className="coverPhoto" src='/images/cover.jpg' blurDataURL='/images/cover.jpg' alt = "beach" layout="fill" objectFit="cover" placeholder="blur"/>
                     <div className="title">
                             <p>Moments.</p>
                             <p>Enjoyed.</p>

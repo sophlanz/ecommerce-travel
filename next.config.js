@@ -1,6 +1,8 @@
 const path = require('path')
 const withImages = require('next-images');
+
 module.exports = {
+ 
     sassOptions: {
         includePaths: [path.join(__dirname, 'styles')],
         prependData: `@import "./src/sass/utilities/variables.scss";`
@@ -27,7 +29,16 @@ module.exports = {
           },
         }
       ),
-      
+     config.module.rules.push({
+        // For newer versions of Webpack it should be
+
+  test: /\.(jpe?g|png|gif|svg)$/i, 
+  loader: 'file-loader',
+  options: {
+    name: 'images/[name].[ext]'
+  
+} 
+      }),  
       config.module.rules.push({
         
             test: /\.mp4$/,
@@ -39,26 +50,9 @@ module.exports = {
     },
     
   };  
-  module.exports = withImages({
+/*   module.exports = withImages({
     images: {
       disableStaticImages: true,
     },
-  });
-/* module.exports=withImages({
-    images: {
-      formats: ['image/avif', 'image/webp'],
-      remotePatterns: [
-        {
-          protocol: 'https',
-          /*allow all subdomains as well */
-/*           hostname: 'localhost',
-          port: ' ',
-          pathname:'/images/**' 
-
-        },
-      ],
-     /*  disableStaticImages: true, */
-/*       domains: ['excursion-escape.up.railway.app', 'localhost'],
-    },
-});  */ 
+  }); */
 
