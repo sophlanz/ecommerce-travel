@@ -1,6 +1,5 @@
 const path = require('path')
 const withImages = require('next-images');
-module.exports = withImages()
 module.exports = {
     sassOptions: {
         includePaths: [path.join(__dirname, 'styles')],
@@ -40,6 +39,11 @@ module.exports = {
     },
     
   };  
+  module.exports = withImages({
+    images: {
+      disableStaticImages: true,
+    },
+  });
 /* module.exports=withImages({
     images: {
       formats: ['image/avif', 'image/webp'],
