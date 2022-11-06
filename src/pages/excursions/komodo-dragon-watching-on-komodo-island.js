@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../../components/TripLayout';
-import image from '../../../public/images/komodo.jpg';
+
 const KomodoDragon = () => {
     return (
         <div>
@@ -11,7 +11,7 @@ transportType ="Bus and Car"
 rating  ="2/5"
 price="50"
 originDestination="Labuan Bajo to Komodo Island"
-foodIncluded= "Food Not Included" background = {image} imageUrl='komodo.jpg' />
+foodIncluded= "Food Not Included" imageUrl='komodo.jpg' />
         </div>
     )
 }

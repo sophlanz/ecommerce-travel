@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../../components/TripLayout';
-import image from '../../../public/images/halong.jpg';
+
 
 const HaLongTour = () => {
     return (
@@ -12,7 +12,7 @@ transportType ="Bus and Boat"
 rating  ="1/5"
 price="50"
 originDestination="Ho Chi Minh to Ha Long Bay"
-foodIncluded= "Food Included" background = {image} imageUrl='halong.jpg' />
+foodIncluded= "Food Included" imageUrl='halong.jpg' />
         </div>
     )
 }

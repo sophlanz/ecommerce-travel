@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../../components/TripLayout';
-import image from '../../../public/images/kuta.jpg';
+
 const KutaBeach = () => {
     return (
         <div>
@@ -11,7 +11,7 @@ transportType ="Bus"
 rating  ="4/5"
 price="75"
 originDestination="Denpasar to Kuta Beach"
-foodIncluded= "Food Included" background = {image} imageUrl='kuta.jpg' />
+foodIncluded= "Food Included"  imageUrl='kuta.jpg' />
         </div>
     )
 }

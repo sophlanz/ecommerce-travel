@@ -1,5 +1,6 @@
 const path = require('path')
 const withImages = require('next-images');
+module.exports = withImages()
 module.exports = {
     sassOptions: {
         includePaths: [path.join(__dirname, 'styles')],
@@ -39,21 +40,21 @@ module.exports = {
     },
     
   };  
-module.exports=withImages({
+/* module.exports=withImages({
     images: {
       formats: ['image/avif', 'image/webp'],
       remotePatterns: [
         {
           protocol: 'https',
           /*allow all subdomains as well */
-          hostname: 'localhost',
+/*           hostname: 'localhost',
           port: ' ',
           pathname:'/images/**' 
 
         },
       ],
-      disableStaticImages: true,
-      domains: ['excursion-escape.up.railway.app', 'localhost'],
+     /*  disableStaticImages: true, */
+/*       domains: ['excursion-escape.up.railway.app', 'localhost'],
     },
-});
+});  */ 
 

@@ -11,7 +11,7 @@ const TripLayout = ({country = "Country", title = "Title",
 overview="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id lectus suscipit eros dignissim imperdiet at sed erat. Fusce in fringilla mauris. Proin tincidunt lacinia pulvinar. Sed massa enim, cursus vitae cursus a, varius ac velit. ",
 transportType ="transport type",
 foodIncluded= "food included",
-background = "../images/cover.jpg",
+
 originDestination = "from here to there",
 imageUrl="url",
 rating="1/5",
@@ -58,7 +58,7 @@ position="bottom"
                     })
                 )
         };
-        console.log(background);
+        
         console.log(imageUrl)
     return(
         <div>

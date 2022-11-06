@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../../components/TripLayout';
-import image from '../../../public/images/market.jpg';
+
 
 const MarketTour = () => {
     return (
@@ -13,7 +13,7 @@ rating  ="1/5"
 price="40"
 position="center"
 originDestination="Bangkok to Local Market"
-foodIncluded= "Food Included" background = {image} imageUrl='market.jpg' />
+foodIncluded= "Food Included"  imageUrl='market.jpg' />
         </div>
     )
 }

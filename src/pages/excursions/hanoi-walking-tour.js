@@ -1,6 +1,5 @@
 import React from 'react';
 import Layout from '../../components/TripLayout';
-import image from '../../../public/images/hanoi.jpg';
 import uniqid from 'uniqid';
 const HanoiTour = () => {
     return (
@@ -12,7 +11,7 @@ transportType ="walking"
 rating  ="1/5"
 price="30"
 originDestination="Hanoi to The Old City"
-foodIncluded= "Food Not Included" background = {image} imageUrl='hanoi.jpg' position="top" />
+foodIncluded= "Food Not Included"  imageUrl='hanoi.jpg' position="top" />
         </div>
     )
 }
