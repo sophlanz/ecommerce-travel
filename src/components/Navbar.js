@@ -1,7 +1,4 @@
 import React, {useState, useEffect} from "react";
-//import {ReactComponent as Facebook} from '../../public/images/facebook.svg';
-import {ReactComponent as Instagram} from '../../public/images/instagram.svg';
-import {ReactComponent as Twitter} from '../../public/images/twitter.svg';
 import { useSelector } from 'react-redux';
 import ShoppingCart from "./ShoppingCart";
 import Modal from 'react-modal';

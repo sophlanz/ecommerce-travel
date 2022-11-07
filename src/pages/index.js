@@ -10,7 +10,7 @@ import "../fonts/OggRegular.ttf";
 import "../fonts/OggRegularItalic.ttf";
 import "../fonts/OggThin.ttf";
 import "../fonts/OggThinItalic.ttf"; */
-import cover from '../../public/images/cover.jpg'
+
 //import discover component
 import React, {useState} from 'react';
 
