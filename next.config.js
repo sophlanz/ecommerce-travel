@@ -1,5 +1,5 @@
 const path = require('path')
-const withImages = require('next-images');
+/* const withImages = require('next-images'); */
 
 module.exports = {
  
@@ -8,6 +8,7 @@ module.exports = {
         prependData: `@import "./src/sass/utilities/variables.scss";`
       },
     webpack: (config, options) => {
+    
       config.module.rules.push({
         test: /\.(woff|woff2|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
         use: [
@@ -19,26 +20,36 @@ module.exports = {
             },
           },
         ],
-      }),
+      })
+      return config
+    },
+    webpack: (config, options) => {
       /*app was unable to read .png files error*/
       config.module.rules.push(
+       
         {
           test: /\.(png|jpeg|jpg|gif|svg)$/,
           use: {
             loader: "file-loader"
           },
         }
-      ),
+      )
+      return config
+    },
+      webpack: (config, options) => {
      config.module.rules.push({
         // For newer versions of Webpack it should be
-
+     
   test: /\.(jpe?g|png|gif|svg)$/i, 
   loader: 'file-loader',
   options: {
     name: 'images/[name].[ext]'
   
 } 
-      }),  
+      })
+      return config
+    },  
+    webpack: (config, options) =>{
       config.module.rules.push({
         
             test: /\.mp4$/,
@@ -47,12 +58,13 @@ module.exports = {
       })
   
       return config
-    },
+    }
+  };
     
-  };  
-  module.exports = withImages({
+  
+/*   module.exports = withImages({
     images: {
       disableStaticImages: true,
     },
-  });
+  }); */
 
