@@ -1,15 +1,15 @@
 /* import React from 'react';
 //import './sass/global.scss'
-import '../fonts/OggBold.ttf';
-import "../fonts/OggBoldItalic.ttf";
-import "../fonts/OggLight.ttf";
-import "../fonts/OggLightItalic.ttf";
-import "../fonts/OggMedium.ttf";
-import "../fonts/OggMediumItalic.ttf";
-import "../fonts/OggRegular.ttf";
-import "../fonts/OggRegularItalic.ttf";
-import "../fonts/OggThin.ttf";
-import "../fonts/OggThinItalic.ttf"; */
+import '..../../public/fonts//OggBold.ttf';
+import "..../../public/fonts//OggBoldItalic.ttf";
+import "..../../public/fonts//OggLight.ttf";
+import "..../../public/fonts//OggLightItalic.ttf";
+import "..../../public/fonts//OggMedium.ttf";
+import "..../../public/fonts//OggMediumItalic.ttf";
+import "..../../public/fonts//OggRegular.ttf";
+import "..../../public/fonts//OggRegularItalic.ttf";
+import "..../../public/fonts//OggThin.ttf";
+import "..../../public/fonts//OggThinItalic.ttf"; */
 
 //import discover component
 import React, {useState} from 'react';
