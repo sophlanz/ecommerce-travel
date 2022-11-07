@@ -2,7 +2,7 @@ const path = require('path')
 const withImages = require('next-images');
 module.exports = withImages({
   images: {
-    path: `/_next/image`,
+    path: `/_next`,
   }
 })
 module.exports = {
