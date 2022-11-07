@@ -8,7 +8,7 @@ module.exports = {
         prependData: `@import "./src/sass/utilities/variables.scss";`
       },
       images: {
-        path: `/_next/images`,
+        path: `/_next/image`,
       }
     /* webpack: (config, options) => {
     
