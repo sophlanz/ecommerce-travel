@@ -6,9 +6,6 @@ module.exports = {
     sassOptions: {
         includePaths: [path.join(__dirname, 'styles')],
         prependData: `@import "./src/sass/utilities/variables.scss";`
-      },
-      images: {
-        path: `/_next/image`,
       }
     /* webpack: (config, options) => {
     
