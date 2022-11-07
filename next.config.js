@@ -1,16 +1,15 @@
 const path = require('path')
-const withImages = require('next-images');
-module.exports = withImages({
-  images: {
-    path: `/_next`,
-  }
-})
+
+
 module.exports = {
  
     sassOptions: {
         includePaths: [path.join(__dirname, 'styles')],
         prependData: `@import "./src/sass/utilities/variables.scss";`
       },
+      images: {
+        path: `/_next/images`,
+      }
     /* webpack: (config, options) => {
     
       config.module.rules.push({
