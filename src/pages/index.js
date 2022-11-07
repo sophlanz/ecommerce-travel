@@ -10,7 +10,6 @@ import "..../../public/fonts//OggRegular.ttf";
 import "..../../public/fonts//OggRegularItalic.ttf";
 import "..../../public/fonts//OggThin.ttf";
 import "..../../public/fonts//OggThinItalic.ttf"; */
-
 //import discover component
 import React, {useState} from 'react';
 

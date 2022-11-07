@@ -1,13 +1,17 @@
 const path = require('path')
 const withImages = require('next-images');
-
+module.exports = withImages({
+  images: {
+    path: `/_next/image`,
+  }
+})
 module.exports = {
  
     sassOptions: {
         includePaths: [path.join(__dirname, 'styles')],
         prependData: `@import "./src/sass/utilities/variables.scss";`
       },
-    webpack: (config, options) => {
+    /* webpack: (config, options) => {
     
       config.module.rules.push({
         test: /\.(woff|woff2|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
@@ -25,7 +29,7 @@ module.exports = {
     },
     webpack: (config, options) => {
       /*app was unable to read .png files error*/
-      config.module.rules.push(
+/*       config.module.rules.push(
        
         {
           test: /\.(png|jpeg|jpg|gif|svg)$/,
@@ -58,10 +62,10 @@ module.exports = {
       })
   
       return config
-    },
+    }, */ 
   
   };
     
   
-  module.exports = withImages();
+
 
