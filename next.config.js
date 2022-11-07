@@ -1,5 +1,5 @@
 const path = require('path')
-/* const withImages = require('next-images'); */
+const withImages = require('next-images');
 
 module.exports = {
  
@@ -58,13 +58,10 @@ module.exports = {
       })
   
       return config
-    }
+    },
+  
   };
     
   
-/*   module.exports = withImages({
-    images: {
-      disableStaticImages: true,
-    },
-  }); */
+  module.exports = withImages();
 
