@@ -329,7 +329,7 @@ export default function DiscoverComponent() {
                                     <p>Full-Day</p>
                                 </div>
                             </div>
-                            <button id = "moreInfo"><Link href="/excusrions/trekking-kelimutu-volcano">More Information</Link></button>
+                            <button id = "moreInfo"><Link href="/excursions/trekking-kelimutu-volcano">More Information</Link></button>
                         </div>
                         <div id="excursion" style={{display: indonesia && halfDay && budget50 ? "flex" : null }}>
                             <Image className="cardImage" src='/images/komodo2.jpg' alt = "komodo island" layout="fill" blurDataURL='/images/komodo2.jpg' placeholder="blur"/>
