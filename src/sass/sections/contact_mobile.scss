@@ -1,0 +1,53 @@
+@media only screen and (max-width: 1025px) {
+    .aboutContent{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .aboutContent {
+        flex-direction:column;
+        margin:20px;
+    }
+ 
+ 
+    textarea.message {
+        width:90vw;
+    }
+    .queryContact {
+        font-size:.9rem;
+    }
+    .contactHeader {
+        height:50vh;
+    }
+    video.surf {
+        width:100vh;
+    }
+    .excursionQueries {
+        margin:0px;
+    }
+    .signUpContainer form {
+        margin-top:20px;
+    }
+}
+@media only screen and (max-width: 750px) {
+    .nameEmail {
+        display:block;
+    }
+    input.number {
+        width:auto;
+    }
+    }
+
+    @media only screen and (max-width: 280px) {
+        .signUpContainer input, textarea {
+            width:auto
+        }
+        .queriesTop, .queriesBottom {
+            padding:20px;
+            margin:0px;
+        }
+        .queryContact {
+            font-size:.8rem;
+        }
+    }
+   
