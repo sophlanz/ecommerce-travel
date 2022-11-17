@@ -3,7 +3,10 @@
     display:none;
    }
    #centerNav {
-    left:25%;
+     position: absolute;
+    left: 50%;
+    margin-left: -115px;
+    width:250px
    }
  
 }

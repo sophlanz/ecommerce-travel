@@ -1,0 +1,41 @@
+@media only screen and (max-width: 1000px) {
+    .tripOverview {
+        padding-left:5px;
+        padding-right:5px;
+    }
+    .titles {
+        margin-left:5px;
+        margin-bottom:20px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .tripOverview {
+        width:auto;
+    }
+    .tripInfo {
+        flex-direction:column;
+    }
+    .bookTrip {
+        width:auto;
+        margin:0px;
+        margin-bottom:30px;
+        
+    }
+}
+@media only screen and (max-width: 500px) {
+    .moreInfo {
+        height:auto;
+        flex-direction:column;
+    }
+    .transport, .food, .difficulty {
+        align-items:center;
+        padding:10px;
+        flex-direction:row;
+    }
+}
+@media only screen and (max-width: 280px) {
+
+    .contactInfo > p {
+        font-size:.9rem;
+    }
+}

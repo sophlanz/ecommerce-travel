@@ -1,4 +1,5 @@
-@media only screen and (max-width: 900px) {
+
+@media only screen and (max-width: 1025px) {
     .filterTrips {
         flex-direction:column;
     }
@@ -29,5 +30,19 @@
         margin:0px;
         justify-content:center;
        }
+       .marquee-content {
+        margin-top:20px;
+       }
 
+}
+@media only screen and (max-width: 375px) {
+    #excursionTitle {
+        font-size:1.6rem;
+    }
+    .quote {
+        font-size:1.6rem;
+    }
+    .title {
+        font-size: 2rem;
+    }
 }
