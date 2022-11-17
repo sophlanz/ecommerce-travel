@@ -1,0 +1,33 @@
+@media only screen and (max-width: 900px) {
+    .filterTrips {
+        flex-direction:column;
+    }
+    .title {
+        font-size:3em;
+        letter-spacing:5px;
+       }
+       .quote {
+        padding:0px;
+        font-size:1.8em;
+       }
+       #header {
+        height:50vh;
+       }
+       blockquote::after {
+        bottom: 30px;
+        right: 10px;
+       }
+       blockquote::before {
+         top: 20px;
+         left: 10px;
+       }
+       .welcome {
+        font-size:.5em;
+        margin-top:10px;
+       }
+       #exploreTrips {
+        margin:0px;
+        justify-content:center;
+       }
+
+}
