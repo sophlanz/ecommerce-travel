@@ -1,0 +1,50 @@
+@media only screen and (max-width: 1025px) {
+    video.boat {
+        width:100%;
+    }
+    .aboutHeader {
+        height:auto;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    video.boat {
+        width:100vh;
+        margin-top:0px;
+    }
+    .aboutHeader {
+        height:50vh;
+        margin-bottom:20px;
+    }
+    .aboutInfo {
+        padding:0px 5px 0px 5px;
+    }
+    .overviewAbout {
+        padding:5px;
+        font-size:1.3rem;
+        height:20vh;
+        margin-top:70px;
+        text-align:center;
+    }
+    blockquote::before {
+        top:-45px;
+    }
+}
+@media only screen and (max-width: 750px) {
+    .overviewAbout {
+        height:40vh
+    }
+}
+@media only screen and (max-width: 400px) {
+    .overviewAbout {
+        height:65vh;
+    }
+}
+@media only screen and (max-width: 280px) {
+    .aboutInfo{
+        height:auto;
+        margin-bottom:100px;
+    }
+    blockquote::after {
+        bottom:-100px;
+    }
+}
