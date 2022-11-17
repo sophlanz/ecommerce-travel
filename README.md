@@ -25,6 +25,8 @@ Ecommerce website that allows users to browse excursions and add them to their s
 <img width="1245" alt="Captura de Pantalla 2022-11-17 a la(s) 1 57 34 p m" src="https://user-images.githubusercontent.com/75180391/202534252-4fc6eed5-a6f6-493c-b484-3aa147f1afe6.png">
 <img width="1249" alt="Captura de Pantalla 2022-11-17 a la(s) 1 57 58 p m" src="https://user-images.githubusercontent.com/75180391/202534400-a6f269e7-3fa3-41ef-8a70-87e1ac98d928.png">
 <img width="1251" alt="Captura de Pantalla 2022-11-17 a la(s) 1 58 14 p m" src="https://user-images.githubusercontent.com/75180391/202534419-9b1dc467-5563-4db3-9b5d-d5351db0cf88.png">
+<img width="1248" alt="Captura de Pantalla 2022-11-17 a la(s) 2 04 56 p m" src="https://user-images.githubusercontent.com/75180391/202535743-187bfe17-3296-45b2-9236-84da364f9a12.png">
+<img width="1253" alt="Captura de Pantalla 2022-11-17 a la(s) 2 05 58 p m" src="https://user-images.githubusercontent.com/75180391/202535884-89af8493-479d-4593-a86e-e60924c5473b.png">
 
 ## Screenshots Mobile
 <img width="444" alt="Captura de Pantalla 2022-11-17 a la(s) 12 56 58 p m" src="https://user-images.githubusercontent.com/75180391/202534634-8623a34c-308f-462f-8587-01763acb94ba.png">
